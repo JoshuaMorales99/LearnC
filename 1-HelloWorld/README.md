@@ -51,7 +51,7 @@ The following sources were used:
 ___
 # ¡Hola Mundo!
 ## Nuestro primer programa.
-Todo programa en C utiliza librerías, las cuales dan la habilidad de ejecutar funciones necesarias. Un ejemplo es el caso de la funcion `printf`, la cual imprime un mensaje o cadena con formato en pantalla. Dicha funcion está definida en el archivo `stdio.h`.
+Todo programa en C utiliza librerías, las cuales dan la habilidad de ejecutar funciones necesarias. Un ejemplo es el caso de la funcion `printf`, la cual imprime un mensaje o cadena con formato en pantalla. Dicha función está definida en el archivo `stdio.h`.
 
 **¿Qué podemos encontrar en `stdio.h`?**<br>
 El archivo de inclusión `<stdio.h>` define constantes, macros, tipos y declara funciones de entrada y salida de secuencias. Algunas de ellas son:
@@ -79,9 +79,9 @@ Para este programa, devolveremos 0 para indicar que nuestro programa fue exitosa
 return 0;
 ```
 
-> Tener en cuenta que cada declaracion C **debe terminar con un punto y coma**, para que el compilador sepa que ha comenzado una nueva declaración.
+> Tener en cuenta que cada declaración C **debe terminar con un punto y coma**, para que el compilador sepa que ha comenzado una nueva declaración.
 
-Finalmente, llamamos a la funcion `printf` para imprimir nuestro mensaje en consola.
+Finalmente, llamamos a la función `printf` para imprimir nuestro mensaje en consola.
 ```
 #include <stdio.h>
 
