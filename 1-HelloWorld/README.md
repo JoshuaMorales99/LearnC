@@ -1,4 +1,4 @@
-# Hello World!
+# Hello World! 🌎
 ## Our first program.
 Every C program uses libraries, which give the ability to excecute necessary functions. An example is the case of the `printf` function, which prints a message or string with formating on the screen. This function is defined in the `stdio.h` file.
 
@@ -35,8 +35,10 @@ Finally, we call the `printf` function to print our message on the console.
 #include <stdio.h>
 
 int main() {
-    printf("¡Hola Mundo!");
+    // Print "Hello World!" in console.
+    printf("Hello World!");
 
+    // Return 0 if the code was run successfully.
     return 0;
 }
 ```
@@ -49,7 +51,7 @@ The following sources were used:
 
 ⠀<br>
 ___
-# ¡Hola Mundo!
+# ¡Hola Mundo! 🌎
 ## Nuestro primer programa.
 Todo programa en C utiliza librerías, las cuales dan la habilidad de ejecutar funciones necesarias. Un ejemplo es el caso de la funcion `printf`, la cual imprime un mensaje o cadena con formato en pantalla. Dicha función está definida en el archivo `stdio.h`.
 
@@ -86,8 +88,11 @@ Finalmente, llamamos a la función `printf` para imprimir nuestro mensaje en con
 #include <stdio.h>
 
 int main() {
+    // Imprimir "¡Hola Mundo!" en consola.
     printf("¡Hola Mundo!");
 
+    // Retornar 0 si el codigo se ejecuto correctamente.
+    // Return 0 if the code was run successfully.
     return 0;
 }
 ```
