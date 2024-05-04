@@ -1,4 +1,4 @@
-// Defines constants, macros, and types, and declares stream input and output functions.
+// Defines constants, macros, types, and declares stream input and output functions.
 #include <stdio.h>
 
 int main() {

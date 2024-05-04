@@ -32,6 +32,7 @@ return 0;
 
 Finally, we call the `printf` function to print our message on the console.
 ```
+// Defines constants, macros, types, and declares stream input and output functions.
 #include <stdio.h>
 
 int main() {
@@ -85,6 +86,7 @@ return 0;
 
 Finalmente, llamamos a la función `printf` para imprimir nuestro mensaje en consola.
 ```
+// Define constantes, macros, tipos y declara funciones de entrada y salida.
 #include <stdio.h>
 
 int main() {
@@ -92,7 +94,6 @@ int main() {
     printf("¡Hola Mundo!");
 
     // Retornar 0 si el codigo se ejecuto correctamente.
-    // Return 0 if the code was run successfully.
     return 0;
 }
 ```
