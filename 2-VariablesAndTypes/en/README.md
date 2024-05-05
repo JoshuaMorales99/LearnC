@@ -109,6 +109,7 @@ If you assign a new value to an existing variable already initialized, it will *
 > #include <stdio.h>
 > 
 > int main() {
+>   // Declare signed integer variables.
 >   int aNumber = 4;                                                          // aNumber is 4.
 >   int anotherNumber = 2;                                                    // anotherNumber is 2.
 > 

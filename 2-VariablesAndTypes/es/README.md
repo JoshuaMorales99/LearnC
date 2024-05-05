@@ -108,6 +108,7 @@ Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescri
 > #include <stdio.h>
 > 
 > int main() {
+>   // Declarar variables enteras con signo.
 >   int unNumero = 4;                                                       // unNumero es 4.
 >   int otroNumero = 2;                                                     // otroNumero es 2.
 > 

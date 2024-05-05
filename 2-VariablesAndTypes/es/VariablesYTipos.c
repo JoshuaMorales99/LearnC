@@ -13,10 +13,13 @@ int main() {
     // Imprimir los valores en consola.
     printf("El valor de esVerdadero es: %d\n", esVerdadero);                // Imprime: 1.
     printf("El valor de esFalso es: %d\n", esFalso);                        // Imprime: 0.
-    
+
     // Declarar variables enteras con signo.
     int unNumero = 4;
-    int otroNumero = 2;
+    int otroNumero = 0;
+    
+    // Cambiar el valor de la variable.
+    otroNumero = 2;
 
     // Imprimir los valores en consola.
     printf("La suma es igual a: %d\n", unNumero + otroNumero);              // Realiza e imprime: 4 + 2 = 6.
