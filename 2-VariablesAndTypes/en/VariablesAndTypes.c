@@ -14,7 +14,7 @@ int main() {
     printf("The value of isTrue is: %d\n", isTrue);                             // Print: 1.
     printf("The value of isFalse is: %d\n", isFalse);                           // Print: 0.
     
-    // Declare integer variables.
+    // Declare signed integer variables.
     int aNumber = 4;
     int anotherNumber = 2;
 
@@ -22,7 +22,7 @@ int main() {
     printf("The sum is equal to: %d\n", aNumber + anotherNumber);               // Make and print: 4 + 2 = 6.
     printf("The subtraction is equal to: %d\n", aNumber - anotherNumber);       // Make and print: 4 - 2 = 2.
     printf("The multiplication is equal to: %d\n", aNumber * anotherNumber);    // Make and print: 4 * 2 = 8.
-    printf("The division is equal to: %d", aNumber / anotherNumber);            // Make and print: 4 / 2 = 2.
+    printf("The division is equal to: %d\n", aNumber / anotherNumber);            // Make and print: 4 / 2 = 2.
 
     return 0;
 }
