@@ -44,7 +44,7 @@ int main() {
 }
 ```
 
-## Bibliography.
+## References.
 The following sources were used:
 - Lear-C: https://www.learn-c.org/en/Hello%2C_World%21
 - IBM: https://www.ibm.com/docs/en/i/7.5?topic=files-stdioh

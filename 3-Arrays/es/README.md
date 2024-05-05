@@ -54,9 +54,9 @@ Para cambiar el valor de un elemento específico, se debe realizar indicando el 
 
 int main() {
     // Declarar arreglo.
-    int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+    int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numeros[0] es 10.
     // Cambiar el primer elemento del arreglo.
-    numeros[0] = 15;
+    numeros[0] = 15;                                                        // Ahora numeros[0] es 15.
 
     // Imprimir el primer elemento del arreglo.
     printf("El primer elemento del array es igual a: %d", numeros[0]);      // Imprime el valor 15.

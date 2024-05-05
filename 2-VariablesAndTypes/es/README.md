@@ -86,6 +86,41 @@ int main() {
 }
 ```
 
+## Especificadores de formato.
+Los especificadores de formato se utilizan junto con la función `printf` para indicar al compilador qué tipo de datos está almacenando la variable. Para esto, un especificador de formato se inicia con un signo de porcentaje `%`, seguido de un carácter.
+Por ejemplo, para generar el valor de una variable `int`, utilice el formato especificador `%d` entre comillas dobles (`""`), Dentro de la función `printf`:
+```
+int unNumero = 4;
+printf("%d", unNumero);                                                     // Imprime: 4.
+```
+> Para imprimir otros tipos, usa `%c` para **char** y `%f` para **float**.
+
+## Cambiar valores de las variables.
+Para cambiar el valor de una variable existente, se procederá de la siguiente manera:
+```
+int unNumero = 4;                                                           // unNumero es 4.
+unNumero = 10;                                                              // Ahora unNumero es 10.
+```
+Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescribirá el valor anterior.
+
+> También puedes asignar el valor de una variable a otra:
+> ```
+> #include <stdio.h>
+> 
+> int main() {
+>   int unNumero = 4;                                                       // unNumero es 4.
+>   int otroNumero = 2;                                                     // otroNumero es 2.
+> 
+>   // Asignar el valor de otroNumero a unNumero.
+>   unNumero = otroNumero;                                                  // Ahora unNumero es 2.
+> 
+>   // Imprimir los valores en consola.
+>   printf("El valor de unNumero es: %d", unNumero);                        // Imprime: 2.
+>
+>   return 0;
+> }
+> ```
+
 ## ¡Importante!.
 Cosas a tener en cuenta a la hora de usar variables:
 - **Flexibilidad**: Las variables nos permiten adaptar nuestro código a diferentes situaciones, almacenando y manupulando varios tipos de datos.

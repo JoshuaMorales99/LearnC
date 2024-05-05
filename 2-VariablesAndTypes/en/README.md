@@ -86,12 +86,49 @@ int main() {
 }
 ```
 
+## Format specifiers.
+Format specifiers are used together with the `printf` function to tell the compiler what type of data the variable is storing.<br>
+A format specifier starts with a percentage sign `%`, followed by a character.<br>
+For example, to output the value of an `int` variable, use the format specifier `%d` surrounded by double quotes (`""`), inside the `printf` function:
+```
+int aNumber = 4;
+printf("The value of aNumber is: %d", aNumber);                               // Print: 4
+```
+> To print other types, use `%c` for **char** and `%f` for **float**.
+
+## Change Variable Values.
+To change the value of an existing variable, proceed as follows:
+```
+int aNumber = 4;                                                              // aNumber is 4.
+aNumber = 10;                                                                 // Now aNumber is 10.
+```
+If you assign a new value to an existing variable already initialized, it will **overwrite** the previous value:
+
+> You can also assign the value of one variable to another:
+> ```
+> #include <stdio.h>
+> 
+> int main() {
+>   int aNumber = 4;                                                          // aNumber is 4.
+>   int anotherNumber = 2;                                                    // anotherNumber is 2.
+> 
+>   // Assign the value of anotherNumber to aNumber.
+>   aNumber = anotherNumber;                                                  // Now aNumber is 2.
+> 
+>   // Print the values to console.
+>   printf("The value of aNumber is: %d", aNumber);                           // Print: 2.
+> 
+>   return 0;
+> }
+> ```
+
 ## Important!.
 Things to consider when using variables:
 - Flexibility: Variables allow us to adapt our code to different situations, storing and manipulating various types of data.
 - Readability: The use of declarative variable names improves the readability of the code. Instead of dealing with raw values, it's better to understand the purpose of each variable at a glance.
 - Accuracy: Choosing the correct data type ensures that our variables consume appropriate amounts of memory, optimizing the performance of our programs.
 
-## Bibliography.
+## References.
 - Learn-C: https://www.learn-c.org/en/Variables_and_Types
 - LinkedIn: https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/
+- W3schools: https://www.w3schools.com/c/c_variables_format.php
