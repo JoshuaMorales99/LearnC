@@ -79,8 +79,8 @@ int main() {
     BOOL isFalse = FALSE;
 
     // Print the values to console.
-    printf("The value of isTrue is: %d\n", isTrue);                           // Print: 1.
-    printf("The value of isFalse is: %d\n", isFalse);                         // Print: 0.
+    printf("The value of isTrue is: %d\n", isTrue);                           // Prints the value: 1.
+    printf("The value of isFalse is: %d\n", isFalse);                         // Prints the value: 0.
 
     return 0;
 }
@@ -92,15 +92,15 @@ A format specifier starts with a percentage sign `%`, followed by a character.<b
 For example, to output the value of an `int` variable, use the format specifier `%d` surrounded by double quotes (`""`), inside the `printf` function:
 ```
 int aNumber = 4;
-printf("The value of aNumber is: %d", aNumber);                               // Print: 4
+printf("The value of aNumber is: %d", aNumber);                               // Prints the value: 4
 ```
 > To print other types, use `%c` for **char** and `%f` for **float**.
 
 ## Change Variable Values.
 To change the value of an existing variable, proceed as follows:
 ```
-int aNumber = 4;                                                              // aNumber is 4.
-aNumber = 10;                                                                 // Now aNumber is 10.
+int aNumber = 4;                                                              // aNumber is: 4.
+aNumber = 10;                                                                 // Now aNumber is: 10.
 ```
 If you assign a new value to an existing variable already initialized, it will **overwrite** the previous value:
 
@@ -110,14 +110,14 @@ If you assign a new value to an existing variable already initialized, it will *
 > 
 > int main() {
 >   // Declare signed integer variables.
->   int aNumber = 4;                                                          // aNumber is 4.
->   int anotherNumber = 2;                                                    // anotherNumber is 2.
+>   int aNumber = 4;                                                          // aNumber is: 4.
+>   int anotherNumber = 2;                                                    // anotherNumber is: 2.
 > 
 >   // Assign the value of anotherNumber to aNumber.
->   aNumber = anotherNumber;                                                  // Now aNumber is 2.
+>   aNumber = anotherNumber;                                                  // Now aNumber is: 2.
 > 
 >   // Print the values to console.
->   printf("The value of aNumber is: %d", aNumber);                           // Print: 2.
+>   printf("The value of aNumber is: %d", aNumber);                           // Prints the value: 2.
 > 
 >   return 0;
 > }

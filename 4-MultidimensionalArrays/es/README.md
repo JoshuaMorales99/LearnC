@@ -63,7 +63,7 @@ int main() {
     int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};
 
     // Imprimir el valor en consola.
-    printf("El valor es: %d", matriz[0][1]);                // Imprime: 4.
+    printf("El valor es: %d", matriz[0][1]);                // Imprime el valor: 4.
 
     return 0;
 }
@@ -77,12 +77,12 @@ Para cambiar el valor de un elemento, se debe realizar indicando el n√∫mero de √
 
 int main() {
     // Declarar un arreglo de 2 filas y 3 columnas.
-    int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};              // matriz[0][0] es 1.
+    int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};              // matriz[0][0] es: 1.
     // Cambiar el elemento de la fila 0 y columna 0.
-    matriz[0][0] = 9;                                       // Ahora matriz[0][0] es 9.
+    matriz[0][0] = 9;                                       // Ahora matriz[0][0] es: 9.
 
     // Imprimir el elemento de la fila 0 y columna 0.
-    printf("El valor es: %d", matriz[0][0]);                // Imprime el valor 9.
+    printf("El valor es: %d", matriz[0][0]);                // Imprime el valor: 9.
 
     return 0;
 }

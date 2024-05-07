@@ -79,8 +79,8 @@ int main() {
     BOOL esFalso = FALSE;
 
     // Imprimir los valores en consola.
-    printf("El valor de esVerdadero es: %d\n", esVerdadero);                // Imprime: 1.
-    printf("El valor de esFalso es: %d\n", esFalso);                        // Imprime: 0.
+    printf("El valor de esVerdadero es: %d\n", esVerdadero);        // Imprime el valor: 1.
+    printf("El valor de esFalso es: %d\n", esFalso);                // Imprime el valor: 0.
 
     return 0;
 }
@@ -91,15 +91,15 @@ Los especificadores de formato se utilizan junto con la función `printf` para i
 Por ejemplo, para generar el valor de una variable `int`, utilice el formato especificador `%d` entre comillas dobles (`""`), Dentro de la función `printf`:
 ```
 int unNumero = 4;
-printf("%d", unNumero);                                                     // Imprime: 4.
+printf("%d", unNumero);                                             // Imprime el valor: 4.
 ```
 > Para imprimir otros tipos, usa `%c` para **char** y `%f` para **float**.
 
 ## Cambiar valores de las variables.
 Para cambiar el valor de una variable existente, se procederá de la siguiente manera:
 ```
-int unNumero = 4;                                                           // unNumero es 4.
-unNumero = 10;                                                              // Ahora unNumero es 10.
+int unNumero = 4;                                                   // unNumero es: 4.
+unNumero = 10;                                                      // Ahora unNumero es: 10.
 ```
 Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescribirá el valor anterior.
 
@@ -109,14 +109,14 @@ Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescri
 > 
 > int main() {
 >   // Declarar variables enteras con signo.
->   int unNumero = 4;                                                       // unNumero es 4.
->   int otroNumero = 2;                                                     // otroNumero es 2.
+>   int unNumero = 4;                                               // unNumero es: 4.
+>   int otroNumero = 2;                                             // otroNumero es: 2.
 > 
 >   // Asignar el valor de otroNumero a unNumero.
->   unNumero = otroNumero;                                                  // Ahora unNumero es 2.
+>   unNumero = otroNumero;                                          // Ahora unNumero es: 2.
 > 
 >   // Imprimir los valores en consola.
->   printf("El valor de unNumero es: %d", unNumero);                        // Imprime: 2.
+>   printf("El valor de unNumero es: %d", unNumero);                // Imprime el valor: 2.
 >
 >   return 0;
 > }

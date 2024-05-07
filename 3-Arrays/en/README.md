@@ -42,7 +42,7 @@ int main() {
     int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
     // Print the first element of the array.
-    printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value 10.
+    printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value: 10.
 
     return 0;
 }
@@ -55,12 +55,12 @@ To change the value of a specific element, it must be done by indicating the ind
 
 int main() {
     // Declare array.
-    int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numbers[0] is 10.
+    int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numbers[0] is: 10.
     // Change the first element of the array.
-    numbers[0] = 15;                                                        // Now numbers[0] is 15.
+    numbers[0] = 15;                                                        // Now numbers[0] is: 15.
 
     // Print the first element of the array.
-    printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value 15.
+    printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value: 15.
 
     return 0;
 }

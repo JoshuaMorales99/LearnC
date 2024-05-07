@@ -63,7 +63,7 @@ int main() {
     int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};
 
     // Print the value in console.
-    printf("The value is: %d", matrix[0][1]);               // Print: 4.
+    printf("The value is: %d", matrix[0][1]);               // Prints the value: 4.
 
     return 0;
 }
@@ -77,12 +77,12 @@ To change the value of an element, you must specify the index number as follows:
 
 int main() {
     // Declare an array of 2 rows and 3 columns.
-    int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};              // matrix[0][0] is 1.
+    int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};              // matrix[0][0] is: 1.
     // Change the element at row 0 and column 0.
-    matrix[0][0] = 9;                                       // Now matrix[0][0] is 9.
+    matrix[0][0] = 9;                                       // Now matrix[0][0] is: 9.
 
     // Print the element of row 0 and column 0.
-    printf("The value is: %d", matrix[0][0]);               // Prints the value 9.
+    printf("The value is: %d", matrix[0][0]);               // Prints the value: 9.
 
     return 0;
 }
