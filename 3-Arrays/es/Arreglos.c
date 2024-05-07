@@ -7,7 +7,7 @@ int main() {
     numeros[0] = 15;
 
     // Imprimir el primer elemento del arreglo.
-    printf("El primer elemento del array es igual a: %d", numeros[0]);
+    printf("El valor es: %d", numeros[0]);
 
     return 0;
 }

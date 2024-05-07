@@ -42,7 +42,7 @@ int main() {
     int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
     // Print the first element of the array.
-    printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value: 10.
+    printf("The value is: %d", numbers[0]);                                 // Prints the value: 10.
 
     return 0;
 }
@@ -60,7 +60,7 @@ int main() {
     numbers[0] = 15;                                                        // Now numbers[0] is: 15.
 
     // Print the first element of the array.
-    printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value: 15.
+    printf("The value is: %d", numbers[0]);                                 // Prints the value: 15.
 
     return 0;
 }

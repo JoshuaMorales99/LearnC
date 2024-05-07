@@ -43,7 +43,7 @@ int main() {
     int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
     // Imprimir el primer elemento del arreglo.
-    printf("El primer elemento del array es igual a: %d", numeros[0]);      // Imprime el valor: 10.
+    printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 10.
 
     return 0;
 }
@@ -61,7 +61,7 @@ int main() {
     numeros[0] = 15;                                                        // Ahora numeros[0] es: 15.
 
     // Imprimir el primer elemento del arreglo.
-    printf("El primer elemento del array es igual a: %d", numeros[0]);      // Imprime el valor: 15.
+    printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 15.
 
     return 0;
 }

@@ -7,7 +7,7 @@ int main() {
     numbers[0] = 15;
 
     // Print the first element of the array.
-    printf("The first element of the array is equal to: %d", numbers[0]);
+    printf("The value is: %d", numbers[0]);
 
     return 0;
 }
