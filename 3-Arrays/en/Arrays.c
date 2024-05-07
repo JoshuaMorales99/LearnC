@@ -8,4 +8,6 @@ int main() {
 
     // Print the first element of the array.
     printf("The first element of the array is equal to: %d", numbers[0]);
+
+    return 0;
 }

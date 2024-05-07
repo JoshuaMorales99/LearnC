@@ -43,6 +43,8 @@ int main() {
 
     // Print the first element of the array.
     printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value 10.
+
+    return 0;
 }
 ```
 
@@ -59,6 +61,8 @@ int main() {
 
     // Print the first element of the array.
     printf("The first element of the array is equal to: %d", numbers[0]);   // Prints the value 15.
+
+    return 0;
 }
 ```
 

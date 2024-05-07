@@ -44,6 +44,8 @@ int main() {
 
     // Imprimir el primer elemento del arreglo.
     printf("El primer elemento del array es igual a: %d", numeros[0]);      // Imprime el valor 10.
+
+    return 0;
 }
 ```
 
@@ -60,6 +62,8 @@ int main() {
 
     // Imprimir el primer elemento del arreglo.
     printf("El primer elemento del array es igual a: %d", numeros[0]);      // Imprime el valor 15.
+
+    return 0;
 }
 ```
 
