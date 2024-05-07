@@ -11,8 +11,8 @@ int main() {
     BOOL esFalso = FALSE;
 
     // Imprimir los valores en consola.
-    printf("El valor de esVerdadero es: %d\n", esVerdadero);                // Imprime: 1.
-    printf("El valor de esFalso es: %d\n", esFalso);                        // Imprime: 0.
+    printf("El valor de esVerdadero es: %d\n", esVerdadero);
+    printf("El valor de esFalso es: %d\n", esFalso);
 
     // Declarar variables enteras con signo.
     int unNumero = 4;
@@ -22,10 +22,10 @@ int main() {
     otroNumero = 2;
 
     // Imprimir los valores en consola.
-    printf("La suma es igual a: %d\n", unNumero + otroNumero);              // Realiza e imprime: 4 + 2 = 6.
-    printf("La resta es igual a: %d\n", unNumero - otroNumero);             // Realiza e imprime: 4 - 2 = 2.
-    printf("La multiplicacion es igual a: %d\n", unNumero * otroNumero);    // Realiza e imprime: 4 * 2 = 8.
-    printf("La division es igual a: %d\n", unNumero / otroNumero);          // Realiza e imprime: 4 / 2 = 2.
+    printf("La suma es igual a: %d\n", unNumero + otroNumero);
+    printf("La resta es igual a: %d\n", unNumero - otroNumero);
+    printf("La multiplicacion es igual a: %d\n", unNumero * otroNumero);
+    printf("La division es igual a: %d\n", unNumero / otroNumero);
 
     return 0;
 }
