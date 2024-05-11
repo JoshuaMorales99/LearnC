@@ -106,21 +106,15 @@ If you assign a new value to an existing variable already initialized, it will *
 
 > You can also assign the value of one variable to another:
 > ```
-> #include <stdio.h>
+> // Declare signed integer variables.
+> int aNumber = 4;                                                          // aNumber is: 4.
+> int anotherNumber = 2;                                                    // anotherNumber is: 2.
 > 
-> int main() {
->   // Declare signed integer variables.
->   int aNumber = 4;                                                          // aNumber is: 4.
->   int anotherNumber = 2;                                                    // anotherNumber is: 2.
+> // Assign the value of anotherNumber to aNumber.
+> aNumber = anotherNumber;                                                  // Now aNumber is: 2.
 > 
->   // Assign the value of anotherNumber to aNumber.
->   aNumber = anotherNumber;                                                  // Now aNumber is: 2.
-> 
->   // Print the values to console.
->   printf("The value of aNumber is: %d", aNumber);                           // Prints the value: 2.
-> 
->   return 0;
-> }
+> // Print the values to console.
+> printf("The value of aNumber is: %d", aNumber);                           // Prints the value: 2.
 > ```
 
 ## Important!.

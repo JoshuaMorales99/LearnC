@@ -105,21 +105,15 @@ Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescri
 
 > También puedes asignar el valor de una variable a otra:
 > ```
-> #include <stdio.h>
+> // Declarar variables enteras con signo.
+> int unNumero = 4;                                               // unNumero es: 4.
+> int otroNumero = 2;                                             // otroNumero es: 2.
 > 
-> int main() {
->   // Declarar variables enteras con signo.
->   int unNumero = 4;                                               // unNumero es: 4.
->   int otroNumero = 2;                                             // otroNumero es: 2.
+> // Asignar el valor de otroNumero a unNumero.
+> unNumero = otroNumero;                                          // Ahora unNumero es: 2.
 > 
->   // Asignar el valor de otroNumero a unNumero.
->   unNumero = otroNumero;                                          // Ahora unNumero es: 2.
-> 
->   // Imprimir los valores en consola.
->   printf("El valor de unNumero es: %d", unNumero);                // Imprime el valor: 2.
->
->   return 0;
-> }
+> // Imprimir los valores en consola.
+> printf("El valor de unNumero es: %d", unNumero);                // Imprime el valor: 2.
 > ```
 
 ## ¡Importante!.
