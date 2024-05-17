@@ -34,7 +34,11 @@ if(edad < 18) {
     printf("Es menor de edad");
 }
 ```
-> En el ejemplo anterior, usamos la variable `edad` para comprobar si la edad es menor que 18. Como `edad` es 4, y sabemos que 4 es menor que 18, entonces la condición resulta **Verdadera**. Como es Verdadera, entra en el `if` y ejecuta el código que contiene.
+> Analizamos el ejemplo anterior.
+> 1. Usamos una variable `edad` que contendrá una edad dada.
+> 2. Verificamos que la edad sea menor a 18.
+> 3. Como `edad` es 4, y sabemos que 4 es menor que 18, entonces la condición resulta **Verdadera**.
+> 4. Como la condición es Verdadera, se entra en el `if` y se ejecuta el código que contiene.
 
 <br>
 
@@ -48,7 +52,11 @@ if(edad < 18) {
     printf("Es menor de edad");
 }
 ```
-> En el ejemplo anterior, usamos las variables `edad` para comprobar si la edad es menor que 18. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición resulta **Falsa**. Como es Falsa, no entra en el `if` y no ejecuta el código que contiene.
+> Analizamos el ejemplo anterior.
+> 1. Usamos la variable `edad` que contendrá una edad dada.
+> 2. Verificamos que la edad sea menor a 18.
+> 3. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición resulta **Falsa**.
+> 4. Como la condición es Falsa, no entra en el `if` y no ejecuta el código que contiene.
 
 ## La sentencia `else`.
 La sentencia `else` nos permite ejecutar código si el resultado de la condición del `if` es **Falso**. Su sintaxis es la siguiente:
@@ -74,7 +82,12 @@ if(edad < 18) {
     printf("Es mayor de edad");
 }
 ```
-> En el ejemplo anterior, usamos las variables `edad` para comprobar si la edad es menor que 18. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición resulta **Falsa**. Como es Falsa, no entra en el `if` y no ejecuta el código que contiene. Sin embargo, como es Falsa, entra en el `else` y ejecuta el código que contiene.
+> Analizamos el ejemplo anterior.
+> 1. Usamos la variable `edad` que contendrá una edad dada.
+> 2. Verificamos que la edad sea menor a 18.
+> 3. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición resulta **Falsa**.
+> 4. Como la condición es Falsa, no entra en el `if` y no ejecuta el código que contiene.
+> 5. Como la condición es Falsa, entra en el `else` y ejecuta el código que contiene.
 
 ## La sentencia `else if`.
 En ocaciones, tendremos más de dos salidas de las cuales elegir. En estos casos, encadenamos múltiples sentencias `if else`.<br>
@@ -92,7 +105,7 @@ if( <CONDICION_1> ) {
 
 Por ejemplo:
 ```
-int edad = 19;
+int edad = 18;
 
 // Evaluar si es menor de edad.
 if(edad < 18) {
@@ -107,7 +120,30 @@ if(edad < 18) {
     printf("Es mayor de edad");
 }
 ```
-> En el ejemplo anterior, usamos la variable `edad` para comprobar si la edad es menor que 18 (Condición 1). Como `edad` es 19, y sabemos que 19 es mayor a 18, entonces la condición 1 resulta **Falsa**. Como es Falsa, no entra en el `if` y no ejecuta el código que contiene. Sin embargo, como la condición 1 es Falsa, se evalúa una nueva condición establecida en la sentencia `else if` para comprobar si la edad es igual a 18 (Condición 2). Como `edad` es 19, y sabemos que 19 es distinto que 18, entonces la condición 2 resulta **Falsa**. Como es Falsa, no entra en el `else if` y no ejecuta el código que contiene. No obstante, como la condición 2 también es Falsa, entra en el `else` final y ejecuta el código que contiene.
+> Analizamos el ejemplo anterior.
+> 1. Usamos la variable `edad` que contendrá una edad dada.
+> 2. Verificamos que la edad sea menor a 18 (Condición 1)
+> 3. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición 1 resulta **Falsa**.
+> 4. Como la condición 1 es Falsa, no entra en el `if` y no efecuta el código que contiene.
+> 5. Como la condición 1 es Falsa, se evalúa una nueva condición que es establecida en la sentencia `else if`.
+> 6. Verificamos que la edad es igual a 18 (Condición 2)
+> 7. Como `edad` es 18, y sabemos que 18 es igual que 18, entonces la condición 2 resulta **Verdadera**.
+> 8. Como la condición 1 es Falsa y la condición 2 es Verdadera, entra en el `else if` y ejecuta el código que contiene.
+
+¿Qué pasaría si `edad` es mayor a 18?
+```
+int edad = 19;
+```
+> Analizamos el ejemplo anterior.
+> 1. Usamos la variable `edad` que contendrá una edad dada.
+> 2. Verificamos que la edad sea menor a 18 (Condición 1)
+> 3. Como `edad` es 19, y sabemos que 19 no es menor que 18, entonces la condición 1 resulta **Falsa**.
+> 4. Como la condición 1 es Falsa, no entra en el `if` y no ejecuta el código que contiene.
+> 5. Como la condición 1 es Falsa, se evalúa una nueva condición que es establecida en la sentencia `else if`.
+> 6. Verificamos que la edad es igual a 18 (Condición 2)
+> 7. Como `edad` es 19, y sabemos que 19 no es igual que 18, entonces la condición 2 resulta **Falsa**.
+> 8. Como la condición 1 y 2 son Falsas, no entra en el `else if` y no ejecuta el código que contiene.
+> 9. Como la condición 1 y 2 son Falsas, entra en el `else` y ejecuta el código que contiene.
 
 ## Operador ternario.
 En C, existe una abreviatura para `if else`. Esta se conoce como **Operador Ternario** ya que consta de tres operandos. Usualmente, se puede utilizar para reempleazar varias líneas de código en una sola. Su sintaxis es la siguiente:
@@ -160,8 +196,8 @@ if (foo < bar || moo > bar) {
 }
 ```
 
-> Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposiciones lógicas con el fin de negar una variable lógica o constante. En otras palabras, invierte el resultado **Verdadero** y **Falso**.
-> - ! Verdadero => Falso.
+> Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposiciones lógicas con el fin de negar una variable lógica o constante. En otras palabras, invierte el resultado **Verdadero** y **Falso**.<br>
+> - ! Verdadero => Falso.<br>
 > - ! Falso => Verdadero.
 
 ## Bibliografía.
