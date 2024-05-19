@@ -5,7 +5,7 @@ Sometimes, we encounter multiple `if ... else` statements. In these situations, 
 **What is the switch statement?**<br>
 The `switch` statement is used to specify many alternative blocks of code to be executed based on a given expression.<br>
 Its syntax is as follows:
-```
+```c
 switch (<EXPRESSION>) {
     case <CASE_1>:
         // Your code here. It will be executed if <EXPRESSION> matches <CASE_1>.
@@ -27,7 +27,7 @@ The `switch` statement works as follows:
 - The `break` statement stops the execution of the `switch` block.
 
 Let's see an example of this:
-```
+```c
 int day = 4;
 
 // Evaluate the day.
@@ -77,7 +77,7 @@ The `break` keyword is used to terminate the execution of different statements. 
 ## The `default` statement.
 The `default` statement specifies some code to be executed if there is no case match.<br>
 Its syntax is as follows:
-```
+```c
 switch (<EXPRESSION>) {
     case <CASE_1>:
         // Your code here. It will be executed if <EXPRESSION> matches <CASE_1>.
@@ -95,7 +95,7 @@ switch (<EXPRESSION>) {
 ```
 
 Let's see an example of this:
-```
+```c
 int day = 7;
 
 // Evaluate the day.

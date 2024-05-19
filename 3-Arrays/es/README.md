@@ -11,7 +11,7 @@ Para crear una matriz, se debe definir el tipo de datos (Ejemplo: `int`) y espec
 ## Inicializar un arreglo.
 Para inicializarle valores, se puede realizar de dos formas:
 - Dato a dato: Veamos un ejemplo.
-    ```
+    ```c
     int numeros[10];
 
     numeros[0] = 10;
@@ -26,7 +26,7 @@ Para inicializarle valores, se puede realizar de dos formas:
     numeros[9] = 100;
     ```
 - Usar una lista separada por comas y entre **llaves `{}`**: Veamos un ejemplo.
-    ```
+    ```c
     int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
     ```
 
@@ -35,36 +35,24 @@ Con esto, hemos creado una variable que contiene una matriz de diez números ent
 
 ## Acceder a los elementos de un arreglo.
 Para acceder a un elemento de un arreglo, se debe consultar su índice. Para eso, se debe tener en cuenta que el primer elemento del mismo comienzan en 0 (`[0]`), el segundo elemento es el 1 (`[1]`), el tercer elemento es el 2 (`[2]`), etc.
-```
-#include <stdio.h>
+```c
+// Declarar arreglo.
+int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
-int main() {
-    // Declarar arreglo.
-    int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-
-    // Imprimir el primer elemento del arreglo.
-    printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 10.
-
-    return 0;
-}
+// Imprimir el primer elemento del arreglo.
+printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 10.
 ```
 
 ## Cambiar un elemento del arreglo.
 Para cambiar el valor de un elemento específico, se debe realizar indicando el número de índice de la siguiente manera:
-```
-#include <stdio.h>
+```c
+// Declarar arreglo.
+int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numeros[0] es: 10.
+// Cambiar el primer elemento del arreglo.
+numeros[0] = 15;                                                        // Ahora numeros[0] es: 15.
 
-int main() {
-    // Declarar arreglo.
-    int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numeros[0] es: 10.
-    // Cambiar el primer elemento del arreglo.
-    numeros[0] = 15;                                                        // Ahora numeros[0] es: 15.
-
-    // Imprimir el primer elemento del arreglo.
-    printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 15.
-
-    return 0;
-}
+// Imprimir el primer elemento del arreglo.
+printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 15.
 ```
 
 ## Bibliografía.

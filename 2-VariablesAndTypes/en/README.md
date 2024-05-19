@@ -25,7 +25,7 @@ C has several variable types, but there are a few basic types:
 > Keep in mind that different types of variables define their bounds.
 
 In other languages, you can find more very common data types, an example of this is the **boolean** type. This type represents binary logic values (2 values) commonly known as **True** or **False**. In C does not have a boolean type, but usually, it is defined using the following notation:
-```
+```c
 #define BOOL char
 #define FALSE 0
 #define TRUE 1
@@ -36,7 +36,7 @@ On the other hand, we can also find those known as **String**. For that, C uses 
 ## Define variables.
 To define a variable in C, you must precede the reserved word of the variable type to the identifier of said variable (The identifier is a representative and characteristic name of what you want to store in it). This can be accompanied, or not, by an initialization (Initial value)<br>
 An example is the following:
-```
+```c
 // RESERVED WORD: int.  -   IDENTIFIER: foo.
 int foo;
 
@@ -46,26 +46,20 @@ int bar = 1;
 In the previous example, the variable `foo` can be used, but since we did not initialize it, we do not know what is in it. However, the variable `bar` contains the number 1.<br>
 
 Now that we know about variables, we can do some math. Assuming that `aNumber` and `anotherNumber` are variables, we can operate with them:
-```
-#include <stdio.h>
+```c
+// Declare signed integer variables.
+int aNumber = 4;
+int anotherNumber = 2;
 
-int main() {
-    // Declare signed integer variables.
-    int aNumber = 4;
-    int anotherNumber = 2;
-
-    // Print the values to console.
-    printf("The sum is equal to: %d\n", aNumber + anotherNumber);             // Make and print: 4 + 2 = 6.
-    printf("The subtraction is equal to: %d\n", aNumber - anotherNumber);     // Make and print: 4 - 2 = 2.
-    printf("The multiplication is equal to: %d\n", aNumber * anotherNumber);  // Make and print: 4 * 2 = 8.
-    printf("The division is equal to: %d\n", aNumber / anotherNumber);        // Make and print: 4 / 2 = 2.
-
-    return 0;
-}
+// Print the values to console.
+printf("The sum is equal to: %d\n", aNumber + anotherNumber);             // Make and print: 4 + 2 = 6.
+printf("The subtraction is equal to: %d\n", aNumber - anotherNumber);     // Make and print: 4 - 2 = 2.
+printf("The multiplication is equal to: %d\n", aNumber * anotherNumber);  // Make and print: 4 * 2 = 8.
+printf("The division is equal to: %d\n", aNumber / anotherNumber);        // Make and print: 4 / 2 = 2.
 ```
 
 Now, let's see an example with boolean variables:
-```
+```c
 #include <stdio.h>
 
 // Define the boolean type.
@@ -79,8 +73,8 @@ int main() {
     BOOL isFalse = FALSE;
 
     // Print the values to console.
-    printf("The value of isTrue is: %d\n", isTrue);                           // Prints the value: 1.
-    printf("The value of isFalse is: %d\n", isFalse);                         // Prints the value: 0.
+    printf("The value of isTrue is: %d\n", isTrue);                       // Prints the value: 1.
+    printf("The value of isFalse is: %d\n", isFalse);                     // Prints the value: 0.
 
     return 0;
 }
@@ -90,31 +84,31 @@ int main() {
 Format specifiers are used together with the `printf` function to tell the compiler what type of data the variable is storing.<br>
 A format specifier starts with a percentage sign `%`, followed by a character.<br>
 For example, to output the value of an `int` variable, use the format specifier `%d` surrounded by double quotes (`""`), inside the `printf` function:
-```
+```c
 int aNumber = 4;
-printf("The value of aNumber is: %d", aNumber);                               // Prints the value: 4
+printf("The value of aNumber is: %d", aNumber);                           // Prints the value: 4
 ```
 > To print other types, use `%c` for **char** and `%f` for **float**.
 
 ## Change Variable Values.
 To change the value of an existing variable, proceed as follows:
-```
-int aNumber = 4;                                                              // aNumber is: 4.
-aNumber = 10;                                                                 // Now aNumber is: 10.
+```c
+int aNumber = 4;                                                          // aNumber is: 4.
+aNumber = 10;                                                             // Now aNumber is: 10.
 ```
 If you assign a new value to an existing variable already initialized, it will **overwrite** the previous value:
 
 > You can also assign the value of one variable to another:
-> ```
+> ```c
 > // Declare signed integer variables.
-> int aNumber = 4;                                                          // aNumber is: 4.
-> int anotherNumber = 2;                                                    // anotherNumber is: 2.
+> int aNumber = 4;                                                        // aNumber is: 4.
+> int anotherNumber = 2;                                                  // anotherNumber is: 2.
 > 
 > // Assign the value of anotherNumber to aNumber.
-> aNumber = anotherNumber;                                                  // Now aNumber is: 2.
+> aNumber = anotherNumber;                                                // Now aNumber is: 2.
 > 
 > // Print the values to console.
-> printf("The value of aNumber is: %d", aNumber);                           // Prints the value: 2.
+> printf("The value of aNumber is: %d", aNumber);                         // Prints the value: 2.
 > ```
 
 ## Important!.

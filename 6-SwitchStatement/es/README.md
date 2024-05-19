@@ -5,7 +5,7 @@ En ocasiones, nos encontramos con múltiples declaraciones `if ... else`. En est
 **¿Qué es la instrucción `switch`?**<br>
 La sentencia `switch` se utiliza para especificar muchos bloques de código alternativos que se ejecutarán según una expresión dada.<br>
 Su sintaxis es la siguiente:
-```
+```c
 switch ( <EXPRESION> ) {
     case <CASO_1>:
         // Nuestro código aquí. Será ejecutado si la <EXPRESION> coincide con el <CASO_1>.
@@ -27,7 +27,7 @@ La sentencia `switch` funciona de la siguiente manera:
 - La sentencia `break` detiene la ejecución del bloque `switch`.
 
 Veamos un ejemplo de esto:
-```
+```c
 int dia = 4;
 
 // Evaluar el dia.
@@ -77,7 +77,7 @@ La palabra clave `break` sirve para finalizar la ejecución de diferentes senten
 ## La expresión `default`.
 La expresión `default` especifica algún código que se ejecutará si no hay ninguna coincidencia de casos.<br>
 Su sintaxis es la siguiente:
-```
+```c
     switch ( <EXPRESION> ) {
     case <CASO_1>:
         // Nuestro código aquí. Será ejecutado si la <EXPRESION> coincide con el <CASO_1>.
@@ -95,7 +95,7 @@ Su sintaxis es la siguiente:
 ```
 
 Veamos un ejemplo de esto:
-```
+```c
 int dia = 7;
 
 // Evaluar el dia.

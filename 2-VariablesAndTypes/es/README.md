@@ -25,7 +25,7 @@ C tiene varios tipos de variables, pero hay unos tipos básicos:
 > Tener en cuenta que los distintos tipos de varibles definen sus límites.
 
 En otros lenguajes se pueden encontrar más tipos muy comunes de dato, un ejemplo de este es el tipo **booleano**. Dicho tipo representa valores de lógica binaria (2 valores) que normalmente son conocidos como **Verdadero** o **Falso**. En C no existe dicho tipo de variable, pero usualmente es definido usando la siguiente notación:
-```
+```c
 #define BOOL char
 #define FALSE 0
 #define TRUE 1
@@ -36,7 +36,7 @@ Por otro lado, también podemos hallar los denominados como **String**. Para eso
 ## Definir variables.
 Para definir una variables en C se deberá anteponer la palabra reservada del tipo de variable al identificador de dicha variable (El identificador es un nombre representativo y caracteristico de lo que se desea almacenar en ella). Este puede ir acompañado, o no, de una inicialización (Valor inicial)<br>
 Un ejemplo es el siguiente:
-```
+```c
 // PALABRA RESERVADA: int.  -   IDENTIFICADOR: foo.
 int foo;
 
@@ -46,26 +46,19 @@ int bar = 1;
 En el ejemplo anterior, la variable `foo` puede ser usada, pero como no la inicializamos, no sabemos qué hay en ella. Sin embargo, la variable `bar` contiene el número 1.<br>
 
 Ahora que conocemos a las variables, podemos hacer un poco de matemáticas. Asumiendo que `unNumero` y `otroNumero` son variables, podemos operar con ellos:
-```
-#include <stdio.h>
+```c
+int unNumero = 4;
+int otroNumero = 2;
 
-int main() {
-    // Declarar variables enteras con signo.
-    int unNumero = 4;
-    int otroNumero = 2;
-
-    // Imprimir los valores en consola.
-    printf("La suma es igual a: %d\n", unNumero + otroNumero);              // Realiza e imprime: 4 + 2 = 6.
-    printf("La resta es igual a: %d\n", unNumero - otroNumero);             // Realiza e imprime: 4 - 2 = 2.
-    printf("La multiplicacion es igual a: %d\n", unNumero * otroNumero);    // Realiza e imprime: 4 * 2 = 8.
-    printf("La division es igual a: %d\n", unNumero / otroNumero);          // Realiza e imprime: 4 / 2 = 2.
-
-    return 0;
-}
+// Imprimir los valores en consola.
+printf("La suma es igual a: %d\n", unNumero + otroNumero);              // Realiza e imprime: 4 + 2 = 6.
+printf("La resta es igual a: %d\n", unNumero - otroNumero);             // Realiza e imprime: 4 - 2 = 2.
+printf("La multiplicacion es igual a: %d\n", unNumero * otroNumero);    // Realiza e imprime: 4 * 2 = 8.
+printf("La division es igual a: %d\n", unNumero / otroNumero);          // Realiza e imprime: 4 / 2 = 2.
 ```
 
 Veamos ahora un ejemplo con los booleanos:
-```
+```c
 #include <stdio.h>
 
 // Definir el tipo booleano.
@@ -79,8 +72,8 @@ int main() {
     BOOL esFalso = FALSE;
 
     // Imprimir los valores en consola.
-    printf("El valor de esVerdadero es: %d\n", esVerdadero);        // Imprime el valor: 1.
-    printf("El valor de esFalso es: %d\n", esFalso);                // Imprime el valor: 0.
+    printf("El valor de esVerdadero es: %d\n", esVerdadero);            // Imprime el valor: 1.
+    printf("El valor de esFalso es: %d\n", esFalso);                    // Imprime el valor: 0.
 
     return 0;
 }
@@ -89,31 +82,31 @@ int main() {
 ## Especificadores de formato.
 Los especificadores de formato se utilizan junto con la función `printf` para indicar al compilador qué tipo de datos está almacenando la variable. Para esto, un especificador de formato se inicia con un signo de porcentaje `%`, seguido de un carácter.
 Por ejemplo, para generar el valor de una variable `int`, utilice el formato especificador `%d` entre comillas dobles (`""`), Dentro de la función `printf`:
-```
+```c
 int unNumero = 4;
-printf("%d", unNumero);                                             // Imprime el valor: 4.
+printf("%d", unNumero);                                                 // Imprime el valor: 4.
 ```
 > Para imprimir otros tipos, usa `%c` para **char** y `%f` para **float**.
 
 ## Cambiar valores de las variables.
 Para cambiar el valor de una variable existente, se procederá de la siguiente manera:
-```
-int unNumero = 4;                                                   // unNumero es: 4.
-unNumero = 10;                                                      // Ahora unNumero es: 10.
+```c
+int unNumero = 4;                                                       // unNumero es: 4.
+unNumero = 10;                                                          // Ahora unNumero es: 10.
 ```
 Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescribirá el valor anterior.
 
 > También puedes asignar el valor de una variable a otra:
-> ```
+> ```c
 > // Declarar variables enteras con signo.
-> int unNumero = 4;                                               // unNumero es: 4.
-> int otroNumero = 2;                                             // otroNumero es: 2.
+> int unNumero = 4;                                                     // unNumero es: 4.
+> int otroNumero = 2;                                                   // otroNumero es: 2.
 > 
 > // Asignar el valor de otroNumero a unNumero.
-> unNumero = otroNumero;                                          // Ahora unNumero es: 2.
+> unNumero = otroNumero;                                                // Ahora unNumero es: 2.
 > 
 > // Imprimir los valores en consola.
-> printf("El valor de unNumero es: %d", unNumero);                // Imprime el valor: 2.
+> printf("El valor de unNumero es: %d", unNumero);                      // Imprime el valor: 2.
 > ```
 
 ## ¡Importante!.

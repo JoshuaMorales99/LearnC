@@ -17,7 +17,7 @@ These logical conditionals are generally used to perform different actions in de
 
 ## The `if` statement.
 The if statement allows us to check if an expression is **True** or **False**, and execute code if the result of that condition is True. Its syntax is as follows:
-```
+```c
 if( <CONDITION> ) {
     // Our code here. It will be executed if the condition is True.
 }
@@ -25,7 +25,7 @@ if( <CONDITION> ) {
 <br>
 
 For example:
-```
+```c
 int age = 4;
 
 // Check if it's underage.
@@ -43,7 +43,7 @@ if(age < 18) {
 <br>
 
 Another example:
-```
+```c
 int age = 18;
 
 // Check if it's underage.
@@ -61,7 +61,7 @@ if(age < 18) {
 
 ## The `else` statement.
 The `else` statement allows us to execute code if the result of the `if` condition is **False**. Its syntax is as follows:
-```
+```c
 if( <CONDITION> ) {
     // Our code here. It will be executed if the condition is True.
 } else {
@@ -71,7 +71,7 @@ if( <CONDITION> ) {
 <br>
 
 For example:
-```
+```c
 int age = 18;
 
 // Check if it's underage.
@@ -93,7 +93,7 @@ if(age < 18) {
 ## The `else if` statement.
 Sometimes, we'll have more than two possible outcomes. In these cases, we chain multiple `if else` statements.<br>
 The `else if` statement allows us to check if a new expression is **True** or **False**, and execute code if the result of that condition is **True**. Its syntax is as follows:
-```
+```c
 if( <CONDITION_1> ) {
     // Our code here. It will be executed if condition 1 is True.
 } else if ( <CONDITION_2> ) {
@@ -105,7 +105,7 @@ if( <CONDITION_1> ) {
 <br>
 
 For example:
-```
+```c
 int age = 18;
 
 // Check if it's underage.
@@ -131,7 +131,7 @@ if(age < 18) {
 > 8. Since condition 1 is False and condition 2 is True, enter the `else if` and execute the code it contains.
 
 ¿What would happen if `age` is greater than 18?
-```
+```c
 int age = 19;
 ```
 > We analyze the previous example:
@@ -147,12 +147,12 @@ int age = 19;
 
 ## Ternary operator.
 In C, there's a shorthand for `if else`. This is known as the **Ternary Operator** as it consists of three operands. It's commonly used to replace multiple lines of code with a single line. Its syntax is as follows:
-```
+```c
 ( <CONDITION> ) ? <TRUE_EXPRESSION> : <FALSE_EXPRESSION> ;
 ```
 
 For example, the following lines of code:
-```
+```c
 int age = 18;
 
 // Check if it's underage.
@@ -166,7 +166,7 @@ if(age < 18) {
 ```
 
 Can be written as follows:
-```
+```c
 int age = 18;
 
 // Check if it's underage.
@@ -181,7 +181,7 @@ It's possible to evaluate two or more expressions together using logical operato
 <br>
 
 For example:
-```
+```c
 int foo = 1;
 int bar = 2;
 int moo = 3;
@@ -196,8 +196,11 @@ if (foo < bar || moo > bar) {
 ```
 
 > Another very useful operator is the **NOT** (`!`) operator. It's used in logical propositions to negate a logical variable or constant. In other words, it flips the result **True** and **False**.<br>
-> ! True => False.<br>
-> ! False => True.
+```
+> ! True        ->      False.
+> ! False       ->      True.
+```
+
 
 ## References.
 - Learn-C: https://www.learn-c.org/en/Conditions

@@ -17,7 +17,7 @@ Estos condicionales lógicos se utilizan generalmente para realizar diferentes a
 
 ## La sentencia `if`.
 La sentencia `if` nos permite chequear si una expresión es **Verdadera** o **Falsa**, y ejecutar códigos si el resultado de dicha condición es **Verdadera**. Su sintaxis es la siguiente:
-```
+```c
 if( <CONDICION> ) {
     // Nuestro código aquí. Será ejecutado si la condición es Verdadera.
 }
@@ -25,7 +25,7 @@ if( <CONDICION> ) {
 <br>
 
 Por ejemplo:
-```
+```c
 int edad = 4;
 
 // Evaluar si es menor de edad.
@@ -43,7 +43,7 @@ if(edad < 18) {
 <br>
 
 Otro ejemplo:
-```
+```c
 int edad = 18;
 
 // Evaluar si es menor de edad.
@@ -60,7 +60,7 @@ if(edad < 18) {
 
 ## La sentencia `else`.
 La sentencia `else` nos permite ejecutar código si el resultado de la condición del `if` es **Falso**. Su sintaxis es la siguiente:
-```
+```c
 if( <CONDICION> ) {
     // Nuestro código aquí. Será ejecutado si la condición es Verdadera.
 } else {
@@ -70,7 +70,7 @@ if( <CONDICION> ) {
 <br>
 
 Por ejemplo:
-```
+```c
 int edad = 18;
 
 // Evaluar si es menor de edad.
@@ -92,7 +92,7 @@ if(edad < 18) {
 ## La sentencia `else if`.
 En ocaciones, tendremos más de dos salidas de las cuales elegir. En estos casos, encadenamos múltiples sentencias `if else`.<br>
 La sentencia `else if` nos permite chequear si una nueva expresión es **Verdadera** o **Falsa**, y ejecutar códigos si el resultado de dicha condición es **Verdadera**. Su sintaxis es la siguiente:
-```
+```c
 if( <CONDICION_1> ) {
     // Nuestro código aquí. Será ejecutado si la condición 1 es Verdadera.
 } else if ( <CONDICION_2> ) {
@@ -104,7 +104,7 @@ if( <CONDICION_1> ) {
 <br>
 
 Por ejemplo:
-```
+```c
 int edad = 18;
 
 // Evaluar si es menor de edad.
@@ -131,7 +131,7 @@ if(edad < 18) {
 > 8. Como la condición 1 es Falsa y la condición 2 es Verdadera, entra en el `else if` y ejecuta el código que contiene.
 
 ¿Qué pasaría si `edad` es mayor a 18?
-```
+```c
 int edad = 19;
 ```
 > Analizamos el ejemplo anterior.
@@ -147,13 +147,13 @@ int edad = 19;
 
 ## Operador ternario.
 En C, existe una abreviatura para `if else`. Esta se conoce como **Operador Ternario** ya que consta de tres operandos. Usualmente, se puede utilizar para reempleazar varias líneas de código en una sola. Su sintaxis es la siguiente:
-```
+```c
 ( <CONDICION> ) ? <EXPRESION_VERDADERA> : <EXPRESION_FALSA> ;
 ```
 <br>
 
 Por ejemplo, siguiente lineas de código:
-```
+```c
 int edad = 18;
 
 // Evaluar si es menor de edad.
@@ -167,7 +167,7 @@ if(edad < 18) {
 ```
 
 Pueden ser escritas de la siguiente manera:
-```
+```c
 int edad = 18
 
 // Evaluar si es menor de edad.
@@ -182,7 +182,7 @@ Es posible evaluar dos o más expresiones juntas usando operadores lógicos. Par
 <br>
 
 Por ejemplo:
-```
+```c
 int foo = 1;
 int bar = 2;
 int moo = 3;
@@ -197,8 +197,11 @@ if (foo < bar || moo > bar) {
 ```
 
 > Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposiciones lógicas con el fin de negar una variable lógica o constante. En otras palabras, invierte el resultado **Verdadero** y **Falso**.<br>
-> - ! Verdadero => Falso.<br>
-> - ! Falso => Verdadero.
+```
+> ! Verdadero       ->      Falso.
+> ! Falso           ->      Verdadero.
+```
+
 
 ## Bibliografía.
 - Learn-C: https://www.learn-c.org/es/Conditions

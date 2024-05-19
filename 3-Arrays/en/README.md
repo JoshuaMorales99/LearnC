@@ -1,7 +1,7 @@
 # Arrays 📰
 ## What are Arrays?
 Arrays are special variables used to store multiple values in a single variable, organized with an index. Arrays are defined using the following syntax:
-```
+```c
 int numbers[10];
 ```
 To create an array, you must define the data type (For example: `int`) and specify the array name followed by **square brackets `[]`**.
@@ -11,7 +11,7 @@ To create an array, you must define the data type (For example: `int`) and speci
 ## Initializing an Array.
 To initialize values, you can do it in two ways:
 - Element by element: Let's see an example.
-    ```
+    ```c
     int numbers[10];
 
     numbers[0] = 10;
@@ -26,7 +26,7 @@ To initialize values, you can do it in two ways:
     numbers[9] = 100;
     ```
 - Using a comman-separated list within braces `{}`: Let's see an example.
-    ```
+    ```c
     int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
     ```
 
@@ -35,35 +35,24 @@ With this, we have created a variable that contains an array of ten integers.
 
 ## Accessing Array elements.
 To access an element of an array, you must refer to its index. For this, it must be noted that the first element of the array starts at 0 (`[0]`), the second element is 1 (`[1]`), the third element is 2 (`[2]`), etc.
-```
-#include <stdio.h>
-int main() {
-    // Declare array.
-    int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+```c
+// Declare array.
+int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
-    // Print the first element of the array.
-    printf("The value is: %d", numbers[0]);                                 // Prints the value: 10.
-
-    return 0;
-}
+// Print the first element of the array.
+printf("The value is: %d", numbers[0]);                                 // Prints the value: 10.
 ```
 
 ## Changing an Array element.
 To change the value of a specific element, it must be done by indicating the index number as follows:
-```
-#include <stdio.h>
+```c
+// Declare array.
+int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numbers[0] is: 10.
+// Change the first element of the array.
+numbers[0] = 15;                                                        // Now numbers[0] is: 15.
 
-int main() {
-    // Declare array.
-    int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numbers[0] is: 10.
-    // Change the first element of the array.
-    numbers[0] = 15;                                                        // Now numbers[0] is: 15.
-
-    // Print the first element of the array.
-    printf("The value is: %d", numbers[0]);                                 // Prints the value: 15.
-
-    return 0;
-}
+// Print the first element of the array.
+printf("The value is: %d", numbers[0]);                                 // Prints the value: 15.
 ```
 
 ## References.
