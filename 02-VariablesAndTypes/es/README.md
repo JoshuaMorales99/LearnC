@@ -35,12 +35,19 @@ Por otro lado, también podemos hallar los denominados como **String**. Para eso
 
 ## Definir variables.
 Para definir una variables en C se deberá anteponer la palabra reservada del tipo de variable al identificador de dicha variable (El identificador es un nombre representativo y caracteristico de lo que se desea almacenar en ella). Este puede ir acompañado, o no, de una inicialización (Valor inicial)<br>
+Syntax:
+```c
+<TIPO_VARIABLE> <IDENTIFICADOR> ;
+
+<TIPO_VARIABLE> <IDENTIFICADOR> = <INICIALIZACION> ;
+```
+
 Un ejemplo es el siguiente:
 ```c
-// PALABRA RESERVADA: int.  -   IDENTIFICADOR: foo.
+// TIPO VARIABLE: int.  -   IDENTIFICADOR: foo.
 int foo;
 
-// PALABRA RESERVADA: int.  -   IDENTIFICADOR: bar  -   INICIALIZACION: 1.
+// TIPO VARIABLE: int.  -   IDENTIFICADOR: bar  -   INICIALIZACION: 1.
 int bar = 1;
 ```
 En el ejemplo anterior, la variable `foo` puede ser usada, pero como no la inicializamos, no sabemos qué hay en ella. Sin embargo, la variable `bar` contiene el número 1.<br>
@@ -51,10 +58,17 @@ int unNumero = 4;
 int otroNumero = 2;
 
 // Imprimir los valores en consola.
-printf("La suma es igual a: %d\n", unNumero + otroNumero);              // Realiza e imprime: 4 + 2 = 6.
-printf("La resta es igual a: %d\n", unNumero - otroNumero);             // Realiza e imprime: 4 - 2 = 2.
-printf("La multiplicacion es igual a: %d\n", unNumero * otroNumero);    // Realiza e imprime: 4 * 2 = 8.
-printf("La division es igual a: %d\n", unNumero / otroNumero);          // Realiza e imprime: 4 / 2 = 2.
+printf("La suma es igual a: %d\n", unNumero + otroNumero);
+printf("La resta es igual a: %d\n", unNumero - otroNumero);
+printf("La multiplicacion es igual a: %d\n", unNumero * otroNumero);
+printf("La division es igual a: %d\n", unNumero / otroNumero);
+```
+***Salida***:
+```
+> La suma es igual a: 6
+> La resta es igual a: 2
+> La multiplicacion es igual a: 8
+> La division es igual a: 2
 ```
 
 Veamos ahora un ejemplo con los booleanos:
@@ -72,11 +86,16 @@ int main() {
     BOOL esFalso = FALSE;
 
     // Imprimir los valores en consola.
-    printf("El valor de esVerdadero es: %d\n", esVerdadero);            // Imprime el valor: 1.
-    printf("El valor de esFalso es: %d\n", esFalso);                    // Imprime el valor: 0.
+    printf("El valor de esVerdadero es: %d\n", esVerdadero);
+    printf("El valor de esFalso es: %d\n", esFalso);
 
     return 0;
 }
+```
+***Salida***:
+```
+> El valor de esVerdadero es: 1
+> El valor de esFalso es: 0
 ```
 
 ## Especificadores de formato.
@@ -84,7 +103,11 @@ Los especificadores de formato se utilizan junto con la función `printf` para i
 Por ejemplo, para generar el valor de una variable `int`, utilice el formato especificador `%d` entre comillas dobles (`""`), Dentro de la función `printf`:
 ```c
 int unNumero = 4;
-printf("%d", unNumero);                                                 // Imprime el valor: 4.
+printf("%d", unNumero);
+```
+***Salida***:
+```
+> 4
 ```
 > Para imprimir otros tipos, usa `%c` para **char** y `%f` para **float**.
 
@@ -106,7 +129,11 @@ Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescri
 > unNumero = otroNumero;                                                // Ahora unNumero es: 2.
 > 
 > // Imprimir los valores en consola.
-> printf("El valor de unNumero es: %d", unNumero);                      // Imprime el valor: 2.
+> printf("El valor de unNumero es: %d", unNumero);
+> ```
+> ***Salida***:
+> ```
+> > El valor de unNumero es: 2
 > ```
 
 ## ¡Importante!.

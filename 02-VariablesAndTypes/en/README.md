@@ -35,12 +35,19 @@ On the other hand, we can also find those known as **String**. For that, C uses 
 
 ## Define variables.
 To define a variable in C, you must precede the reserved word of the variable type to the identifier of said variable (The identifier is a representative and characteristic name of what you want to store in it). This can be accompanied, or not, by an initialization (Initial value)<br>
+Syntax:
+```c
+<VARIABLE_TYPE> <IDENTIFIER> ;
+
+<VARIABLE_TYPE> <IDENTIFIER> = <INITIALIZATION> ;
+```
+
 An example is the following:
 ```c
-// RESERVED WORD: int.  -   IDENTIFIER: foo.
+// VARIABLE TYPE: int.  -   IDENTIFIER: foo.
 int foo;
 
-// RESERVED WORD: int.  -   IDENTIFIER: bar  -   INITIALIZATION: 1.
+// VARIABLE TYPE: int.  -   IDENTIFIER: bar  -   INITIALIZATION: 1.
 int bar = 1;
 ```
 In the previous example, the variable `foo` can be used, but since we did not initialize it, we do not know what is in it. However, the variable `bar` contains the number 1.<br>
@@ -52,10 +59,17 @@ int aNumber = 4;
 int anotherNumber = 2;
 
 // Print the values to console.
-printf("The sum is equal to: %d\n", aNumber + anotherNumber);             // Make and print: 4 + 2 = 6.
-printf("The subtraction is equal to: %d\n", aNumber - anotherNumber);     // Make and print: 4 - 2 = 2.
-printf("The multiplication is equal to: %d\n", aNumber * anotherNumber);  // Make and print: 4 * 2 = 8.
-printf("The division is equal to: %d\n", aNumber / anotherNumber);        // Make and print: 4 / 2 = 2.
+printf("The sum is equal to: %d\n", aNumber + anotherNumber);
+printf("The subtraction is equal to: %d\n", aNumber - anotherNumber);
+printf("The multiplication is equal to: %d\n", aNumber * anotherNumber);
+printf("The division is equal to: %d\n", aNumber / anotherNumber);
+```
+***Output***:
+```
+> The sum is equal to: 6
+> The subtraction is equal to: 2
+> The multiplication is equal to: 8
+> The division is equal to: 2
 ```
 
 Now, let's see an example with boolean variables:
@@ -73,11 +87,16 @@ int main() {
     BOOL isFalse = FALSE;
 
     // Print the values to console.
-    printf("The value of isTrue is: %d\n", isTrue);                       // Prints the value: 1.
-    printf("The value of isFalse is: %d\n", isFalse);                     // Prints the value: 0.
+    printf("The value of isTrue is: %d\n", isTrue);
+    printf("The value of isFalse is: %d\n", isFalse);
 
     return 0;
 }
+```
+***Output***:
+```
+> The value of isTrue is: 1
+> The value of isFalse is: 0
 ```
 
 ## Format specifiers.
@@ -86,7 +105,11 @@ A format specifier starts with a percentage sign `%`, followed by a character.<b
 For example, to output the value of an `int` variable, use the format specifier `%d` surrounded by double quotes (`""`), inside the `printf` function:
 ```c
 int aNumber = 4;
-printf("The value of aNumber is: %d", aNumber);                           // Prints the value: 4
+printf("%d", aNumber);
+```
+***Output***:
+```
+> 4
 ```
 > To print other types, use `%c` for **char** and `%f` for **float**.
 
@@ -108,7 +131,11 @@ If you assign a new value to an existing variable already initialized, it will *
 > aNumber = anotherNumber;                                                // Now aNumber is: 2.
 > 
 > // Print the values to console.
-> printf("The value of aNumber is: %d", aNumber);                         // Prints the value: 2.
+> printf("The value of aNumber is: %d", aNumber);
+> ```
+> ***Output***:
+> ```
+> > The value of aNumber is: 2
 > ```
 
 ## Important!.
