@@ -2,8 +2,8 @@
 ## ¿Qué son los arreglos multidimensional?
 En la anterior sección se vio arreglos y cómo funcionan. Estos eran arreglos unidimensional (De una sola dimensión), pero en C podemos crear y usar arreglos multidimensionales. Si se desea almacenar datos de forma tubular, como una tabla con filas y columnas, debemos familiarizarnos con este último.<br>
 Una matriz multidimensional es, básicamente, un arreglo de matrices que pueden tener cualquier número de dimensiones.
-```c
-tipo nombreDeArreglo[tamaño1][tamaño2]...[tamañoN];
+```
+<TIPO_VARIABLE> <IDENTIFICADOR> [ <TAMAÑO_ARRAY_1> ] [ <TAMAÑO_ARRAY_2> ] .. [ <TAMAÑO_ARRAY_N> ] ;
 ```
 
 Por ejemplo:
@@ -20,22 +20,29 @@ La forma más simple de arreglos multidimensionales son las matrices bidimension
 Para declarar un arreglo bidimensional de enteros de tamaño [x][y], se procede de la siguiente manera:
 ```c
 // Declarar un arreglo de x filas e y columnas.
-tipo nombreDeArreglo[x][y];
+<TIPO_VARIABLE> <IDENTIFICADOR> [ <TAMAÑO_ARRAY_X> ] [ <TAMAÑO_ARRAY_Y> ] ;
 ```
 Donde: 
-- `tipo` puede ser cualquier tipo de dato de C (`int`, `char`, `long`, `doble`, etc.)
-- `nombreDeArreglo` será un identificador válido en C.
-- `x` e `y` representará los índices que identifica cada elemento del arreglo.
+- `<TIPO_VARIABLE>` puede ser cualquier tipo de dato de C (`int`, `char`, `long`, `doble`, etc.)
+- `<IDENTIFICADOR>` será un identificador válido en C.
+- `<TAMAÑO_ARRAY_X>` e `<TAMAÑO_ARRAY_Y>` representará los índices que identifica cada elemento del arreglo.
 
 Un ejemplo de esto puede ser:
 ```c
 // Declarar un arreglo de 2 filas y 3 columnas.
 int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};
 ```
-
 > La primera dimensión representa el número de filas [2], mientras que la segunda dimensión representa el número de columnas [3] Se puede visualizar de la siguiente manera:
 >
-> ![](ArregloBidimensional.png)
+> ```c
+> +---------+-----------------------+-----------------------+-----------------------+
+> |         |       Columna 0       |       Columna 1       |       Columna 2       |
+> +---------+-----------------------+-----------------------+-----------------------+
+> | Fila 0  |   matriz[0][0] = 1    |   matriz[0][1] = 4    |   matriz[0][2] = 2    |
+> +---------+-----------------------+-----------------------+-----------------------+
+> | Fila 1  |   matriz[1][0] = 3    |   matriz[1][1] = 6    |   matriz[1][2] = 8    |
+> +---------+-----------------------+-----------------------+-----------------------+
+> ```
 
 ## Inicializar arreglos bidimensionales.
 Los arreglos multidimensionales pueden ser inicializados usando valores encerrados entre llaves `{}` y separados por comas `,`. Veamos un ejemplo que posee 3 filas y 4 columnas:
@@ -60,7 +67,11 @@ Para tener acceso a un elemento de una matriz bidimensional, se debe especificar
 int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};
 
 // Imprimir el valor en consola.
-printf("El valor es: %d", matriz[0][1]);                    // Imprime el valor: 4.
+printf("El valor es: %d", matriz[0][1]);
+```
+***Salida***:
+```
+> El valor es: 4
 ```
 > Recordar que los índices de los arreglos comienzan con 0.
 
@@ -73,7 +84,11 @@ int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};                  // matriz[0][0] es: 
 matriz[0][0] = 9;                                           // Ahora matriz[0][0] es: 9.
 
 // Imprimir el elemento de la fila 0 y columna 0.
-printf("El valor es: %d", matriz[0][0]);                    // Imprime el valor: 9.
+printf("El valor es: %d", matriz[0][0]);
+```
+***Salida***:
+```
+> El valor es: 9
 ```
 
 ## Bibliografía.

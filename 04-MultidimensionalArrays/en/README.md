@@ -2,8 +2,8 @@
 ## What are multidimensional arrays?
 In the previous section, we looked at arrays and how they work. These were one-dimensional arrays (Single dimension arrays), but in C, we can create and use multidimensional arrays. if you want to store data as a tabular form, like a table with rows and columns, you need to get familiar with multidimensional arrays.<br>
 A multidimensional array is basically an array of arrays that can have any number of dimensions.
-```c
-tipo arrayName[size1][size2]...[sizeN];
+```
+<VARIABLE_TYPE> <IDENTIFIER> [ <ARRAY_SIZE_1> ] [ <ARRAY_SIZE_2> ] .. [ <ARRAY_SIZE_N> ] ;
 ```
 
 For example:
@@ -20,12 +20,12 @@ The simplest form of multidimensional array is the two-dimensional array. This t
 To declare a two-dimensional integer array of size [x][y], you proceed as follows:
 ```c
 // Declare an array of x rows and y columns.
-type arrayName[x][y];
+<VARIABLE_TYPE> <IDENTIFIER> [ <ARRAY_SIZE_X> ] [ <ARRAY_SIZE_Y> ] ;
 ```
 Where:
-- `type` can be any C data type (`int`, `char`, `long`, `double`, etc.)
-- `arrayName` will be a valid C identifier.
-- `x` and `y` represent the indices that identify each element of the array.
+- `<VARIABLE_TYPE>` can be any C data type (`int`, `char`, `long`, `double`, etc.)
+- `<IDENTIFIER>` will be a valid C identifier.
+- `<ARRAY_SIZE_X>` and `<ARRAY_SIZE_Y>` represent the indices that identify each element of the array.
 
 An example of this could be:
 ```c
@@ -34,8 +34,16 @@ int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};
 ```
 
 > The first dimension represents the number of rows [2], while the second dimension represents the number of columns [3]. It can be visualized as follows:
->
-> ![](MultidimensionalArray.png)
+> 
+> ```c
+> +-------------+-----------------------+-----------------------+-----------------------+
+> |             |       Column 0        |       Column 1        |       Column 2        |
+> +-------------+-----------------------+-----------------------+-----------------------+
+> |    Row 0    |   matrix[0][0] = 1    |   matrix[0][1] = 4    |   matrix[0][2] = 2    |
+> +-------------+-----------------------+-----------------------+-----------------------+
+> |    Row 1    |   matrix[1][0] = 3    |   matrix[1][1] = 6    |   matrix[1][2] = 8    |
+> +-------------+-----------------------+-----------------------+-----------------------+
+> ```
 
 ## Initializing Two-dimensional arrays.
 Multidimensional arrays can be initialized using values enclosed in braces `{}` and separated by commas `,`. Let's see an example that has 3 rows and 4 columns:
@@ -60,7 +68,11 @@ To access an element of a two-dimensional array, you must specify the index numb
 int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};
 
 // Print the value in console.
-printf("The value is: %d", matrix[0][1]);                   // Prints the value: 4.
+printf("The value is: %d", matrix[0][1]);
+```
+***Output***:
+```
+> The value is: 4
 ```
 > Remember that array indexes start with 0.
 
@@ -73,7 +85,11 @@ int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};                  // matrix[0][0] is: 
 matrix[0][0] = 9;                                           // Now matrix[0][0] is: 9.
 
 // Print the element of row 0 and column 0.
-printf("The value is: %d", matrix[0][0]);                   // Prints the value: 9.
+printf("The value is: %d", matrix[0][0]);
+```
+***Output***:
+```
+> The value is: 9
 ```
 
 ## References.
