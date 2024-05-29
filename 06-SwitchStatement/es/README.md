@@ -68,6 +68,10 @@ switch(dia) {
     break;
 }
 ```
+***Salida***:
+```
+> Jueves
+```
 
 ## La expresión `break`.
 La palabra clave `break` sirve para finalizar la ejecución de diferentes sentencias. En el caso del `switch`, la palabra clave `break` detiene la ejecución del bloque de codigo asociado a un caso, y finaliza la ejecución del `switch`.
@@ -130,7 +134,10 @@ switch (dia) {
         printf("Es fin de semana!");
 }
 ```
-
+***Salida***:
+```
+> Es fin de semana!
+```
 > La palabra clave `default` debe ser la última instrucción en el `switch`, y no necesita un `break`.
 
 ## Bibliografía.

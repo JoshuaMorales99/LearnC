@@ -68,6 +68,10 @@ switch(day) {
         break;
 }
 ```
+***Output***:
+```
+> Thursday
+```
 
 ## The `break` statement.
 The `break` keyword is used to terminate the execution of different statements. In the case of the `switch`, the `break` keyword stops the execution of the associated case block and ends the execution of the `switch`.
@@ -130,7 +134,10 @@ switch (day) {
         printf("It's the weekend!");
 }
 ```
-
+***Output***:
+```
+> It's the weekend!
+```
 > The `default` keyword should be the last statement in the `switch`, and it does not need a `break`.
 
 ## References.
