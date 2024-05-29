@@ -1,15 +1,24 @@
 # Arrays 📰
 ## What are Arrays?
 Arrays are special variables used to store multiple values in a single variable, organized with an index. Arrays are defined using the following syntax:
+```
+<VARIABLE_TYPE> <IDENTIFIER> [ <ARRAY_SIZE> ] ;
+```
+
+For example:
 ```c
+// RESERVED WORD: int.  -   IDENTIFIER: numbers.    -   ARRAY SIZE: 10.
 int numbers[10];
 ```
 To create an array, you must define the data type (For example: `int`) and specify the array name followed by **square brackets `[]`**.
-
 > An important point to note is that all arrays in C start at 0. This means that if we defined an array of size 10, then the cells are defined from 0 to 9 (inclusive)
 
 ## Initializing an Array.
 To initialize values, you can do it in two ways:
+```
+<VARIABLE_TYPE> <IDENTIFIER> [ <ARRAY_SIZE> ] = <INITIALIZATION>;
+```
+
 - Element by element: Let's see an example.
     ```c
     int numbers[10];
@@ -40,7 +49,11 @@ To access an element of an array, you must refer to its index. For this, it must
 int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
 // Print the first element of the array.
-printf("The value is: %d", numbers[0]);                                 // Prints the value: 10.
+printf("The value is: %d", numbers[0]);
+```
+***Output***:
+```
+> The value is: 10
 ```
 
 ## Changing an Array element.
@@ -52,7 +65,11 @@ int numbers[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numbe
 numbers[0] = 15;                                                        // Now numbers[0] is: 15.
 
 // Print the first element of the array.
-printf("The value is: %d", numbers[0]);                                 // Prints the value: 15.
+printf("The value is: %d", numbers[0]);
+```
+***Output***:
+```
+> The value is: 15
 ```
 
 ## References.

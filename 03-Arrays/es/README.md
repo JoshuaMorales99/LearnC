@@ -2,14 +2,22 @@
 ## ¿Qué son los arreglos?
 Los arreglos son variables especiales que se utilicen para almacenar varios valores en una sola variable, organizado con un índice. Los arreglos son definidos usando la siguiente sintaxis:
 ```
+<TIPO_VARIABLE> <IDENTIFICADOR> [ <TAMAÑO_ARREGLO> ] ;
+```
+
+Por ejemplo:
+```c
+// PALABRA RESERVADA: int.  -   IDENTIFICADOR: numeros  -   TAMAÑO ARREGLO: 10.
 int numeros[10];
 ```
 Para crear una matriz, se debe definir el tipo de datos (Ejemplo: `int`) y especificar el nombre del arreglo seguido de **corchetes `[]`**.
-
 > Un dato no menor es que todo arreglo en C comienza en 0. Esto significa que si definimos un arreglo de tamaño 10, entonces se definen las celdas de 0 a 9 (inclusive)
 
 ## Inicializar un arreglo.
 Para inicializarle valores, se puede realizar de dos formas:
+```
+<TIPO_VARIABLE> <IDENTIFICADOR> [ <TAMAÑO_ARREGLO> ] = <INICIALIZACION> ;
+```
 - Dato a dato: Veamos un ejemplo.
     ```c
     int numeros[10];
@@ -40,7 +48,11 @@ Para acceder a un elemento de un arreglo, se debe consultar su índice. Para eso
 int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
 // Imprimir el primer elemento del arreglo.
-printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 10.
+printf("El valor es: %d", numeros[0]);
+```
+***Salida***:
+```
+> El valor es: 10
 ```
 
 ## Cambiar un elemento del arreglo.
@@ -52,7 +64,11 @@ int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numer
 numeros[0] = 15;                                                        // Ahora numeros[0] es: 15.
 
 // Imprimir el primer elemento del arreglo.
-printf("El valor es: %d", numeros[0]);                                  // Imprime el valor: 15.
+printf("El valor es: %d", numeros[0]);
+```
+***Salida***:
+```
+> El valor es: 15
 ```
 
 ## Bibliografía.
