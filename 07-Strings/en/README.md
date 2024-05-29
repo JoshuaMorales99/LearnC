@@ -30,6 +30,10 @@ int age = 27;
 // Print a message to the console.
 printf("Mr. %s is %d years old", name, age);
 ```
+***Output***:
+```
+> Mr. John Smith is 27 years old
+```
 
 ## Access String.
 Since strings are arrays in C, you can access a string by referencing its index number inside square brackets `[]`.<br>
@@ -38,7 +42,11 @@ In this example, the first character (`[0]`) of the variable `greeting` is print
 char greeting[] = "Hello World!";
 
 // Print the first character of the string.
-printf("The first character is %c", greeting[0]);                           // Prints: 'H'.
+printf("The first character is: %c", greeting[0]);
+```
+***Output***:
+```
+> The first character is: H
 ```
 > Note that we have to use the `%c` format specifier to print a **single character**.
 
@@ -51,22 +59,26 @@ char greeting[] = "Jello World!";                                           // g
 greeting[0] = 'H';                                                          // Now greeting[0] is: 'H'.
 
 // Print the first element of the array.
-printf("The first character is %c", greeting[0]);                           // Prints: 'H'.
+printf("The first character is: %c", greeting[0]);
+```
+***Output***:
+```
+> The first character is: H
 ```
 
 ## Special characters.
 Because strings must be written in double quotes (`""`), C will misinterpret certain sequences and generate an error. The solution is to use the **escape backslash** (`\`), which converts special characters into string characters.
 ```
-// Escape character: \'     ->      Results in: '
-// Escape character: \"     ->      Results in: "
-// Escape character: \\     ->      Results in: \
+- Escape character: \'      ->      Results in: '
+- Escape character: \"      ->      Results in: "
+- Escape character: \\      ->      Results in: \
 ```
 
 Other popular escape characters in C are:
 ```
-// Escape character: \n     ->      Results in: New line.
-// Escape character: \t     ->      Results in: Tab.
-// Escape character: \0     ->      Results in: Null.
+- Escape character: \n      ->      Results in: New line.
+- Escape character: \t      ->      Results in: Tab.
+- Escape character: \0      ->      Results in: Null.
 ```
 
 ## References.
