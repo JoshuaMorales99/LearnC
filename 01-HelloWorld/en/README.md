@@ -43,6 +43,10 @@ int main() {
     return 0;
 }
 ```
+***Output***:
+```
+> Hello World!
+```
 
 ## References.
 The following sources were used:
