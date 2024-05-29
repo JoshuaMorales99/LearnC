@@ -11,8 +11,8 @@ Let's look at the following example, where we want to count the runners particip
 int runner();
 
 int main() {
-    printf("%d\n", runner());                   // Prints: 1.
-    printf("%d\n", runner());                   // Prints: 1.
+    printf("%d\n", runner());
+    printf("%d\n", runner());
 
     return 0;
 }
@@ -26,6 +26,11 @@ int runner() {
     return counter;
 }
 ```
+***Output***:
+```
+> 1
+> 1
+```
 We can observe that `counter` is not updated because it is removed from memory as soon as the function ends. However, if we use the `static` modifier:
 ```c
 #include <stdio.h>
@@ -33,8 +38,8 @@ We can observe that `counter` is not updated because it is removed from memory a
 int runner();
 
 int main() {
-    printf("%d\n", runner());                   // Prints: 1.
-    printf("%d\n", runner());                   // Prints: 2.
+    printf("%d\n", runner());
+    printf("%d\n", runner());
 
     return 0;
 }
@@ -47,6 +52,11 @@ int runner() {
     // Return the value of counter.
     return counter;
 }
+```
+***Output***:
+```
+> 1
+> 2
 ```
 
 ## Static variables vs. Global variables.
@@ -61,8 +71,8 @@ static int counter = 0;
 int runner();
 
 int main() {
-    printf("%d\n", runner());                   // Prints: 1.
-    printf("%d\n", runner());                   // Prints: 2.
+    printf("%d\n", runner());
+    printf("%d\n", runner());
 
     return 0;
 }
@@ -73,6 +83,11 @@ int runner() {
     // Return the value of counter.
     return counter;
 }
+```
+***Output***:
+```
+> 1
+> 2
 ```
 
 ## Static functions.
@@ -88,6 +103,10 @@ For example:
 static void aFunction() {
    printf("I am a static function.");
 }
+```
+***Output***:
+```
+> I am a static function.
 ```
 
 ## Tips and best practices.

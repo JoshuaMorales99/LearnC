@@ -22,9 +22,9 @@ void miFuncion(char nombre[]);
 
 int main() {
     // Saludar a personas.
-    miFuncion("Liam");                                      // Imprime: "Hola Liam!".
-    miFuncion("Jenny");                                     // Imprime: "Hola Jenny!".
-    miFuncion("Anja");                                      // Imprime: "Hola Anja!".
+    miFuncion("Liam");
+    miFuncion("Jenny");
+    miFuncion("Anja");
 
     return 0;
 }
@@ -33,6 +33,12 @@ void miFuncion(char nombre[]) {
     // Imprimir por consola un saludo a la persona.
     printf("Hola %s!\n", nombre);
 }
+```
+***Salida***:
+```
+> Hola Liam!
+> Hola Jenny!
+> Hola Anja!
 ```
 > Cuando se pasa un **parámetro** a la función, se denomina **argumento**. Entonces:
 > - `nombre` es un parámetro.
@@ -44,9 +50,9 @@ void miFuncion(char nombre[], int edad);
 
 int main() {
     // Imprimir edad de la persona.
-    miFuncion("Liam", 3);                                   // Imprime: "Hola Liam! Tienes 3 anios".
-    miFuncion("Jenny", 14);                                 // Imprime: "Hola Jenny! Tienes 14 anios".
-    miFuncion("Anja", 30);                                  // Imprime: "Hola Anja! Tienes 30 anios".
+    miFuncion("Liam", 3);
+    miFuncion("Jenny", 14);
+    miFuncion("Anja", 30);
 
     return 0;
 }
@@ -55,6 +61,12 @@ void miFuncion(char nombre[], int edad) {
     // Imprimir por consola la edad de la persona.
     printf("Hola %s! Tienes %d anios\n", nombre, edad);
 }
+```
+***Salida***:
+```
+> Hola Liam! Tienes 3 anios
+> Hola Jenny! Tienes 14 anios
+> Hola Anja! Tienes 30 anios
 ```
 > Tenga en cuenta que, cuando se trabaja con varios parámetros, la llamada a la función debe tener la misma cantidad de argumentos que parámetros. Además, los argumentos deben pasarse en el mismo orden.
 
@@ -66,7 +78,7 @@ void miFuncion(int numeros[]);
 int main() {
     int misNumeros[5] = {10, 20, 30, 40, 50};
     // Imprimir los numeros del array.
-    miFuncion(misNumeros);                                  // Imprime: 10, 20, 30, 40 y 50.
+    miFuncion(misNumeros);
 
     return 0;
 }
@@ -78,6 +90,14 @@ void miFuncion(int numeros[]) {
     }
 }
 ```
+***Salida***:
+```
+> 10
+> 20
+> 30
+> 40
+> 50
+```
 > Hay que tener en cuenta que, cuando llamamos a la función, solo se necesita usar el nombre de la variable al pasarla como argumento (`miFuncion(misNumeros)`). Sin embargo, se necesita la declaración completa de la matriz en el parámetro de la función (`int numeros[5]`)
 
 ## Valores de retorno.
@@ -88,7 +108,7 @@ int miFuncion(int numero);
 
 int main() {
     // Imprimir por consola la suma entre 5 y 3.
-    printf("El resultado es: %d", miFuncion(3));            // Imprime: 8.
+    printf("El resultado es: %d", miFuncion(3));
 
     return 0;
 }
@@ -97,6 +117,10 @@ int miFuncion(int numero) {
     // Retornar la suma de 5 y el numero dado.
     return 5 + numero;
 }
+```
+***Salida***:
+```
+> El resultado es: 8
 ```
 
 Ahora, veamos un ejemplo con muchos parametros.
@@ -107,7 +131,7 @@ int main() {
     // Almacenar el resultado de la suma entre dos numeros.
     int resultado = miFuncion(5, 3);
     // Imprimir por consola el resultado de la suma.
-    printf("El resultado es: %d", resultado);               // Imprime: 8.
+    printf("El resultado es: %d", resultado);
 
     return 0;
 }
@@ -116,6 +140,10 @@ int miFuncion(int x, int y) {
     // Retornar la suma de los numeros.
     return x + y;
 }
+```
+***Salida***:
+```
+> El resultado es: 8
 ```
 
 ## Bibliografía.

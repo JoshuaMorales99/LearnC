@@ -4,7 +4,7 @@
 Its syntax is as follows:
 ```c
 while ( <CONDITION> ) {
-    // Our code here!
+    // Our code here.
 }
 ```
 
@@ -19,6 +19,14 @@ while(i < 5){
     // Increment the value of i by 1.
     i++;
 }
+```
+***Output***:
+```
+> 0
+> 1
+> 2
+> 3
+> 4
 ```
 > Do not forget to increment the variable used in the condition (`i++`), otherwise, the loop will never end.
 
@@ -52,6 +60,14 @@ do {
     i++;
 } while (i < 5);
 ```
+***Output***:
+```
+> 0
+> 1
+> 2
+> 3
+> 4
+```
 > Do not forget to increment the variable used in the condition (`i++`), otherwise, the loop will never end.
 
 ## Loop directives.
@@ -75,6 +91,13 @@ while(i < 10) {
     i++;
 }
 ```
+***Output***:
+```
+> 0
+> 1
+> 2
+> 3
+```
 > The `break` directive can also be used in other types of loops.
 
 ### The `continue` directive.
@@ -96,6 +119,18 @@ while(i < 10) {
     // Increment the value of i by 1.
     i++;
 }
+```
+***Output***:
+```
+> 0
+> 1
+> 2
+> 3
+> 5
+> 6
+> 7
+> 8
+> 9
 ```
 > The `continue` directive can also be used in other types of loops.
 

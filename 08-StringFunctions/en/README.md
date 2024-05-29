@@ -11,7 +11,11 @@ To get the length of a string, we can use the strlen function which is defined i
 char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Print the length of the string.
-printf("The size of the alphabet is %lu\n", strlen(alphabet));                  // Prints: 26.
+printf("The size of the alphabet is: %lu\n", strlen(alphabet));
+```
+***Output***:
+```
+> The size of the alphabet is: 26
 ```
 
 Another way is by using the `sizeof` operator, though it is important to understand the difference:
@@ -19,7 +23,11 @@ Another way is by using the `sizeof` operator, though it is important to underst
 char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Print the size of the array.
-printf("The size of the alphabet is %d\n", sizeof(alphabet));                   // Prints: 27.
+printf("The size of the alphabet is: %d\n", sizeof(alphabet));
+```
+***Output***:
+```
+> The size of the alphabet is: 27
 ```
 
 > Note that the `strlen` function returns the length of the string excluding the null character `\0`, while `sizeof` returns the total size of the array including the null character. Additionally, `sizeof` returns the size in bytes of the array, not the length of the string.
@@ -29,7 +37,11 @@ printf("The size of the alphabet is %d\n", sizeof(alphabet));                   
 > char alphabet[50] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 > 
 > // Print the size of the array.
-> printf("The size of the alphabet is %d\n", sizeof(alphabet));                 // Prints: 50.
+> printf("The size of the alphabet is: %d\n", sizeof(alphabet));
+> ```
+> ***Output***:
+> ```
+> > The size of the alphabet is: 50
 > ```
 
 ## Compare Strings.
@@ -39,10 +51,15 @@ char name[] = "Joe";
 char anotherName[] = "Leo";
 
 // Compare the names and print the result.
-printf("The result of the comparison is %d\n", strcmp(name, "Joe"));            // Prints: 0.
+printf("The result of the comparison is: %d\n", strcmp(name, "Joe"));
 
 // Compare the names and print the result.
-printf("The result of the comparison is %d\n", strcmp(anotherName, "Joe"));     // Prints: 1.
+printf("The result of the comparison is: %d\n", strcmp(anotherName, "Joe"));
+```
+***Output***:
+```
+> The result of the comparison is: 0
+> The result of the comparison is: 1
 ```
 > `strcmp` compares the strings character by character until a difference is found or the end is reached.
 
@@ -52,10 +69,15 @@ char name[] = "Joe";
 char anotherName[] = "Leo";
 
 // Compare the first 3 characters of the names and print the result.
-printf("The result of the comparison is %d\n", strncmp(name, "Joe", 3));        // Prints: 0.
+printf("The result of the comparison is: %d\n", strncmp(name, "Joe", 3));
 
 // Compare the first 3 characters of the names and print the result.
-printf("The result of the comparison is %d\n", strncmp(anotherName, "Joe", 3)); // Prints: 2.
+printf("The result of the comparison is: %d\n", strncmp(anotherName, "Joe", 3));
+```
+***Output***:
+```
+> The result of the comparison is: 0
+> The result of the comparison is: 2
 ```
 > `strncmp` compares the first n characters of the specified strings.
 
@@ -69,7 +91,11 @@ char lastName[] = "Smith";
 strcat(name, lastName);                                                         // Now name is: "John Smith".
 
 // Print the name to console.
-printf("The name is: %s\n", name);                                              // Prints: "John Smith".
+printf("The name is: %s\n", name);
+```
+***Output***:
+```
+> The name is: John Smith
 ```
 > Make sure the size of `name` is large enough to store the result of the concatenation.
 
@@ -82,7 +108,11 @@ char lastName[] = "Smith";
 strncat(name, lastName, 5);                                                     // Now name is: "John Smith"
 
 // Print the name to console.
-printf("The name is: %s\n", name);                                              // Prints: "John Smith"
+printf("The name is: %s\n", name);
+```
+***Output***:
+```
+> The name is: John Smith
 ```
 
 ## Copy Strings.
@@ -95,7 +125,11 @@ char anotherString[20] = "Goodbye world!";                                      
 strcpy(anotherString, aString);                                                 // Now anotherString is: "Hello world!"
 
 // Print the value of the second string.
-printf("The value of the second string is %s\n", anotherString);                // Prints: "Hello world!"
+printf("The value of the second string is: %s\n", anotherString);
+```
+***Output***:
+```
+> The value of the second string is: Hello world!
 ```
 > Make sure the size of `anotherString` is large enough to store the result of the copy. This function overwrites the value of the first string.
 

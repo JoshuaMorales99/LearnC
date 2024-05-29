@@ -11,7 +11,11 @@ Para obtener la longitud de un string, podemos usar la función `strlen` que se 
 char abecedario[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Imprimir la longitud del arreglo.
-printf("El tamanio del abecedario es %d", strlen(abecedario));                  // Imprime: 26.
+printf("El tamanio del abecedario es: %d", strlen(abecedario));
+```
+***Salida***:
+```
+> El tamanio del abecedario es: 26
 ```
 
 Otra forma es utilizando el operador `sizeof`, aunque es importante entender la diferencia:
@@ -19,7 +23,11 @@ Otra forma es utilizando el operador `sizeof`, aunque es importante entender la 
 char abecedario[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Imprimir la longitud del arreglo.
-printf("El tamanio del abecedario es %d", sizeof(abecedario));                  // Imprime: 27.
+printf("El tamanio del abecedario es: %d", sizeof(abecedario));
+```
+***Salida***:
+```
+> El tamanio del abecedario es: 27
 ```
 
 > Tener en cuenta que la función `strlen` devuelve la longitud del string sin incluir el carácter nulo `\0`, mientras que `sizeof` devuelve el tamaño total del arreglo incluyendo el carácter nulo. Además, `sizeof` devuelve el tamaño en bytes del arreglo, no la longitud del string.
@@ -29,7 +37,11 @@ printf("El tamanio del abecedario es %d", sizeof(abecedario));                  
 > char abecedario[50] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 > 
 > // Imprimir la longitud del arreglo.
-> printf("El tamanio del abecedario es %d", sizeof(abecedario));                // Imprime: 50.
+> printf("El tamanio del abecedario es: %d", sizeof(abecedario));
+> ```
+> ***Salida***:
+> ```
+> > El tamanio del abecedario es: 50
 > ```
 
 ## Comparar Strings.
@@ -39,10 +51,15 @@ char nombre[] = "Joe";
 char otroNombre[] = "Leo";
 
 // Comparar los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es %d", strcmp(nombre, "Joe"));          // Imprime: 0.
+printf("El resultado de la comparacion es: %d", strcmp(nombre, "Joe"));
 
 // Comparar los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es %d", strcmp(otroNombre, "Joe"));      // Imprime: 1.
+printf("El resultado de la comparacion es: %d", strcmp(otroNombre, "Joe"));
+```
+***Salida***:
+```
+> El resultado de la comparacion es: 0
+> El resultado de la comparacion es: 1
 ```
 > `strcmp` compara los strings carácter por carácter hasta encontrar una diferencia o llegar al final.
 
@@ -52,10 +69,15 @@ char nombre[] = "Joe";
 char otroNombre[] = "Leo";
 
 // Comparar los 3 primeros caracteres de los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es %d", strncmp(nombre, "Joe", 3));      // Imprime: 0.
+printf("El resultado de la comparacion es: %d", strncmp(nombre, "Joe", 3));
 
 // Comparar los 3 primeros caracteres de los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es %d", strncmp(otroNombre, "Joe", 3));  // Imprime: 2.
+printf("El resultado de la comparacion es: %d", strncmp(otroNombre, "Joe", 3));
+```
+***Salida***:
+```
+> El resultado de la comparacion es: 0
+> El resultado de la comparacion es: 2
 ```
 > `strncmp` compara los primeros n caracteres de los strings especificados.
 
@@ -69,7 +91,11 @@ char apellido[] = "Smith";
 strcat(nombre, apellido);                                                       // Ahora nombre es: "John Smith".
 
 // Imprimir el nombre por consola.
-printf("El nombre es: %s", nombre);                                             // Imprime: "John Smith".
+printf("El nombre es: %s", nombre);
+```
+***Salida***:
+```
+> El nombre es: John Smith
 ```
 > Asegúrate de que el tamaño de `nombre` sea lo suficientemente grande como para almacenar el resultado de la concatenación.
 
@@ -82,7 +108,11 @@ char apellido[] = "Smith";
 strncat(nombre, apellido, 5);                                                   // Ahora nombre es: "John Smith".
 
 // Imprimir el nombre por consola.
-printf("El nombre es: %s", nombre);                                             // Imprime: "John Smith".
+printf("El nombre es: %s", nombre);
+```
+***Salida***:
+```
+> El nombre es: John Smith
 ```
 
 ### Copiar Strings.
@@ -95,7 +125,11 @@ char otroString[20] = "Chau mundo!";                                            
 strcpy(otroString, unString);                                                   // Ahora otroString es: "Hola mundo!".
 
 // Imprimir el valor del segundo string.
-printf("El valor del segundo string es %s", otroString);                        // Imprime: "Hola mundo!".
+printf("El valor del segundo string es: %s", otroString);
+```
+***Salida***:
+```
+> El valor del segundo string es: Hola mundo!
 ```
 > Asegúrate de que el tamaño de `otroString` sea lo suficientemente grande como para almacenar el resultado de la copia. Esta función sobrescribe el valor del primer string.
 

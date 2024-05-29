@@ -22,9 +22,9 @@ void myFunction(char name[]);
 
 int main() {
     // Greet people.
-    myFunction("Liam");                                     // Prints: "Hello Liam!".
-    myFunction("Jenny");                                    // Prints: "Hello Jenny!".
-    myFunction("Anja");                                     // Prints: "Hello Anja!".
+    myFunction("Liam");
+    myFunction("Jenny");
+    myFunction("Anja");
 
     return 0;
 }
@@ -33,6 +33,12 @@ void myFunction(char name[]) {
     // Print a greeting to the person.
     printf("Hello %s!\n", name);
 }
+```
+***Output***:
+```
+> Hello Liam!
+> Hello Jenny!
+> Hello Anja!
 ```
 > When a parameter is passed to the function, it is called an argument. So:
 > - `name` is a parameter.
@@ -44,9 +50,9 @@ void myFunction(char name[], int age);
 
 int main() {
     // Print the person's age.
-    myFunction("Liam", 3);                                  // Prints: "Hello Liam! You are 3 years old".
-    myFunction("Jenny", 14);                                // Prints: "Hello Jenny! You are 14 years old".
-    myFunction("Anja", 30);                                 // Prints: "Hello Anja! You are 30 years old".
+    myFunction("Liam", 3);
+    myFunction("Jenny", 14);
+    myFunction("Anja", 30);
 
     return 0;
 }
@@ -55,6 +61,12 @@ void myFunction(char name[], int age) {
     // Print the person's age.
     printf("Hello %s! You are %d years old\n", name, age);
 }
+```
+***Output***:
+```
+> Hello Liam! You are 3 years old
+> Hello Jenny! You are 14 years old
+> Hello Anja! You are 30 years old
 ```
 > Note that when working with multiple parameters, the function call must have the same number of arguments as parameters. Additionally, the arguments must be passed in the same order.
 
@@ -66,7 +78,7 @@ void myFunction(int numbers[]);
 int main() {
     int myNumbers[5] = {10, 20, 30, 40, 50};
     // Print the array numbers.
-    myFunction(myNumbers);                                  // Prints: 10, 20, 30, 40, and 50.
+    myFunction(myNumbers);
 
     return 0;
 }
@@ -78,6 +90,14 @@ void myFunction(int numbers[]) {
     }
 }
 ```
+***Output***:
+```
+> 10
+> 20
+> 30
+> 40
+> 50
+```
 > Note that when calling the function, we only need to use the variable name when passing it as an argument (`myFunction(myNumbers)`). However, the full array declaration is needed in the function parameter (`int numbers[5]`).
 
 ## Return values.
@@ -88,7 +108,7 @@ int myFunction(int number);
 
 int main() {
     // Print the sum of 5 and 3.
-    printf("The result is: %d", myFunction(3));             // Prints: 8.
+    printf("The result is: %d", myFunction(3));
 
     return 0;
 }
@@ -97,6 +117,10 @@ int myFunction(int number) {
     // Return the sum of 5 and the given number.
     return 5 + number;
 }
+```
+***Output***:
+```
+> The result is: 8
 ```
 
 Now, let's see an example with many parameters.
@@ -107,7 +131,7 @@ int main() {
     // Store the result of the sum of two numbers.
     int result = myFunction(5, 3);
     // Print the sum result.
-    printf("The result is: %d", result);                    // Prints: 8.
+    printf("The result is: %d", result);
 
     return 0;
 }
@@ -116,6 +140,10 @@ int myFunction(int x, int y) {
     // Return the sum of the numbers.
     return x + y;
 }
+```
+***Output***:
+```
+> The result is: 8
 ```
 
 References:

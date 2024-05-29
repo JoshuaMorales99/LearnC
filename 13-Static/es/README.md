@@ -11,8 +11,8 @@ Veamos el siguiente ejemplo, donde queremos contar a los corredores participando
 int corredor();
 
 int main() {
-    printf("%d\n", corredor());                   // Imprime: 1.
-    printf("%d\n", corredor());                   // Imprime: 1.
+    printf("%d\n", corredor());
+    printf("%d\n", corredor());
 
     return 0;
 }
@@ -26,6 +26,11 @@ int corredor() {
     return contador;
 }
 ```
+***Salida***:
+```
+> 1
+> 1
+```
 Podemos observar que `contador` no se actualiza porque es removida de la memoria tan pronto como la función termina. Sin embargo, si usamos el modificador `static`:
 ```c
 #include <stdio.h>
@@ -33,8 +38,8 @@ Podemos observar que `contador` no se actualiza porque es removida de la memoria
 int corredor();
 
 int main() {
-    printf("%d\n", corredor());                   // Imprime: 1.
-    printf("%d\n", corredor());                   // Imprime: 2.
+    printf("%d\n", corredor());
+    printf("%d\n", corredor());
 
     return 0;
 }
@@ -47,6 +52,11 @@ int corredor() {
     // Retornar el valor de contador.
     return contador;
 }
+```
+***Salida***:
+```
+> 1
+> 2
 ```
 
 ## Variables estáticas vs. Variables globales.
@@ -61,8 +71,8 @@ static int contador = 0;
 int corredor();
 
 int main() {
-    printf("%d\n", corredor());                   // Imprime: 1.
-    printf("%d\n", corredor());                   // Imprime: 2.
+    printf("%d\n", corredor());
+    printf("%d\n", corredor());
 
     return 0;
 }
@@ -73,6 +83,11 @@ int corredor() {
     // Retornar el valor de contador.
     return contador;
 }
+```
+***Salida***:
+```
+> 1
+> 2
 ```
 
 ## Funciones estáticas.
@@ -87,8 +102,12 @@ static <TIPO_FUNCION> <NOMBRE_FUNCION> ( <PARAMETRO_1>, <PARAMETRO_2>, .., <PARA
 Por ejemplo:
 ```c
 static void unaFuncion() {
-   printf("Soy una función estática.");
+   printf("Soy una funcion estatica.");
 }
+```
+***Salida***:
+```
+> Soy una funcion estatica.
 ```
 
 ## Consejos y buenas prácticas.

@@ -28,6 +28,14 @@ for (i = 0; i < 5; i++) {
     printf("%d\n", i);
 }
 ```
+***Output***:
+```
+> 0
+> 1
+> 2
+> 3
+> 4
+```
 > Example explained:
 > - `<EXPRESSION_1>`: The expression `i = 0` sets a variable before the loop starts.
 > - `<EXPRESSION_2>`: The expression `i < 5` defines the condition for the loop to execute.
@@ -42,6 +50,15 @@ for (int i = 0; i <= 10; i = i + 2) {
     printf("%d\n", i);
 }
 ```
+***Output***:
+```
+> 0
+> 2
+> 4
+> 6
+> 8
+> 10
+```
 
 ## `for` loop for arrays.
 Loops are also very useful for iterating over the elements of an array. For example:
@@ -53,6 +70,13 @@ int i;
 for (i = 0; i < 4; i++) {
     printf("%d\n", numbers[i]);
 }
+```
+***Output***:
+```
+> 25
+> 50
+> 75
+> 100
 ```
 
 Another example:
@@ -67,7 +91,11 @@ for (i = 0; i < 10; i++) {
 }                                                               // Now sum is: 55.
 
 // Print the result of the array.
-printf("The sum of the array is %d\n", sum);                    // Prints: 55.
+printf("The sum of the array is: %d\n", sum);
+```
+***Output***:
+```
+> The sum of the array is: 55
 ```
 > In both examples, the iterator `i` was used as the array index to access each element.
 
@@ -84,7 +112,21 @@ for (i = 1; i <= 2; ++i) {
     for (j = 1; j <= 3; ++j) {
         printf("Inner: %d\n", j);                               // Executes 6 times (2 * 3)
     }
+
+    printf("\n");
 }
+```
+***Output***:
+```
+> Outer: 1
+> Inner: 1
+> Inner: 2
+> Inner: 3
+> 
+> Outer: 2
+> Inner: 1
+> Inner: 2
+> Inner: 3
 ```
 > The "inner loop" will be executed one time for each iteration of the "outer loop".
 
@@ -97,11 +139,16 @@ for (int i = 0; i < 2; i++) {
     // Inner loop that iterates over the columns of the matrix.
     for (int j = 0; j < 3; j++) {
         // Print the current element of the matrix.
-    	printf("%d", matrix[i][j]);
+    	printf("%d ", matrix[i][j]);
     }
     // Print a newline after printing all the elements of a row.
     printf("\n");
 }
+```
+***Output***:
+```
+> 1 4 2
+> 3 6 8
 ```
 
 ## References.

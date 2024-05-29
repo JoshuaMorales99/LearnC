@@ -20,6 +20,14 @@ while(i < 5){
     i++;
 }
 ```
+***Salida***:
+```
+> 0
+> 1
+> 2
+> 3
+> 4
+```
 > No hay que olvidar incrementar la variable utilizada en la condición (`i++`), de lo contrario el bucle nunca terminará.
 
 ## Bucles infinitos.
@@ -52,6 +60,14 @@ do {
     i++;
 } while (i < 5);
 ```
+***Salida***:
+```
+> 0
+> 1
+> 2
+> 3
+> 4
+```
 > No hay que olvidar incrementar la variable utilizada en la condición (`i++`), de lo contrario el bucle nunca terminará.
 
 ## Directivas de bucle.
@@ -75,6 +91,13 @@ while(i < 10) {
     i++;
 }
 ```
+***Salida***:
+```
+> 0
+> 1
+> 2
+> 3
+```
 > También se pueden utilizar las directivas `break` en los demás tipos de bucles.
 
 ### La directiva `continue`.
@@ -96,6 +119,18 @@ while(i < 10) {
     // Incrementar en 1 el valor de i.
     i++;
 }
+```
+***Salida***:
+```
+> 0
+> 1
+> 2
+> 3
+> 5
+> 6
+> 7
+> 8
+> 9
 ```
 > También se pueden utilizar las directivas `continue` en los demás tipos de bucles.
 

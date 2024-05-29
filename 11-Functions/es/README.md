@@ -55,10 +55,14 @@ void miFuncion() {
 
 int main() {
     // Llamar a la funcion 'miFuncion'.
-    miFuncion();                                        // Imprime: "Me acaban de ejecutar!".
+    miFuncion();
 
     return 0;
 }
+```
+***Salida***:
+```
+> Me acaban de ejecutar!
 ```
 
 Veamos ahora un ejemplo donde se llama a una función varias veces.
@@ -73,12 +77,18 @@ void miFuncion() {
 
 int main() {
     // Llamar a la funcion 'miFuncion' varias veces.
-    miFuncion();                                        // Imprime: "Me acaban de ejecutar!".
-    miFuncion();                                        // Imprime: "Me acaban de ejecutar!".
-    miFuncion();                                        // Imprime: "Me acaban de ejecutar!".
+    miFuncion();
+    miFuncion();
+    miFuncion();
 
     return 0;
 }
+```
+***Salida***:
+```
+> Me acaban de ejecutar!
+> Me acaban de ejecutar!
+> Me acaban de ejecutar!
 ```
 
 En C, las funciones deben ser declaradas **antes de ser usadas en el código**. Estas pueden ser declaradas primero y luego implementadas en un archivo cabecera o al principio del programa en orden de uso.<br>
@@ -91,7 +101,7 @@ void miFuncion();
 
 int main() {
     // Llamar a la funcion 'miFuncion'.
-    miFuncion();                                        // Imprime: "Me acaban de ejecutar!".
+    miFuncion();
 
     return 0;
 }
@@ -101,6 +111,10 @@ void miFuncion() {
     // Imprimir un mensaje por consola.
     printf("Me acaban de ejecutar!\n");
 }
+```
+***Salida***:
+```
+> Me acaban de ejecutar!
 ```
 
 ## Bibliografía.

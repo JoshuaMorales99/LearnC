@@ -28,6 +28,14 @@ for (i = 0; i < 5; i++) {
     printf("%d\n", i);
 }
 ```
+***Salida***:
+```
+> 0
+> 1
+> 2
+> 3
+> 4
+```
 > Ejemplo explicado.
 > - `<EXPRESION_1>`: La expresión `i = 0` establece una variable antes de que inicie el bucle.
 > - `<EXPRESION_2>`: La expresión `i < 5` define la condición para que se ejecute el bucle.
@@ -42,6 +50,15 @@ for (int i = 0; i <= 10; i = i + 2) {
     printf("%d\n", i);
 }
 ```
+***Salida***:
+```
+> 0
+> 2
+> 4
+> 6
+> 8
+> 10
+```
 
 ## Bucle `for` para arreglos.
 Los bucles también son muy útiles para recorrer los elementos de un array. Por ejemplo:
@@ -53,6 +70,13 @@ int i;
 for (i = 0; i < 4; i++) {
     printf("%d\n", numeros[i]);
 }
+```
+***Salida***:
+```
+> 25
+> 50
+> 75
+> 100
 ```
 
 Otro ejemplo:
@@ -67,7 +91,11 @@ for (i = 0; i < 10; i++) {
 }                                                               // Ahora suma es: 55.
 
 // Imprimir por consola el resultado del arreglo. 
-printf("La suma del arreglo es %d\n", suma);                    // Imprime: 55.
+printf("La suma del arreglo es: %d\n", suma);
+```
+***Salida***:
+```
+> La suma del arreglo es: 55
 ```
 > En ambos ejemplos se utilizó el iterador `i` como índice del array para acceder a cada elemento.
 
@@ -84,7 +112,21 @@ for (i = 1; i <= 2; ++i) {
     for (j = 1; j <= 3; ++j) {
         printf("Interno: %d\n", j);                             // Se ejecuta 6 veces (2 * 3)
     }
+
+    printf("\n");
 }
+```
+***Salida***:
+```
+> Externo: 1
+> Interno: 1
+> Interno: 2
+> Interno: 3
+> 
+> Externo: 2
+> Interno: 1
+> Interno: 2
+> Interno: 3
 ```
 > El **"bucle interno"** se ejecutará una vez para cada iteración del **"bucle externo"**.
 
@@ -97,11 +139,16 @@ for (int i = 0; i < 2; i++) {
     // Bucle interno que recorre las columnas de la matriz.
     for (int j = 0; j < 3; j++) {
         // Imprimir el elemento actual de la matriz.
-    	printf("%d", matriz[i][j]);
+    	printf("%d ", matriz[i][j]);
     }
     // Imprimir un salto de línea después de imprimir todos los elementos de una fila.
     printf("\n");
 }
+```
+***Salida***:
+```
+> 1 4 2
+> 3 6 8
 ```
 
 ## Bibliografía:

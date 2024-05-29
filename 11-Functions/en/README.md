@@ -55,10 +55,14 @@ void myFunction() {
 
 int main() {
     // Call the function 'myFunction'.
-    myFunction();                                       // Prints: "I just got executed!".
+    myFunction();
 
     return 0;
 }
+```
+***Output***:
+```
+> I just got executed!
 ```
 
 Now, let's see an example where a function is called multiple times:
@@ -73,12 +77,18 @@ void myFunction() {
 
 int main() {
     // Call the function 'myFunction' multiple times.
-    myFunction();                                       // Prints: "I just got executed!".
-    myFunction();                                       // Prints: "I just got executed!".
-    myFunction();                                       // Prints: "I just got executed!".
+    myFunction();
+    myFunction();
+    myFunction();
 
     return 0;
 }
+```
+***Output***:
+```
+> I just got executed!
+> I just got executed!
+> I just got executed!
 ```
 
 In C, functions must be declared **before they are used in the code**. They can be declared first and then implemented in a header file or at the beginning of the program in order of use.<br>
@@ -91,7 +101,7 @@ void myFunction();
 
 int main() {
     // Call the function 'myFunction'.
-    myFunction();                                       // Prints: "I have just been executed!".
+    myFunction();
 
     return 0;
 }
@@ -99,8 +109,12 @@ int main() {
 // Define the function 'myFunction'.
 void myFunction() {
     // Print a message to the console.
-    printf("I have just been executed!\n");
+    printf("I just been executed!\n");
 }
+```
+***Output***:
+```
+> I just been executed!
 ```
 
 ## References.
