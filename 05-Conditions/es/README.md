@@ -34,6 +34,10 @@ if(edad < 18) {
     printf("Es menor de edad");
 }
 ```
+***Salida***:
+```
+> Es menor de edad
+```
 > Analizamos el ejemplo anterior.
 > 1. Usamos una variable `edad` que contendrá una edad dada.
 > 2. Verificamos que la edad sea menor a 18.
@@ -51,6 +55,10 @@ if(edad < 18) {
     // Si es verdad, imprime un mensaje por consola.
     printf("Es menor de edad");
 }
+```
+***Salida***:
+```
+> 
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
@@ -81,6 +89,10 @@ if(edad < 18) {
     // Si no es verdad, imprime "Es mayor de edad" por consola.
     printf("Es mayor de edad");
 }
+```
+***Salida***:
+```
+> Es mayor de edad
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
@@ -120,6 +132,10 @@ if(edad < 18) {
     printf("Es mayor de edad");
 }
 ```
+***Salida***:
+```
+> La edad es igual a 18
+```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
 > 2. Verificamos que la edad sea menor a 18 (Condición 1)
@@ -130,9 +146,15 @@ if(edad < 18) {
 > 7. Como `edad` es 18, y sabemos que 18 es igual que 18, entonces la condición 2 resulta **Verdadera**.
 > 8. Como la condición 1 es Falsa y la condición 2 es Verdadera, entra en el `else if` y ejecuta el código que contiene.
 
-¿Qué pasaría si `edad` es mayor a 18?
+<br>
+
+**¿Qué pasaría si `edad` es mayor a 18?**
 ```c
 int edad = 19;
+```
+***Salida***:
+```
+> Es mayor de edad
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
@@ -173,6 +195,10 @@ int edad = 18
 // Evaluar si es menor de edad.
 (edad < 18) ? printf("Es menor de edad") : printf("Es mayor de edad");
 ```
+***Salida***:
+```
+> Es mayor de edad
+```
 
 ## Más de una expresión como condición.
 Es posible evaluar dos o más expresiones juntas usando operadores lógicos. Para realizar esto, haremos uso de los siguientes conectores:
@@ -195,11 +221,16 @@ if (foo < bar || moo > bar) {
     printf("foo es menor que bar O moo es mayor que bar.");
 }
 ```
+***Salida***:
+```
+> foo es menor que bar Y moo es mayor que bar.
+> foo es menor que bar O moo es mayor que bar.
+```
 
 > Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposiciones lógicas con el fin de negar una variable lógica o constante. En otras palabras, invierte el resultado **Verdadero** y **Falso**.<br>
 ```
-> ! Verdadero       ->      Falso.
-> ! Falso           ->      Verdadero.
+- ! Verdadero       ->      Falso.
+- ! Falso           ->      Verdadero.
 ```
 
 

@@ -34,6 +34,10 @@ if(age < 18) {
     printf("It's underage");
 }
 ```
+***Output***:
+```
+> It's underage
+```
 > We analyze the previous example:
 > 1. We use the varible `age` that will contain a given age.
 > 2. We verify that the age is less than 18.
@@ -51,6 +55,10 @@ if(age < 18) {
     // If true, print a message to the console.
     printf("It's underage");
 }
+```
+***Output***:
+```
+> 
 ```
 > In the above example, we use the variable `age` to check if the age is less than 18. Since `age` is 18, and we know that 18 is not less than 18, then the condition results in **False**. Since it's False, it doesn't enter the `if` and doesn't execute the contained code.
 > We analyze the previous example:
@@ -82,6 +90,10 @@ if(age < 18) {
     // If false, print "It's of legal age" to the console.
     printf("It's of legal age");
 }
+```
+***Output***:
+```
+> It's of legal age
 ```
 > We analyze the previous example:
 > 1. We use the variable `age` that will contain given age.
@@ -120,6 +132,10 @@ if(age < 18) {
     printf("It's of legal age");
 }
 ```
+***Output***:
+```
+> The age is equal to 18
+```
 > We analyze the previous example:
 > 1. We use the variable `age` that will contain given age.
 > 2. We verify that the age is less than 18 (Condition 1)
@@ -130,9 +146,15 @@ if(age < 18) {
 > 7. Since `age` is 18, and we know that 18 is equal to 18, then condition 2 becomes **True**.
 > 8. Since condition 1 is False and condition 2 is True, enter the `else if` and execute the code it contains.
 
-¿What would happen if `age` is greater than 18?
+<br>
+
+**¿What would happen if `age` is greater than 18?**
 ```c
 int age = 19;
+```
+***Output***:
+```
+> It's of legal age
 ```
 > We analyze the previous example:
 > 1. We use the variable `age` that will contain given age.
@@ -172,6 +194,10 @@ int age = 18;
 // Check if it's underage.
 (age < 18) ? printf("It's underage") : printf("It's of legal age");
 ```
+***Output***:
+```
+> It's of legal age
+```
 
 ## More than one expression as condition.
 It's possible to evaluate two or more expressions together using logical operators. To do this, we'll use the following connectors:
@@ -194,11 +220,16 @@ if (foo < bar || moo > bar) {
     printf("foo is less than bar OR moo is greater than bar.");
 }
 ```
+***Output***:
+```
+> foo is less than bar AND moo is greater than bar.
+> foo is less than bar OR moo is greater than bar.
+```
 
 > Another very useful operator is the **NOT** (`!`) operator. It's used in logical propositions to negate a logical variable or constant. In other words, it flips the result **True** and **False**.<br>
 ```
-> ! True        ->      False.
-> ! False       ->      True.
+- ! True        ->      False.
+- ! False       ->      True.
 ```
 
 
