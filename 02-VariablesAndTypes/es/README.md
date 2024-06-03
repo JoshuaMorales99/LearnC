@@ -143,5 +143,6 @@ Cosas a tener en cuenta a la hora de usar variables:
 - **Precisión**: Elegir el tipo de dato correcto asegura que nuestras variables consuman cantidades apropiadas de memoria, optimizando el rendimiento de nuestros programas.
 
 ## Bibliografía.
-- Learn-C: https://www.learn-c.org/es/Variables_and_Types
-- LinkedIn: https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/
+- [Learn-C: Variables y Tipos](https://www.learn-c.org/es/Variables_and_Types)
+- [LinkedIn: Fundamentos de la Programación - Variables y Tipos de Datos](https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/)
+- [W3schools: Format Specifiers](https://www.w3schools.com/c/c_variables_format.php)

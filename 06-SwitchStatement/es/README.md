@@ -141,5 +141,5 @@ switch (dia) {
 > La palabra clave `default` debe ser la última instrucción en el `switch`, y no necesita un `break`.
 
 ## Bibliografía.
-- W3schools: https://www.w3schools.com/c/c_switch.php
-- Microsoft: https://learn.microsoft.com/es-es/cpp/c-language/break-statement-c?view=msvc-170
+- [W3schools: Switch](https://www.w3schools.com/c/c_switch.php)
+- [Microsoft: Instrucción Break](https://learn.microsoft.com/es-es/cpp/c-language/break-statement-c?view=msvc-170)

@@ -116,4 +116,4 @@ static void unaFuncion() {
 - **Cuidado con el uso excesivo**: Evita abusar de las variables y funciones estáticas, ya que pueden dificultar la depuración y el mantenimiento del código. Un uso excesivo puede llevar a un diseño acoplado y a problemas de gestión del estado.
 
 ## Bibliografía.
-- Learn-C: https://www.learn-c.org/es/Static
+- [Learn-C: Static](https://www.learn-c.org/es/Static)

@@ -135,8 +135,7 @@ while(i < 10) {
 > The `continue` directive can also be used in other types of loops.
 
 ## References.
-- Learn-C: https://www.learn-c.org/en/While_loops
-- W3schools:
-  - https://www.w3schools.com/c/c_while_loop.php
-  - https://www.w3schools.com/c/c_do_while_loop.php
-  - https://www.w3schools.com/c/c_break_continue.php
+- [Learn-C: While Loops](https://www.learn-c.org/en/While_loops)
+- [W3schools: While Loop](https://www.w3schools.com/c/c_while_loop.php)
+- [W3schools: Do/While Loop](https://www.w3schools.com/c/c_do_while_loop.php)
+- [W3schools: Break/Continue](https://www.w3schools.com/c/c_break_continue.php)

@@ -118,5 +118,5 @@ void myFunction() {
 ```
 
 ## References.
-- Learn-C: https://www.learn-c.org/en/Functions
-- W3schools: https://www.w3schools.com/c/c_functions.php
+- [Learn-C: Functions](https://www.learn-c.org/en/Functions)
+- [W3schools: Functions](https://www.w3schools.com/c/c_functions.php)

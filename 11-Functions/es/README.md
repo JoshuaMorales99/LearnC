@@ -118,5 +118,5 @@ void miFuncion() {
 ```
 
 ## Bibliografía.
-- Learn-C: https://www.learn-c.org/es/Functions
-- W3schools: https://www.w3schools.com/c/c_functions.php
+- [Learn-C: Funciones](https://www.learn-c.org/es/Functions)
+- [W3schools: Functions](https://www.w3schools.com/c/c_functions.php)

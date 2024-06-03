@@ -147,5 +147,5 @@ int myFunction(int x, int y) {
 ```
 
 References:
-- Learn-C: https://www.learn-c.org/en/Functions
-- W3schools: https://www.w3schools.com/c/c_functions_parameters.php
+- [Learn-C: Functions](https://www.learn-c.org/en/Functions)
+- [W3schools: Function Parameters](https://www.w3schools.com/c/c_functions_parameters.php)

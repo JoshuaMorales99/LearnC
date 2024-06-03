@@ -20,4 +20,4 @@ printf("The memory address of age is: %p\n", &age);
 Pointers are important in C because they allow us to directly manipulate data in the computer's memory. This can reduce the amount of code needed and improve the performance of the program. With pointers, we can create complex data structures like linked lists, trees, and graphs, and also efficiently handle arrays and buffers.
 
 ## References:
-- W3schools: https://www.w3schools.com/c/c_memory_address.php
+- [W3schools: Memory Address](https://www.w3schools.com/c/c_memory_address.php)

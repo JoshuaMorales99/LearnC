@@ -135,8 +135,7 @@ while(i < 10) {
 > También se pueden utilizar las directivas `continue` en los demás tipos de bucles.
 
 ## Bibliografía.
-- Learn-C: https://www.learn-c.org/es/While_loops
-- W3schools:
-  - https://www.w3schools.com/c/c_while_loop.php
-  - https://www.w3schools.com/c/c_do_while_loop.php
-  - https://www.w3schools.com/c/c_break_continue.php
+- [Learn-C: Bucles While](https://www.learn-c.org/es/While_loops)
+- [W3schools: While Loop](https://www.w3schools.com/c/c_while_loop.php)
+- [W3schools: Do/While Loop](https://www.w3schools.com/c/c_do_while_loop.php)
+- [W3schools: Break/Continue](https://www.w3schools.com/c/c_break_continue.php)

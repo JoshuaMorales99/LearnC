@@ -134,5 +134,5 @@ printf("The value of the second string is: %s\n", anotherString);
 > Make sure the size of `anotherString` is large enough to store the result of the copy. This function overwrites the value of the first string.
 
 ## References.
-- Learn-C: https://www.learn-c.org/en/Strings
-- W3schools: https://www.w3schools.com/c/c_strings_functions.php
+- [Learn-C: Strings](https://www.learn-c.org/en/Strings)
+- [W3schools: Strings Functions](https://www.w3schools.com/c/c_strings_functions.php)

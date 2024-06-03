@@ -93,5 +93,5 @@ printf("The value is: %d", matrix[0][0]);
 ```
 
 ## References.
-- Learn-C: https://www.learn-c.org/en/Multidimensional_Arrays
-- W3schools: https://www.w3schools.com/c/c_arrays_multi.php
+- [Learn-C: Multidimensional Arrays](https://www.learn-c.org/en/Multidimensional_Arrays)
+- [W3schools: Multidimensional Arrays](https://www.w3schools.com/c/c_arrays_multi.php)

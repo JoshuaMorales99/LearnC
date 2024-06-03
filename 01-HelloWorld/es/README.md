@@ -50,5 +50,5 @@ int main() {
 
 ## Bibliografía.
 Se utilizó las siguientes fuente:
-- Learn-C: https://www.learn-c.org/es/Hello%2C_World%21
-- IBM: https://www.ibm.com/docs/es/i/7.5?topic=files-stdioh
+- [Learn-C: Hola, Mundo!](https://www.learn-c.org/es/Hello%2C_World%21)
+- [IBM: <stdio.h>](https://www.ibm.com/docs/es/i/7.5?topic=files-stdioh)

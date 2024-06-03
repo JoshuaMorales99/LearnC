@@ -235,5 +235,8 @@ if (foo < bar || moo > bar) {
 
 
 ## Bibliografía.
-- Learn-C: https://www.learn-c.org/es/Conditions
-- W3schools: https://www.w3schools.com/c/c_conditions.php
+- [Learn-C: Condiciones](https://www.learn-c.org/es/Conditions)
+- [W3schools: If](https://www.w3schools.com/c/c_conditions.php)
+- [W3schools: Else](https://www.w3schools.com/c/c_conditions_else.php)
+- [W3schools: Else If](https://www.w3schools.com/c/c_conditions_elseif.php)
+- [W3schools: Short Hand If](https://www.w3schools.com/c/c_conditions_short_hand.php)

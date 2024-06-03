@@ -82,5 +82,6 @@ Other popular escape characters in C are:
 ```
 
 ## References.
-- Learn-C: https://www.w3schools.com/c/c_strings.php
-- W3schools: https://www.learn-c.org/en/Strings
+- [Learn-C: Strings](https://www.learn-c.org/en/Strings)
+- [W3schools: Strings](https://www.w3schools.com/c/c_strings.php)
+- [W3schools: Special Characters](https://www.w3schools.com/c/c_strings_esc.php)

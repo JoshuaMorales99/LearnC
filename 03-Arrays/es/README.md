@@ -72,5 +72,5 @@ printf("El valor es: %d", numeros[0]);
 ```
 
 ## Bibliografía.
-- Learn-C: https://www.learn-c.org/es/Arrays
-- W3schools: https://www.w3schools.com/c/c_arrays.php
+- [Learn-C: Arreglos](https://www.learn-c.org/es/Arrays)
+- [W3schools: Arrays](https://www.w3schools.com/c/c_arrays.php)

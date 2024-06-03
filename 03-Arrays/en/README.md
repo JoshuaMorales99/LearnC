@@ -73,5 +73,5 @@ printf("The value is: %d", numbers[0]);
 ```
 
 ## References.
-- Learn-C: https://www.learn-c.org/en/Arrays
-- W3schools: https://www.w3schools.com/c/c_arrays.php
+- [Learn-C: Arrays](https://www.learn-c.org/en/Arrays)
+- [W3schools: Arrays](https://www.w3schools.com/c/c_arrays.php)

@@ -20,4 +20,4 @@ printf("La direccion de memoria de edad es: %p\n", &edad);
 Los punteros son importantes en C porque nos permiten manipular directamente los datos en la memoria de la computadora. Esto puede reducir la cantidad de código necesario y mejorar el rendimiento del programa. Con los punteros, podemos crear estructuras de datos complejas como listas enlazadas, árboles y gráficos, y también manejar eficientemente arrays y buffers.
 
 ## Bibliografía.
-- W3schools: https://www.w3schools.com/c/c_memory_address.php
+- [W3schools: Memory Address](https://www.w3schools.com/c/c_memory_address.php)

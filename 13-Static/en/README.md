@@ -115,4 +115,4 @@ static void aFunction() {
 - **Beware of excessive use**: Avoid overusing static variables and functions, as they can make debugging and maintaining the code difficult. Excessive use can lead to tightly coupled designs and state management issues.
 
 ## References.
-- Learn-C: https://www.learn-c.org/en/Static
+- [Learn-C: Static](https://www.learn-c.org/en/Static)

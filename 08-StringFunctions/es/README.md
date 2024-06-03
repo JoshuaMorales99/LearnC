@@ -134,5 +134,5 @@ printf("El valor del segundo string es: %s", otroString);
 > Asegúrate de que el tamaño de `otroString` sea lo suficientemente grande como para almacenar el resultado de la copia. Esta función sobrescribe el valor del primer string.
 
 ## Bibliografía.
-- Learn-C: https://www.learn-c.org/es/Strings
-- W3schools: https://www.w3schools.com/c/c_strings_functions.php
+- [Learn-C: Strings](https://www.learn-c.org/es/Strings)
+- [W3schools: Strings Functions](https://www.w3schools.com/c/c_strings_functions.php)

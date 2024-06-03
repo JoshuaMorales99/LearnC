@@ -145,6 +145,6 @@ Things to consider when using variables:
 - Accuracy: Choosing the correct data type ensures that our variables consume appropriate amounts of memory, optimizing the performance of our programs.
 
 ## References.
-- Learn-C: https://www.learn-c.org/en/Variables_and_Types
-- LinkedIn: https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/
-- W3schools: https://www.w3schools.com/c/c_variables_format.php
+- [Learn-C: Variables and Types](https://www.learn-c.org/en/Variables_and_Types)
+- [LinkedIn: Fundamentos de la Programación - Variables y Tipos de Datos](https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/)
+- [W3schools: Format Specifiers](https://www.w3schools.com/c/c_variables_format.php)

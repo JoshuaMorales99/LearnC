@@ -152,8 +152,7 @@ for (int i = 0; i < 2; i++) {
 ```
 
 ## Bibliografía:
-- Learn-C: https://www.learn-c.org/es/For_loops
-- W3schools:
-  - https://www.w3schools.com/c/c_for_loop.php
-  - https://www.w3schools.com/c/c_for_loop_nested.php
-  - https://www.w3schools.com/c/c_arrays.php
+- [Learn-C: Bucles For](https://www.learn-c.org/es/For_loops)
+- [W3schools: For Loop](https://www.w3schools.com/c/c_for_loop.php)
+- [W3schools: Nested Loops](https://www.w3schools.com/c/c_for_loop_nested.php)
+- [W3schools: Arrays](https://www.w3schools.com/c/c_arrays.php)

@@ -141,5 +141,5 @@ switch (day) {
 > The `default` keyword should be the last statement in the `switch`, and it does not need a `break`.
 
 ## References.
-- W3schools: https://www.w3schools.com/c/c_switch.php
-- Microsoft: https://learn.microsoft.com/en-us/cpp/c-language/break-statement-c?view=msvc-170
+- [W3schools: Switch](https://www.w3schools.com/c/c_switch.php)
+- [Microsoft: Break Statement](https://learn.microsoft.com/en-us/cpp/c-language/break-statement-c?view=msvc-170)
