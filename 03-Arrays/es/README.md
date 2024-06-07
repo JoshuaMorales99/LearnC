@@ -71,6 +71,46 @@ printf("El valor es: %d", numeros[0]);
 > El valor es: 15
 ```
 
+## Obtener el tamaño y largo de un arreglo.
+Para obtener el tamaño de un arreglo, podemos utilizar el operador `sizeof`. Este operador devolverá el tamaño en Bytes del tipo de datos. Veamos el siguiente ejemplo:
+```c
+int numeros[] = {10, 25, 50, 75, 100};
+
+// Imprimir el tamanio en Bytes del arreglo dado.
+printf("El arreglo numeros tiene un tamanio de: %lu Bytes\n", sizeof(numeros));
+```
+***Salida***:
+```
+> El arreglo numeros tiene un tamanio de: 20 Bytes
+```
+Esto ocurre porque el tipo de dato `int` suele tener 4 Bytes, por lo que en el ejemplo anterior se cumple lo siguiente: `4 Bytes * 5 elementos = 20 Bytes`.
+
+> Conocer el tamaño de la memoria de un arreglo es esencial cuando se trabaja con programas más grandes que requieren una buena gestión de la memoria.
+
+<br>
+
+**¿Cómo obtener la cantidad de elementos del arreglo?**<br>
+Para obtener la cantidad de elementos del arreglo mediante la utilización del operador `sizeof`, podemos utilizar la siguiente fórmula:
+```
+sizeof(ARRAY_IDENTIFICADOR) / sizeof(ELEMENTO_DEL_ARRAY)
+```
+
+Por ejemplo:
+```c
+int numeros[] = {10, 25, 50, 75, 100};
+// Almacenar el largo del arreglo.
+int largo = sizeof(numeros) / sizeof(numeros[0]);
+
+// Imprimir el largo del arreglo dado.
+printf("El arreglo numeros tiene un largo de: %d\n", largo);
+```
+***Salida***:
+```
+> El arreglo numeros tiene un largo de: 5
+```
+> Se divide el tamaño total del arreglo por el tamaño de un elemento del arreglo.
+
 ## Bibliografía.
 - [Learn-C: Arreglos](https://www.learn-c.org/es/Arrays)
 - [W3schools: Arrays](https://www.w3schools.com/c/c_arrays.php)
+- [W3schools: Array size](https://www.w3schools.com/c/c_arrays_size.php)

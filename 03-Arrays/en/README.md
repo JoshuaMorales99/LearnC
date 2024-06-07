@@ -72,6 +72,44 @@ printf("The value is: %d", numbers[0]);
 > The value is: 15
 ```
 
+## Get the size and length of an array.
+To get the size of an array, we can use the `sizeof` operator. This operator will return the size in Bytes of the data type. Let's look at the following example:
+```c
+int numbers[] = {10, 25, 50, 75, 100};
+
+// Print the size in Bytes of the given array.
+printf("The array numbers has a size of: %lu Bytes\n", sizeof(numbers));
+```
+***Output***:
+```
+> The array numbers has a size of: 20 Bytes
+```
+This happens because the `int` data type usually has 4 Bytes, so in the previous example, the following is true: `4 Bytes * 5 elements = 20 Bytes`.
+
+> Knowing the memory size of an array is essential when working with larger programs that require good memory management.
+
+**How to get the number of elements in the array?**<br>
+To get the number of elements in the array using the `sizeof` operator, we can use the following formula:
+```
+sizeof(<ARRAY_IDENTIFIER>) / sizeof(ELEMENT_OF_ARRAY)
+```
+
+For example:
+```c
+int numbers[] = {10, 25, 50, 75, 100};
+// Store the length of the array.
+int length = sizeof(numbers) / sizeof(numbers[0]);
+
+// Print the length of the given array.
+printf("The array numbers has a length of: %d\n", length);
+```
+***Output***:
+```
+> The array numbers has a length of: 5
+```
+> The total size of the array is divided by the size of one element of the array.
+
 ## References.
 - [Learn-C: Arrays](https://www.learn-c.org/en/Arrays)
 - [W3schools: Arrays](https://www.w3schools.com/c/c_arrays.php)
+- [W3schools: Array size](https://www.w3schools.com/c/c_arrays_size.php)
