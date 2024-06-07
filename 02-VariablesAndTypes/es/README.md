@@ -54,6 +54,7 @@ En el ejemplo anterior, la variable `foo` puede ser usada, pero como no la inici
 
 Ahora que conocemos a las variables, podemos hacer un poco de matemáticas. Asumiendo que `unNumero` y `otroNumero` son variables, podemos operar con ellos:
 ```c
+// Declarar variables enteras con signo.
 int unNumero = 4;
 int otroNumero = 2;
 
@@ -99,7 +100,7 @@ int main() {
 ```
 
 ## Especificadores de formato.
-Los especificadores de formato se utilizan junto con la función `printf` para indicar al compilador qué tipo de datos está almacenando la variable. Para esto, un especificador de formato se inicia con un signo de porcentaje `%`, seguido de un carácter.
+Los especificadores de formato se utilizan junto con la función `printf` para indicar al compilador qué tipo de datos está almacenando la variable. Para esto, un especificador de formato se inicia con un signo de porcentaje `%`, seguido de un carácter.<br>
 Por ejemplo, para generar el valor de una variable `int`, utilice el formato especificador `%d` entre comillas dobles (`""`), Dentro de la función `printf`:
 ```c
 int unNumero = 4;
@@ -136,13 +137,63 @@ Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescri
 > > El valor de unNumero es: 2
 > ```
 
+## Declarar múltiples variables.
+En C es posible declarar más de una variable del mismo tipo, para eso debemos usar una lista **separada por comas**:
+```
+<TIPO_VARIABLE> <IDENTIFICADOR_1> , <IDENTIFICADOR_2> , ... , <IDENTIFICADOR_N>;
+```
+
+Por ejemplo:
+```c
+int foo, bar;
+```
+<br>
+
+También es posible asignarles a cada una de las variables un valor inicial (Si se desea):
+```
+<TIPO_VARIABLE> <IDENTIFICADOR_1> = <INICIALIZACION_1>, ... , <IDENTIFICADOR_N> = <INICIALIZACION_N> ;
+```
+
+Por ejemplo:
+```c
+int x = 5, y = 6, z = 50;
+// Imprimir la suma de las variables dadas.
+printf("La suma es: %d", x + y + z);
+```
+***Salida***:
+```
+> La suma es: 61
+```
+> Si lo que queremos es asignar el **mismo valor** a varias variables del mismo tipo, debemos hacerlo de la siguiente manera:
+> ```c
+> int x, y, z;
+> // Asignar un mismo valor a las variables.
+> x = y = z = 50;
+> // Imprimir la suma de las variables dadas.
+> printf("La suma es: %d", x + y + z);
+> ```
+> ***Salida***:
+> ```
+> > La suma es: 150
+> ```
+
 ## ¡Importante!.
 Cosas a tener en cuenta a la hora de usar variables:
 - **Flexibilidad**: Las variables nos permiten adaptar nuestro código a diferentes situaciones, almacenando y manupulando varios tipos de datos.
 - **Legibilidad**: El uso de nombres de variables declarativos mejora la legibilidad del código. En lugar de lidiar con valores crudos, es mejor entender el propósito de cada variable de un vistazo.
 - **Precisión**: Elegir el tipo de dato correcto asegura que nuestras variables consuman cantidades apropiadas de memoria, optimizando el rendimiento de nuestros programas.
 
+Además, se deben tener en cuenta las siguientes reglas generales para nombrar variables:
+- Los nombres pueden contener letras, dígitos y guiones bajos.
+- Los nombres deben comenzar con una letra o un guión bajo (`_`)
+- Los nombres distinguen entre mayúsculas y minúsculas (`miVar` y `mivar` son variables diferentes)
+- Los nombres no pueden contener espacios en blanco ni caracteres especiales como `!`, `#`, `%`, etc.
+- Las palabras reservadas (como `int`) no se pueden usar como nombres.
+
 ## Bibliografía.
 - [Learn-C: Variables y Tipos](https://www.learn-c.org/es/Variables_and_Types)
 - [LinkedIn: Fundamentos de la Programación - Variables y Tipos de Datos](https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/)
 - [W3schools: Format Specifiers](https://www.w3schools.com/c/c_variables_format.php)
+- [W3schools: Change Values](https://www.w3schools.com/c/c_variables_change.php)
+- [W3schools: Multiple Variables](https://www.w3schools.com/c/c_variables_multiple.php)
+- [W3schools: Variables Names](https://www.w3schools.com/c/c_variables_names.php)

@@ -100,8 +100,7 @@ int main() {
 ```
 
 ## Format specifiers.
-Format specifiers are used together with the `printf` function to tell the compiler what type of data the variable is storing.<br>
-A format specifier starts with a percentage sign `%`, followed by a character.<br>
+Format specifiers are used together with the `printf` function to tell the compiler what type of data the variable is storing. To do this, a format specifier starts with a percentage sign `%`, followed by a character.<br>
 For example, to output the value of an `int` variable, use the format specifier `%d` surrounded by double quotes (`""`), inside the `printf` function:
 ```c
 int aNumber = 4;
@@ -138,13 +137,63 @@ If you assign a new value to an existing variable already initialized, it will *
 > > The value of aNumber is: 2
 > ```
 
+## Declare multiple variables.
+In C, it is possible to declare more than one variable of the same type by using a **comma-separated** list:
+```
+<VARIABLE_TYPE> <IDENTIFIER_1>, <IDENTIFIER_2>, ..., <IDENTIFIER_N>;
+```
+
+For example:
+```c
+int foo, bar;
+```
+<br>
+
+It is also possible to assign an initial value to each of the variables (if desired):
+```
+<VARIABLE_TYPE> <IDENTIFIER_1> = <INITIALIZATION_1>, ..., <IDENTIFIER_N> = <INITIALIZATION_N>;
+```
+
+For example:
+```c
+int x = 5, y = 6, z = 50;
+// Print the sum of the given variables.
+printf("The sum is: %d", x + y + z);
+```
+***Output***:
+```
+> The sum is: 61
+```
+> If we want to assign the same value to multiple variables of the same type, we should do it as follows:
+> ```
+> int x, y, z;
+> // Assign the same value to the variables.
+> x = y = z = 50;
+> // Print the sum of the given variables.
+> printf("The sum is: %d", x + y + z);
+> ```
+> ***Output***:
+> ```
+> The sum is: 150
+> ```
+
 ## Important!.
 Things to consider when using variables:
 - Flexibility: Variables allow us to adapt our code to different situations, storing and manipulating various types of data.
 - Readability: The use of declarative variable names improves the readability of the code. Instead of dealing with raw values, it's better to understand the purpose of each variable at a glance.
 - Accuracy: Choosing the correct data type ensures that our variables consume appropriate amounts of memory, optimizing the performance of our programs.
 
+Additionally, the following general rules for naming variables should be considered:
+- Names can contain letters, digits and underscores.
+- Names must begin with a letter or an underscore (`_`)
+- Names are case-sensitive (`myVar` and `myvar` are different variables)
+- Names cannot contain whitespaces or special characters like `!`, `#`, `%`, etc.
+- Reserved words (such as `int`) cannot be used as names
+
 ## References.
 - [Learn-C: Variables and Types](https://www.learn-c.org/en/Variables_and_Types)
 - [LinkedIn: Fundamentos de la Programación - Variables y Tipos de Datos](https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/)
 - [W3schools: Format Specifiers](https://www.w3schools.com/c/c_variables_format.php)
+- [W3schools: Change Values](https://www.w3schools.com/c/c_variables_change.php)
+- [W3schools: Multiple Variables](https://www.w3schools.com/c/c_variables_multiple.php)
+- [W3schools: Variables Names](https://www.w3schools.com/c/c_variables_names.php)
