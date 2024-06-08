@@ -130,7 +130,7 @@ If you assign a new value to an existing variable already initialized, it will *
 > aNumber = anotherNumber;                                                // Now aNumber is: 2.
 > 
 > // Print the values to console.
-> printf("The value of aNumber is: %d", aNumber);
+> printf("The value of aNumber is: %d\n", aNumber);
 > ```
 > ***Output***:
 > ```
@@ -158,7 +158,7 @@ For example:
 ```c
 int x = 5, y = 6, z = 50;
 // Print the sum of the given variables.
-printf("The sum is: %d", x + y + z);
+printf("The sum is: %d\n", x + y + z);
 ```
 ***Output***:
 ```

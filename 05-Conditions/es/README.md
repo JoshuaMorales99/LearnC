@@ -31,7 +31,7 @@ int edad = 4;
 // Evaluar si es menor de edad.
 if(edad < 18) {
     // Si es verdad, imprime un mensaje por consola.
-    printf("Es menor de edad");
+    printf("Es menor de edad\n");
 }
 ```
 ***Salida***:
@@ -53,7 +53,7 @@ int edad = 18;
 // Evaluar si es menor de edad.
 if(edad < 18) {
     // Si es verdad, imprime un mensaje por consola.
-    printf("Es menor de edad");
+    printf("Es menor de edad\n");
 }
 ```
 ***Salida***:
@@ -84,10 +84,10 @@ int edad = 18;
 // Evaluar si es menor de edad.
 if(edad < 18) {
     // Si es verdad, imprime "Es menor de edad" por consola.
-    printf("Es menor de edad");
+    printf("Es menor de edad\n");
 } else {
     // Si no es verdad, imprime "Es mayor de edad" por consola.
-    printf("Es mayor de edad");
+    printf("Es mayor de edad\n");
 }
 ```
 ***Salida***:
@@ -122,14 +122,14 @@ int edad = 18;
 // Evaluar si es menor de edad.
 if(edad < 18) {
     // Si la condicion 1 es verdad, imprime "Es menor de edad" por consola.
-    printf("Es menor de edad");
+    printf("Es menor de edad\n");
 // Evaluar si la edad es igual a 18.
 } else if(edad == 18) {
     // Si la condicion 1 es falsa y la condicion 2 es verdadera, imprime "La edad es igual a 18" por consola.
-    printf("La edad es igual a 18");
+    printf("La edad es igual a 18\n");
 } else {
     // Si la condicion 1 es falsa y la condicion 2 es falsa, imprime "Es mayor de edad" por consola.
-    printf("Es mayor de edad");
+    printf("Es mayor de edad\n");
 }
 ```
 ***Salida***:
@@ -181,10 +181,10 @@ int edad = 18;
 // Evaluar si es menor de edad.
 if(edad < 18) {
     // Si es verdad, imprime "Es menor de edad" por consola.
-    printf("Es menor de edad");
+    printf("Es menor de edad\n");
 } else {
     // Si no es verdad, imprime "Es mayor de edad" por consola.
-    printf("Es mayor de edad");
+    printf("Es mayor de edad\n");
 }
 ```
 
@@ -193,7 +193,7 @@ Pueden ser escritas de la siguiente manera:
 int edad = 18
 
 // Evaluar si es menor de edad.
-(edad < 18) ? printf("Es menor de edad") : printf("Es mayor de edad");
+(edad < 18) ? printf("Es menor de edad\n") : printf("Es mayor de edad\n");
 ```
 ***Salida***:
 ```
@@ -214,17 +214,17 @@ int bar = 2;
 int moo = 3;
 
 if (foo < bar && moo > bar) {
-    printf("foo es menor que bar Y moo es mayor que bar.");
+    printf("foo es menor que bar Y moo es mayor que bar\n");
 }
 
 if (foo < bar || moo > bar) {
-    printf("foo es menor que bar O moo es mayor que bar.");
+    printf("foo es menor que bar O moo es mayor que bar\n");
 }
 ```
 ***Salida***:
 ```
-> foo es menor que bar Y moo es mayor que bar.
-> foo es menor que bar O moo es mayor que bar.
+> foo es menor que bar Y moo es mayor que bar
+> foo es menor que bar O moo es mayor que bar
 ```
 
 > Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposiciones lógicas con el fin de negar una variable lógica o constante. En otras palabras, invierte el resultado **Verdadero** y **Falso**.<br>

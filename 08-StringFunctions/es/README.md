@@ -23,7 +23,7 @@ Otra forma es utilizando el operador `sizeof`, aunque es importante entender la 
 char abecedario[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Imprimir la longitud del arreglo.
-printf("El tamanio del abecedario es: %d", sizeof(abecedario));
+printf("El tamanio del abecedario es: %d\n", sizeof(abecedario));
 ```
 ***Salida***:
 ```
@@ -37,7 +37,7 @@ printf("El tamanio del abecedario es: %d", sizeof(abecedario));
 > char abecedario[50] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 > 
 > // Imprimir la longitud del arreglo.
-> printf("El tamanio del abecedario es: %d", sizeof(abecedario));
+> printf("El tamanio del abecedario es: %d\n", sizeof(abecedario));
 > ```
 > ***Salida***:
 > ```
@@ -51,10 +51,10 @@ char nombre[] = "Joe";
 char otroNombre[] = "Leo";
 
 // Comparar los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es: %d", strcmp(nombre, "Joe"));
+printf("El resultado de la comparacion es: %d\n", strcmp(nombre, "Joe"));
 
 // Comparar los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es: %d", strcmp(otroNombre, "Joe"));
+printf("El resultado de la comparacion es: %d\n", strcmp(otroNombre, "Joe"));
 ```
 ***Salida***:
 ```
@@ -69,10 +69,10 @@ char nombre[] = "Joe";
 char otroNombre[] = "Leo";
 
 // Comparar los 3 primeros caracteres de los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es: %d", strncmp(nombre, "Joe", 3));
+printf("El resultado de la comparacion es: %d\n", strncmp(nombre, "Joe", 3));
 
 // Comparar los 3 primeros caracteres de los nombres e imprimir el resultado.
-printf("El resultado de la comparacion es: %d", strncmp(otroNombre, "Joe", 3));
+printf("El resultado de la comparacion es: %d\n", strncmp(otroNombre, "Joe", 3));
 ```
 ***Salida***:
 ```
@@ -91,7 +91,7 @@ char apellido[] = "Smith";
 strcat(nombre, apellido);                                                       // Ahora nombre es: "John Smith".
 
 // Imprimir el nombre por consola.
-printf("El nombre es: %s", nombre);
+printf("El nombre es: %s\n", nombre);
 ```
 ***Salida***:
 ```
@@ -108,7 +108,7 @@ char apellido[] = "Smith";
 strncat(nombre, apellido, 5);                                                   // Ahora nombre es: "John Smith".
 
 // Imprimir el nombre por consola.
-printf("El nombre es: %s", nombre);
+printf("El nombre es: %s\n", nombre);
 ```
 ***Salida***:
 ```
@@ -125,7 +125,7 @@ char otroString[20] = "Chau mundo!";                                            
 strcpy(otroString, unString);                                                   // Ahora otroString es: "Hola mundo!".
 
 // Imprimir el valor del segundo string.
-printf("El valor del segundo string es: %s", otroString);
+printf("El valor del segundo string es: %s\n", otroString);
 ```
 ***Salida***:
 ```

@@ -8,7 +8,7 @@ En C existen muchas funciones predefinidas. Algunas de ellas que ya hemos visto 
 - `printf()`: Función que se utiliza para imprimir texto por consola/pantalla.
 ```c
 int main() {
-    printf("Hola Mundo!");
+    printf("Hola Mundo!\n");
 
     return 0;
 }

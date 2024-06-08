@@ -28,7 +28,7 @@ char nombre[11] = "John Smith";
 int edad = 27;
 
 // Imprimir un mensaje por consola.
-printf("El Sr. %s tiene %d anios", nombre, edad);
+printf("El Sr. %s tiene %d anios\n", nombre, edad);
 ```
 ***Salida***:
 ```
@@ -42,7 +42,7 @@ En este ejemplo, se imprime el primer carácter (`[0]`) de la variable `saludo`:
 char saludo[] = "Hola Mundo!";
 
 // Imprimir el primer caracter de la cadena de caracteres.
-printf("El primer caracter es: %c", saludo[0]);
+printf("El primer caracter es: %c\n", saludo[0]);
 ```
 ***Salida***:
 ```
@@ -59,7 +59,7 @@ char saludo[] = "Jola Mundo!";                                              // s
 saludo[0] = 'H';                                                            // Ahora saludo[0] es: 'H'.
 
 // Imprimir el primer elemento del arreglo.
-printf("El primer caracter es: %c", saludo[0]);
+printf("El primer caracter es: %c\n", saludo[0]);
 ```
 ***Salida***:
 ```

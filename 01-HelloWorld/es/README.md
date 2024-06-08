@@ -37,7 +37,7 @@ Finalmente, llamamos a la función `printf` para imprimir nuestro mensaje en con
 
 int main() {
     // Imprimir "Hola Mundo!" en consola.
-    printf("Hola Mundo!");
+    printf("Hola Mundo!\n");
 
     // Retornar 0 si el codigo se ejecuto correctamente.
     return 0;

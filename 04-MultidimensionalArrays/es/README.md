@@ -67,7 +67,7 @@ Para tener acceso a un elemento de una matriz bidimensional, se debe especificar
 int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};
 
 // Imprimir el valor en consola.
-printf("El valor es: %d", matriz[0][1]);
+printf("El valor es: %d\n", matriz[0][1]);
 ```
 ***Salida***:
 ```
@@ -84,7 +84,7 @@ int matriz[2][3] = {{1, 4, 2}, {3, 6, 8}};                  // matriz[0][0] es: 
 matriz[0][0] = 9;                                           // Ahora matriz[0][0] es: 9.
 
 // Imprimir el elemento de la fila 0 y columna 0.
-printf("El valor es: %d", matriz[0][0]);
+printf("El valor es: %d\n", matriz[0][0]);
 ```
 ***Salida***:
 ```

@@ -101,7 +101,7 @@ static <RETURN_TYPE> <FUNCTION_NAME> ( <PARAMETER_1>, <PARAMETER_2>, ..., <PARAM
 For example:
 ```c
 static void aFunction() {
-   printf("I am a static function.");
+   printf("I am a static function\n");
 }
 ```
 ***Output***:

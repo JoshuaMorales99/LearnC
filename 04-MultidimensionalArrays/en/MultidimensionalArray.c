@@ -7,7 +7,7 @@ int main() {
     matrix[0][0] = 9;
 
     // Print the element of row 0 and column 0.
-    printf("The value is: %d", matrix[0][0]);
+    printf("The value is: %d\n", matrix[0][0]);
 
     return 0;
 }

@@ -48,7 +48,7 @@ Para acceder a un elemento de un arreglo, se debe consultar su índice. Para eso
 int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
 
 // Imprimir el primer elemento del arreglo.
-printf("El valor es: %d", numeros[0]);
+printf("El valor es: %d\n", numeros[0]);
 ```
 ***Salida***:
 ```
@@ -64,7 +64,7 @@ int numeros[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};            // numer
 numeros[0] = 15;                                                        // Ahora numeros[0] es: 15.
 
 // Imprimir el primer elemento del arreglo.
-printf("El valor es: %d", numeros[0]);
+printf("El valor es: %d\n", numeros[0]);
 ```
 ***Salida***:
 ```

@@ -37,7 +37,7 @@ Finally, we call the `printf` function to print our message on the console.
 
 int main() {
     // Print "Hello World!" in console.
-    printf("Hello World!");
+    printf("Hello World!\n");
 
     // Return 0 if the code was run successfully.
     return 0;

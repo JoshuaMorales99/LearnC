@@ -108,7 +108,7 @@ int myFunction(int number);
 
 int main() {
     // Print the sum of 5 and 3.
-    printf("The result is: %d", myFunction(3));
+    printf("The result is: %d\n", myFunction(3));
 
     return 0;
 }
@@ -131,7 +131,7 @@ int main() {
     // Store the result of the sum of two numbers.
     int result = myFunction(5, 3);
     // Print the sum result.
-    printf("The result is: %d", result);
+    printf("The result is: %d\n", result);
 
     return 0;
 }

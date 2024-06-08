@@ -130,7 +130,7 @@ Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescri
 > unNumero = otroNumero;                                                // Ahora unNumero es: 2.
 > 
 > // Imprimir los valores en consola.
-> printf("El valor de unNumero es: %d", unNumero);
+> printf("El valor de unNumero es: %d\n", unNumero);
 > ```
 > ***Salida***:
 > ```
@@ -158,7 +158,7 @@ Por ejemplo:
 ```c
 int x = 5, y = 6, z = 50;
 // Imprimir la suma de las variables dadas.
-printf("La suma es: %d", x + y + z);
+printf("La suma es: %d\n", x + y + z);
 ```
 ***Salida***:
 ```
@@ -170,7 +170,7 @@ printf("La suma es: %d", x + y + z);
 > // Asignar un mismo valor a las variables.
 > x = y = z = 50;
 > // Imprimir la suma de las variables dadas.
-> printf("La suma es: %d", x + y + z);
+> printf("La suma es: %d\n", x + y + z);
 > ```
 > ***Salida***:
 > ```

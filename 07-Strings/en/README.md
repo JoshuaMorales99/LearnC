@@ -28,7 +28,7 @@ char name[11] = "John Smith";
 int age = 27;
 
 // Print a message to the console.
-printf("Mr. %s is %d years old", name, age);
+printf("Mr. %s is %d years old\n", name, age);
 ```
 ***Output***:
 ```
@@ -42,7 +42,7 @@ In this example, the first character (`[0]`) of the variable `greeting` is print
 char greeting[] = "Hello World!";
 
 // Print the first character of the string.
-printf("The first character is: %c", greeting[0]);
+printf("The first character is: %c\n", greeting[0]);
 ```
 ***Output***:
 ```
@@ -59,7 +59,7 @@ char greeting[] = "Jello World!";                                           // g
 greeting[0] = 'H';                                                          // Now greeting[0] is: 'H'.
 
 // Print the first element of the array.
-printf("The first character is: %c", greeting[0]);
+printf("The first character is: %c\n", greeting[0]);
 ```
 ***Output***:
 ```

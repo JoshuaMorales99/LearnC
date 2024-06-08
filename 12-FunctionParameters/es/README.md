@@ -108,7 +108,7 @@ int miFuncion(int numero);
 
 int main() {
     // Imprimir por consola la suma entre 5 y 3.
-    printf("El resultado es: %d", miFuncion(3));
+    printf("El resultado es: %d\n", miFuncion(3));
 
     return 0;
 }
@@ -131,7 +131,7 @@ int main() {
     // Almacenar el resultado de la suma entre dos numeros.
     int resultado = miFuncion(5, 3);
     // Imprimir por consola el resultado de la suma.
-    printf("El resultado es: %d", resultado);
+    printf("El resultado es: %d\n", resultado);
 
     return 0;
 }

@@ -102,12 +102,12 @@ static <TIPO_FUNCION> <NOMBRE_FUNCION> ( <PARAMETRO_1>, <PARAMETRO_2>, .., <PARA
 Por ejemplo:
 ```c
 static void unaFuncion() {
-   printf("Soy una funcion estatica.");
+   printf("Soy una funcion estatica\n");
 }
 ```
 ***Salida***:
 ```
-> Soy una funcion estatica.
+> Soy una funcion estatica
 ```
 
 ## Consejos y buenas prácticas.

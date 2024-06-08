@@ -68,7 +68,7 @@ To access an element of a two-dimensional array, you must specify the index numb
 int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};
 
 // Print the value in console.
-printf("The value is: %d", matrix[0][1]);
+printf("The value is: %d\n", matrix[0][1]);
 ```
 ***Output***:
 ```
@@ -85,7 +85,7 @@ int matrix[2][3] = {{1, 4, 2}, {3, 6, 8}};                  // matrix[0][0] is: 
 matrix[0][0] = 9;                                           // Now matrix[0][0] is: 9.
 
 // Print the element of row 0 and column 0.
-printf("The value is: %d", matrix[0][0]);
+printf("The value is: %d\n", matrix[0][0]);
 ```
 ***Output***:
 ```
