@@ -13,7 +13,7 @@
 
 <br>
 
-▶ **Módulo siguiente**: [Módulo 02 - Variables y Tipos](https://github.com/JoshuaMorales99/LearnC/tree/main/02-VariablesAndTypes/es)
+| ▶ | **Módulo siguiente**: [Módulo 02 - Variables y Tipos](https://github.com/JoshuaMorales99/LearnC/tree/main/02-VariablesAndTypes/es)
 
 ## Introducción
 Este tutorial está diseñado para ayudarte a entender los conceptos básicos de escribir y ejecutar un programa simple en C. Comenzaremos con el programa "¡Hola Mundo!", que es un primer paso tradicional en el aprendizaje de cualquier lenguaje de programación.
