@@ -13,7 +13,7 @@
 
 <br>
 
-▶ **Next module**: [Modulo 02 - Variables and Types](https://github.com/JoshuaMorales99/LearnC/tree/main/01-HelloWorld/en)
+▶ **Next module**: [Modulo 02 - Variables and Types](https://github.com/JoshuaMorales99/LearnC/tree/main/02-VariablesAndTypes/en)
 
 ## Introduction
 This tutorial is designed to help you understand the basics of writing and running a simple C program. We'll start with the "Hello World!" program, which is a traditional first step in learning any programming language.
