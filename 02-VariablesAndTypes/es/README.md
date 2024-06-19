@@ -1,9 +1,27 @@
-# Variables y Tipos 🧩
+# 🧩 Variables y Tipos
+📖 **TABLA DE CONTENIDOS**
+- [🧩 Variables y Tipos](#-variables-y-tipos)
+  - [¿Qué es una variable?](#qué-es-una-variable)
+  - [Tipos de datos](#tipos-de-datos)
+  - [Definir variables](#definir-variables)
+  - [Especificadores de formato](#especificadores-de-formato)
+  - [Cambiar valores de las variables](#cambiar-valores-de-las-variables)
+  - [Declarar múltiples variables](#declarar-múltiples-variables)
+  - [¡Importante!](#importante)
+  - [Bibliografía](#bibliografía)
+
+<br>
+
+| ◀ | **Módulo anterior**: [Módulo 01 - ¡Hola Mundo!](https://github.com/JoshuaMorales99/LearnC/tree/main/01-HelloWorld/es)<br>
+| ▶ | **Módulo siguiente**: [Módulo 03 - PRÓXIMAMENTE]()
+
 ## ¿Qué es una variable?
 Una variable es un lugar en la computadora donde se va a almacenar datos de un programa. Estos datos o valores pueden ir cambiando durante la ejecución de un programa.<br>
 Las variables están formadas por un espacio en memoria y un nombre simbólico que está asociado a dicho espacio. En dicho espacio podremos encontrar un valor que puede ser conocido o desconocido.
 
-## Tipos de datos.
+<img src="./assets/Memoria.webp" alt="Memoria" width=340px/>
+
+## Tipos de datos
 C tiene varios tipos de variables, pero hay unos tipos básicos:
 - **Enteros con signo**: Números enteros que pueden ser positivos o negativos.
   - `char`: Para un solo carácter o símbolo. Memoria requerida: 1 byte.
@@ -33,7 +51,7 @@ En otros lenguajes se pueden encontrar más tipos muy comunes de dato, un ejempl
 
 Por otro lado, también podemos hallar los denominados como **String**. Para eso, C utilizará arreglos de caracteres para definirlos.
 
-## Definir variables.
+## Definir variables
 Para definir una variables en C se deberá anteponer la palabra reservada del tipo de variable al identificador de dicha variable (El identificador es un nombre representativo y caracteristico de lo que se desea almacenar en ella). Este puede ir acompañado, o no, de una inicialización (Valor inicial)<br>
 Syntax:
 ```c
@@ -99,7 +117,7 @@ int main() {
 > El valor de esFalso es: 0
 ```
 
-## Especificadores de formato.
+## Especificadores de formato
 Los especificadores de formato se utilizan junto con la función `printf` para indicar al compilador qué tipo de datos está almacenando la variable. Para esto, un especificador de formato se inicia con un signo de porcentaje `%`, seguido de un carácter.<br>
 Por ejemplo, para generar el valor de una variable `int`, utilice el formato especificador `%d` entre comillas dobles (`""`), Dentro de la función `printf`:
 ```c
@@ -112,7 +130,7 @@ printf("%d", unNumero);
 ```
 > Para imprimir otros tipos, usa `%c` para **char** y `%f` para **float**.
 
-## Cambiar valores de las variables.
+## Cambiar valores de las variables
 Para cambiar el valor de una variable existente, se procederá de la siguiente manera:
 ```c
 int unNumero = 4;                                                       // unNumero es: 4.
@@ -137,7 +155,7 @@ Si asignas un nuevo valor a una variable existente ya inicializada, se sobrescri
 > > El valor de unNumero es: 2
 > ```
 
-## Declarar múltiples variables.
+## Declarar múltiples variables
 En C es posible declarar más de una variable del mismo tipo, para eso debemos usar una lista **separada por comas**:
 ```
 <TIPO_VARIABLE> <IDENTIFICADOR_1> , <IDENTIFICADOR_2> , ... , <IDENTIFICADOR_N>;
@@ -177,7 +195,7 @@ printf("La suma es: %d\n", x + y + z);
 > > La suma es: 150
 > ```
 
-## ¡Importante!.
+## ¡Importante!
 Cosas a tener en cuenta a la hora de usar variables:
 - **Flexibilidad**: Las variables nos permiten adaptar nuestro código a diferentes situaciones, almacenando y manupulando varios tipos de datos.
 - **Legibilidad**: El uso de nombres de variables declarativos mejora la legibilidad del código. En lugar de lidiar con valores crudos, es mejor entender el propósito de cada variable de un vistazo.
@@ -190,7 +208,7 @@ Además, se deben tener en cuenta las siguientes reglas generales para nombrar v
 - Los nombres no pueden contener espacios en blanco ni caracteres especiales como `!`, `#`, `%`, etc.
 - Las palabras reservadas (como `int`) no se pueden usar como nombres.
 
-## Bibliografía.
+## Bibliografía
 - [Learn-C: Variables y Tipos](https://www.learn-c.org/es/Variables_and_Types)
 - [LinkedIn: Fundamentos de la Programación - Variables y Tipos de Datos](https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/)
 - [W3schools: Format Specifiers](https://www.w3schools.com/c/c_variables_format.php)

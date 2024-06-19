@@ -1,9 +1,27 @@
-# Variables and Types 🧩
+# 🧩 Variables and Types
+📖 **TABLE OF CONTENT**
+- [🧩 Variables and Types](#-variables-and-types)
+  - [What is a variable?](#what-is-a-variable)
+  - [Data types](#data-types)
+  - [Define variables](#define-variables)
+  - [Format specifiers](#format-specifiers)
+  - [Change Variable Values](#change-variable-values)
+  - [Declare multiple variables](#declare-multiple-variables)
+  - [Important!](#important)
+  - [References](#references)
+
+<br>
+
+| ◀ | **Previous module**: [Module 01 - Hello World!](https://github.com/JoshuaMorales99/LearnC/tree/main/01-HelloWorld/en)<br>
+| ▶ | **Next module**: [Module 03 - SOON]()
+
 ## What is a variable?
 A variable is a location in the computer's memory where data from a program will be stored. This data or values can change during the execution of the program.<br>
 Variables are formed by a space in memory and a symbolic name associated with that space. In this space, we can find a value that may be known or unknown.
 
-## Data types.
+<img src="./assets/Memory.webp" alt="Memory" width=340px/>
+
+## Data types
 C has several variable types, but there are a few basic types:
 - **Signed integers**: Integers that can be positive or negative.
   - `char`: For a single character or symbol. Memory required: 1 byte.
@@ -33,7 +51,7 @@ In other languages, you can find more very common data types, an example of this
 
 On the other hand, we can also find those known as **String**. For that, C uses arrays of characters to define them.
 
-## Define variables.
+## Define variables
 To define a variable in C, you must precede the reserved word of the variable type to the identifier of said variable (The identifier is a representative and characteristic name of what you want to store in it). This can be accompanied, or not, by an initialization (Initial value)<br>
 Syntax:
 ```c
@@ -99,7 +117,7 @@ int main() {
 > The value of isFalse is: 0
 ```
 
-## Format specifiers.
+## Format specifiers
 Format specifiers are used together with the `printf` function to tell the compiler what type of data the variable is storing. To do this, a format specifier starts with a percentage sign `%`, followed by a character.<br>
 For example, to output the value of an `int` variable, use the format specifier `%d` surrounded by double quotes (`""`), inside the `printf` function:
 ```c
@@ -112,7 +130,7 @@ printf("%d", aNumber);
 ```
 > To print other types, use `%c` for **char** and `%f` for **float**.
 
-## Change Variable Values.
+## Change Variable Values
 To change the value of an existing variable, proceed as follows:
 ```c
 int aNumber = 4;                                                          // aNumber is: 4.
@@ -137,7 +155,7 @@ If you assign a new value to an existing variable already initialized, it will *
 > > The value of aNumber is: 2
 > ```
 
-## Declare multiple variables.
+## Declare multiple variables
 In C, it is possible to declare more than one variable of the same type by using a **comma-separated** list:
 ```
 <VARIABLE_TYPE> <IDENTIFIER_1>, <IDENTIFIER_2>, ..., <IDENTIFIER_N>;
@@ -177,7 +195,7 @@ printf("The sum is: %d\n", x + y + z);
 > The sum is: 150
 > ```
 
-## Important!.
+## Important!
 Things to consider when using variables:
 - Flexibility: Variables allow us to adapt our code to different situations, storing and manipulating various types of data.
 - Readability: The use of declarative variable names improves the readability of the code. Instead of dealing with raw values, it's better to understand the purpose of each variable at a glance.
@@ -190,7 +208,7 @@ Additionally, the following general rules for naming variables should be conside
 - Names cannot contain whitespaces or special characters like `!`, `#`, `%`, etc.
 - Reserved words (such as `int`) cannot be used as names
 
-## References.
+## References
 - [Learn-C: Variables and Types](https://www.learn-c.org/en/Variables_and_Types)
 - [LinkedIn: Fundamentos de la Programación - Variables y Tipos de Datos](https://www.linkedin.com/pulse/fundamentos-de-la-programaci%C3%B3n-variables-y-tipos-migueles-abraira-ai9hf/)
 - [W3schools: Format Specifiers](https://www.w3schools.com/c/c_variables_format.php)
