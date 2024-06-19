@@ -150,7 +150,14 @@ printf("%d", unNumero);
 ```
 > 4
 ```
-> Para imprimir otros tipos, usa `%c` para **char** y `%f` para **float**.
+
+Algunos especificadores de uso común son:
+- `%d`: Para imprimir números enteros.
+- `%f`: Para imprimir números de coma flotante.
+- `%c`: Para imprimir caracteres.
+- `%s`: Para imprimir cadenas.
+- `%p`: Para imprimir direcciones de memoria.
+- `%x`: Para imprimir valores hexadecimales.
 
 ## Cambiar valores de las variables
 Para cambiar el valor de una variable existente, se procederá de la siguiente manera:
@@ -239,3 +246,4 @@ Además, se deben tener en cuenta las siguientes reglas generales para nombrar v
 - [W3schools: Multiple Variables](https://www.w3schools.com/c/c_variables_multiple.php)
 - [W3schools: Variables Names](https://www.w3schools.com/c/c_variables_names.php)
 - [GeeksForGeeks: Variables in C](https://www.geeksforgeeks.org/variables-in-c/?ref=lbp)
+- [GeeksForGeeks: Printf in C](https://www.geeksforgeeks.org/printf-in-c/?ref=lbp)

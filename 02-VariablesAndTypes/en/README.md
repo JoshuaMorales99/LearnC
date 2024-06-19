@@ -8,7 +8,7 @@
     - [Initialize variables](#initialize-variables)
     - [How to use variables in C?](#how-to-use-variables-in-c)
   - [Format specifiers](#format-specifiers)
-  - [Change Variable Values](#change-variable-values)
+  - [Change variable values](#change-variable-values)
   - [Declare multiple variables](#declare-multiple-variables)
   - [Important!](#important)
   - [Rules for naming variables in C](#rules-for-naming-variables-in-c)
@@ -150,9 +150,16 @@ printf("%d", aNumber);
 ```
 > 4
 ```
-> To print other types, use `%c` for **char** and `%f` for **float**.
 
-## Change Variable Values
+Some commonly used specifiers are:
+- `%d`: For printing integers.
+- `%f`: For printing floating-point numbers.
+- `%c`: For printing characters.
+- `%s`: For printing strings.
+- `%p`: For printing memory addresses.
+- `%x`: For printing hexadecimal values.
+
+## Change variable values
 To change the value of an existing variable, proceed as follows:
 ```c
 int aNumber = 4;                                                          // aNumber is: 4.
@@ -239,3 +246,4 @@ Additionally, the following general rules for naming variables should be conside
 - [W3schools: Multiple Variables](https://www.w3schools.com/c/c_variables_multiple.php)
 - [W3schools: Variables Names](https://www.w3schools.com/c/c_variables_names.php)
 - [GeeksForGeeks: Variables in C](https://www.geeksforgeeks.org/variables-in-c/?ref=lbp)
+- [GeeksForGeeks: Printf in C](https://www.geeksforgeeks.org/printf-in-c/?ref=lbp)
