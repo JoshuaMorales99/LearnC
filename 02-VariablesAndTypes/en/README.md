@@ -2,12 +2,16 @@
 📖 **TABLE OF CONTENT**
 - [🧩 Variables and Types](#-variables-and-types)
   - [What is a variable?](#what-is-a-variable)
-  - [Data types](#data-types)
-  - [Define variables](#define-variables)
+    - [Data types](#data-types)
+    - [Declare variables](#declare-variables)
+    - [Define variables](#define-variables)
+    - [Initialize variables](#initialize-variables)
+    - [How to use variables in C?](#how-to-use-variables-in-c)
   - [Format specifiers](#format-specifiers)
   - [Change Variable Values](#change-variable-values)
   - [Declare multiple variables](#declare-multiple-variables)
   - [Important!](#important)
+  - [Rules for naming variables in C](#rules-for-naming-variables-in-c)
   - [References](#references)
 
 <br>
@@ -16,12 +20,11 @@
 | ▶ | **Next module**: [Module 03 - SOON]()
 
 ## What is a variable?
-A variable is a location in the computer's memory where data from a program will be stored. This data or values can change during the execution of the program.<br>
-Variables are formed by a space in memory and a symbolic name associated with that space. In this space, we can find a value that may be known or unknown.
+A variable is a location in the computer's memory where data from a program will be stored. These data or values can change during the execution. They are formed by a space in memory and a symbolic name associated with that space. In this space, we can find a value that may be known or unknown.
 
 <img src="./assets/Memory.webp" alt="Memory" width=340px/>
 
-## Data types
+### Data types
 C has several variable types, but there are a few basic types:
 - **Signed integers**: Integers that can be positive or negative.
   - `char`: For a single character or symbol. Memory required: 1 byte.
@@ -51,25 +54,42 @@ In other languages, you can find more very common data types, an example of this
 
 On the other hand, we can also find those known as **String**. For that, C uses arrays of characters to define them.
 
-## Define variables
-To define a variable in C, you must precede the reserved word of the variable type to the identifier of said variable (The identifier is a representative and characteristic name of what you want to store in it). This can be accompanied, or not, by an initialization (Initial value)<br>
-Syntax:
-```c
-<VARIABLE_TYPE> <IDENTIFIER> ;
+> C is a **strongly typed** language so all the variables types must be specified before using them.
 
-<VARIABLE_TYPE> <IDENTIFIER> = <INITIALIZATION> ;
+### Declare variables
+Variable declaration in C tells the compiler about the existence of the variable with the given name and data type.When the variable is declared, an entry in symbol table is created and memory will be allocated at the time of initialization of the variable.<br>
+To declare a variable in C, you must precede the reserved word of the variable type to the identifier (The identifier is a representative and characteristic name of what you want to store in it)
+Syntax:
+```
+<VARIABLE_TYPE> <IDENTIFIER> ;
 ```
 
 An example is the following:
 ```c
 // VARIABLE TYPE: int.  -   IDENTIFIER: foo.
 int foo;
+```
 
+### Define variables
+In the definition of a C variable, the compiler allocates some memory and some value to it. A defined variable will contain some random garbage value till it is not initialized.
+
+> Most of the modern C compilers declare and define the variable in single step. Although we can declare a variable in C by using `extern` keyword, it is not required in most of the cases.
+
+### Initialize variables
+Initialization of a variable is the process where the user assigns some meaningful value to the variable.
+Syntax:
+```
+<VARIABLE_TYPE> <IDENTIFIER> = <INITIALIZATION> ;
+```
+
+An example is the following:
+```c
 // VARIABLE TYPE: int.  -   IDENTIFIER: bar  -   INITIALIZATION: 1.
 int bar = 1;
 ```
-In the previous example, the variable `foo` can be used, but since we did not initialize it, we do not know what is in it. However, the variable `bar` contains the number 1.<br>
+In previous examples, the variable `foo` can be used, but since we did not initialize it, we do not know what is in it. However, the variable `bar` contains the number 1.
 
+### How to use variables in C?
 Now that we know about variables, we can do some math. Assuming that `aNumber` and `anotherNumber` are variables, we can operate with them:
 ```c
 // Declare signed integer variables.
@@ -89,6 +109,8 @@ printf("The division is equal to: %d\n", aNumber / anotherNumber);
 > The multiplication is equal to: 8
 > The division is equal to: 2
 ```
+
+<br>
 
 Now, let's see an example with boolean variables:
 ```c
@@ -201,6 +223,7 @@ Things to consider when using variables:
 - Readability: The use of declarative variable names improves the readability of the code. Instead of dealing with raw values, it's better to understand the purpose of each variable at a glance.
 - Accuracy: Choosing the correct data type ensures that our variables consume appropriate amounts of memory, optimizing the performance of our programs.
 
+## Rules for naming variables in C
 Additionally, the following general rules for naming variables should be considered:
 - Names can contain letters, digits and underscores.
 - Names must begin with a letter or an underscore (`_`)
@@ -215,3 +238,4 @@ Additionally, the following general rules for naming variables should be conside
 - [W3schools: Change Values](https://www.w3schools.com/c/c_variables_change.php)
 - [W3schools: Multiple Variables](https://www.w3schools.com/c/c_variables_multiple.php)
 - [W3schools: Variables Names](https://www.w3schools.com/c/c_variables_names.php)
+- [GeeksForGeeks: Variables in C](https://www.geeksforgeeks.org/variables-in-c/?ref=lbp)

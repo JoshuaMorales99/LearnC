@@ -2,12 +2,16 @@
 📖 **TABLA DE CONTENIDOS**
 - [🧩 Variables y Tipos](#-variables-y-tipos)
   - [¿Qué es una variable?](#qué-es-una-variable)
-  - [Tipos de datos](#tipos-de-datos)
-  - [Definir variables](#definir-variables)
+    - [Tipos de datos](#tipos-de-datos)
+    - [Declarar variables](#declarar-variables)
+    - [Definir variables](#definir-variables)
+    - [Inicializar variables](#inicializar-variables)
+    - [¿Cómo usar las variables en C?](#cómo-usar-las-variables-en-c)
   - [Especificadores de formato](#especificadores-de-formato)
   - [Cambiar valores de las variables](#cambiar-valores-de-las-variables)
   - [Declarar múltiples variables](#declarar-múltiples-variables)
   - [¡Importante!](#importante)
+  - [Reglas para nombrar variables en C](#reglas-para-nombrar-variables-en-c)
   - [Bibliografía](#bibliografía)
 
 <br>
@@ -16,12 +20,11 @@
 | ▶ | **Módulo siguiente**: [Módulo 03 - PRÓXIMAMENTE]()
 
 ## ¿Qué es una variable?
-Una variable es un lugar en la computadora donde se va a almacenar datos de un programa. Estos datos o valores pueden ir cambiando durante la ejecución de un programa.<br>
-Las variables están formadas por un espacio en memoria y un nombre simbólico que está asociado a dicho espacio. En dicho espacio podremos encontrar un valor que puede ser conocido o desconocido.
+Una variable es un lugar en la computadora donde se va a almacenar datos de un programa. Estos datos o valores pueden ir cambiando durante su ejecución. Están formadas por un espacio en memoria y un nombre simbólico que está asociado a dicho espacio. En este espacio podremos encontrar un valor que puede ser conocido o desconocido.
 
 <img src="./assets/Memoria.webp" alt="Memoria" width=340px/>
 
-## Tipos de datos
+### Tipos de datos
 C tiene varios tipos de variables, pero hay unos tipos básicos:
 - **Enteros con signo**: Números enteros que pueden ser positivos o negativos.
   - `char`: Para un solo carácter o símbolo. Memoria requerida: 1 byte.
@@ -51,25 +54,42 @@ En otros lenguajes se pueden encontrar más tipos muy comunes de dato, un ejempl
 
 Por otro lado, también podemos hallar los denominados como **String**. Para eso, C utilizará arreglos de caracteres para definirlos.
 
-## Definir variables
-Para definir una variables en C se deberá anteponer la palabra reservada del tipo de variable al identificador de dicha variable (El identificador es un nombre representativo y caracteristico de lo que se desea almacenar en ella). Este puede ir acompañado, o no, de una inicialización (Valor inicial)<br>
-Syntax:
-```c
-<TIPO_VARIABLE> <IDENTIFICADOR> ;
+> C es un lenguaje **fuertemente tipado**, por lo que todos los tipos de variables deben especificarse antes de usarse.
 
-<TIPO_VARIABLE> <IDENTIFICADOR> = <INICIALIZACION> ;
+### Declarar variables
+La declaración de variables en C informa al compilador sobre la existencia de la variable con el nombre y el tipo de dato especificados. Cuando se declara la variable, se crea una entrada en la tabla de símbolos y se asignará memoria en el momento de la inicialización de la variable.<br>
+Para declarar una variables en C se deberá anteponer la palabra reservada del tipo de variable al identificador (El identificador es un nombre representativo y característico de lo que se desea almacenar en ella)
+Sintáxis:
+```
+<TIPO_VARIABLE> <IDENTIFICADOR> ;
 ```
 
 Un ejemplo es el siguiente:
 ```c
 // TIPO VARIABLE: int.  -   IDENTIFICADOR: foo.
 int foo;
+```
 
+### Definir variables
+En la definición de una variable C, el compilador le asigna algo de memoria y algún valor. Una variable definida contendrá algún valor basura aleatorio hasta que no se inicialice.
+
+> La mayoría de los compiladores de C modernos declaran y definen la variable en un solo paso. Aunque podemos declarar una variable en C usando la palabra clave `extern`, no es necesaria en la mayoría de los casos.
+
+### Inicializar variables
+La inicialización de una variable es el proceso en el que el usuario asigna un valor significativo a la variable.
+Sintáxis:
+```
+<TIPO_VARIABLE> <IDENTIFICADOR> = <INICIALIZACION> ;
+```
+
+Un ejemplo es el siguiente:
+```c
 // TIPO VARIABLE: int.  -   IDENTIFICADOR: bar  -   INICIALIZACION: 1.
 int bar = 1;
 ```
-En el ejemplo anterior, la variable `foo` puede ser usada, pero como no la inicializamos, no sabemos qué hay en ella. Sin embargo, la variable `bar` contiene el número 1.<br>
+En los ejemplos anteriores, la variable `foo` puede ser usada, pero como no la inicializamos, no sabemos qué hay en ella. Sin embargo, la variable `bar` contiene el número 1.
 
+### ¿Cómo usar las variables en C?
 Ahora que conocemos a las variables, podemos hacer un poco de matemáticas. Asumiendo que `unNumero` y `otroNumero` son variables, podemos operar con ellos:
 ```c
 // Declarar variables enteras con signo.
@@ -89,6 +109,8 @@ printf("La division es igual a: %d\n", unNumero / otroNumero);
 > La multiplicacion es igual a: 8
 > La division es igual a: 2
 ```
+
+<br>
 
 Veamos ahora un ejemplo con los booleanos:
 ```c
@@ -201,6 +223,7 @@ Cosas a tener en cuenta a la hora de usar variables:
 - **Legibilidad**: El uso de nombres de variables declarativos mejora la legibilidad del código. En lugar de lidiar con valores crudos, es mejor entender el propósito de cada variable de un vistazo.
 - **Precisión**: Elegir el tipo de dato correcto asegura que nuestras variables consuman cantidades apropiadas de memoria, optimizando el rendimiento de nuestros programas.
 
+## Reglas para nombrar variables en C
 Además, se deben tener en cuenta las siguientes reglas generales para nombrar variables:
 - Los nombres pueden contener letras, dígitos y guiones bajos.
 - Los nombres deben comenzar con una letra o un guión bajo (`_`)
@@ -215,3 +238,4 @@ Además, se deben tener en cuenta las siguientes reglas generales para nombrar v
 - [W3schools: Change Values](https://www.w3schools.com/c/c_variables_change.php)
 - [W3schools: Multiple Variables](https://www.w3schools.com/c/c_variables_multiple.php)
 - [W3schools: Variables Names](https://www.w3schools.com/c/c_variables_names.php)
+- [GeeksForGeeks: Variables in C](https://www.geeksforgeeks.org/variables-in-c/?ref=lbp)
