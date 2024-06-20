@@ -1,6 +1,6 @@
-# 🧩 Variables and Types
+# 🧩 Variables and Data Types
 📖 **TABLE OF CONTENT**
-- [🧩 Variables and Types](#-variables-and-types)
+- [🧩 Variables and Data Types](#-variables-and-data-types)
   - [What is a variable?](#what-is-a-variable)
     - [Data types](#data-types)
     - [Declare variables](#declare-variables)

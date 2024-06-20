@@ -1,6 +1,6 @@
-# 🧩 Variables y Tipos
+# 🧩 Variables y Tipos de Datos
 📖 **TABLA DE CONTENIDOS**
-- [🧩 Variables y Tipos](#-variables-y-tipos)
+- [🧩 Variables y Tipos de Datos](#-variables-y-tipos-de-datos)
   - [¿Qué es una variable?](#qué-es-una-variable)
     - [Tipos de datos](#tipos-de-datos)
     - [Declarar variables](#declarar-variables)
