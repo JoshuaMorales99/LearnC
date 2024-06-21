@@ -18,7 +18,7 @@
 <br>
 
 | ◀ | **Previous module**: [Module 01 - Hello World!](https://github.com/JoshuaMorales99/LearnC/tree/main/01-HelloWorld/en)<br>
-| ▶ | **Next module**: [Module 03 - SOON]()
+| ▶ | **Next module**: [Module 03 - Constant Variables](https://github.com/JoshuaMorales99/LearnC/tree/main/03-ConstantVariables/en)
 
 ## What is a variable?
 A variable is a location in the computer's memory where data from a program will be stored. These data or values can change during the execution. They are formed by a space in memory and a symbolic name associated with that space. In this space, we can find a value that may be known or unknown.

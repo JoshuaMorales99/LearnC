@@ -18,7 +18,7 @@
 <br>
 
 | ◀ | **Módulo anterior**: [Módulo 01 - ¡Hola Mundo!](https://github.com/JoshuaMorales99/LearnC/tree/main/01-HelloWorld/es)<br>
-| ▶ | **Módulo siguiente**: [Módulo 03 - PRÓXIMAMENTE]()
+| ▶ | **Módulo siguiente**: [Módulo 03 - Variables Constantes](https://github.com/JoshuaMorales99/LearnC/tree/main/03-ConstantVariables/es)
 
 ## ¿Qué es una variable?
 Una variable es un lugar en la computadora donde se va a almacenar datos de un programa. Estos datos o valores pueden ir cambiando durante su ejecución. Están formadas por un espacio en memoria y un nombre simbólico que está asociado a dicho espacio. En este espacio podremos encontrar un valor que puede ser conocido o desconocido.
