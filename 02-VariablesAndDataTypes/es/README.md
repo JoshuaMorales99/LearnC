@@ -6,6 +6,7 @@
     - [Declarar variables](#declarar-variables)
     - [Definir variables](#definir-variables)
     - [Inicializar variables](#inicializar-variables)
+    - [Diferencia entre declaración y definición](#diferencia-entre-declaración-y-definición)
     - [¿Cómo usar las variables en C?](#cómo-usar-las-variables-en-c)
   - [Especificadores de formato](#especificadores-de-formato)
   - [Cambiar valores de las variables](#cambiar-valores-de-las-variables)
@@ -88,6 +89,9 @@ Un ejemplo es el siguiente:
 int bar = 1;
 ```
 En los ejemplos anteriores, la variable `foo` puede ser usada, pero como no la inicializamos, no sabemos qué hay en ella. Sin embargo, la variable `bar` contiene el número 1.
+
+### Diferencia entre declaración y definición
+En la declaración de variables, solo se especifica el nombre y el tipo de la variable, pero no se asigna memoria a la misma. Mientras que, en la definición de variable, la memoria también se asigna a la variable declarada.
 
 ### ¿Cómo usar las variables en C?
 Ahora que conocemos a las variables, podemos hacer un poco de matemáticas. Asumiendo que `unNumero` y `otroNumero` son variables, podemos operar con ellos:
