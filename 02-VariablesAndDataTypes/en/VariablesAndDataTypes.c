@@ -1,19 +1,6 @@
 #include <stdio.h>
 
-// Define the boolean type.
-#define BOOL char
-#define FALSE 0
-#define TRUE 1
-
 int main() {
-    // Declare boolean variables.
-    BOOL isTrue = TRUE;
-    BOOL isFalse = FALSE;
-
-    // Print the values to console.
-    printf("The value of isTrue is: %d\n", isTrue);
-    printf("The value of isFalse is: %d\n", isFalse);
-    
     // Declare signed integer variables.
     int aNumber = 4;
     int anotherNumber = 0;

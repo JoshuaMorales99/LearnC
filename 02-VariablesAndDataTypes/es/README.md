@@ -46,12 +46,7 @@ C tiene varios tipos de variables, pero hay unos tipos básicos:
 
 > Tener en cuenta que los distintos tipos de varibles definen sus límites.
 
-En otros lenguajes se pueden encontrar más tipos muy comunes de dato, un ejemplo de este es el tipo **booleano**. Dicho tipo representa valores de lógica binaria (2 valores) que normalmente son conocidos como **Verdadero** o **Falso**. En C no existe dicho tipo de variable, pero usualmente es definido usando la siguiente notación:
-```c
-#define BOOL char
-#define FALSE 0
-#define TRUE 1
-```
+En otros lenguajes se pueden encontrar más tipos muy comunes de dato, un ejemplo de este es el tipo **booleano**. Dicho tipo representa valores de lógica binaria (2 valores) que normalmente son conocidos como **Verdadero** o **Falso**.
 
 Por otro lado, también podemos hallar los denominados como **String**. Para eso, C utilizará arreglos de caracteres para definirlos.
 
@@ -112,35 +107,6 @@ printf("La division es igual a: %d\n", unNumero / otroNumero);
 > La resta es igual a: 2
 > La multiplicacion es igual a: 8
 > La division es igual a: 2
-```
-
-<br>
-
-Veamos ahora un ejemplo con los booleanos:
-```c
-#include <stdio.h>
-
-// Definir el tipo booleano.
-#define BOOL char
-#define FALSE 0
-#define TRUE 1
-
-int main() {
-    // Declarar variables booleanas.
-    BOOL esVerdadero = TRUE;
-    BOOL esFalso = FALSE;
-
-    // Imprimir los valores en consola.
-    printf("El valor de esVerdadero es: %d\n", esVerdadero);
-    printf("El valor de esFalso es: %d\n", esFalso);
-
-    return 0;
-}
-```
-***Salida***:
-```
-> El valor de esVerdadero es: 1
-> El valor de esFalso es: 0
 ```
 
 ## Especificadores de formato

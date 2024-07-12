@@ -46,12 +46,7 @@ C has several variable types, but there are a few basic types:
 
 > Keep in mind that different types of variables define their bounds.
 
-In other languages, you can find more very common data types, an example of this is the **boolean** type. This type represents binary logic values (2 values) commonly known as **True** or **False**. In C does not have a boolean type, but usually, it is defined using the following notation:
-```c
-#define BOOL char
-#define FALSE 0
-#define TRUE 1
-```
+In other languages, you can find more very common data types, an example of this is the **boolean** type. This type represents binary logic values (2 values) commonly known as **True** or **False**.
 
 On the other hand, we can also find those known as **String**. For that, C uses arrays of characters to define them.
 
@@ -112,35 +107,6 @@ printf("The division is equal to: %d\n", aNumber / anotherNumber);
 > The subtraction is equal to: 2
 > The multiplication is equal to: 8
 > The division is equal to: 2
-```
-
-<br>
-
-Now, let's see an example with boolean variables:
-```c
-#include <stdio.h>
-
-// Define the boolean type.
-#define BOOL char
-#define FALSE 0
-#define TRUE 1
-
-int main() {
-    // Declare boolean variables.
-    BOOL isTrue = TRUE;
-    BOOL isFalse = FALSE;
-
-    // Print the values to console.
-    printf("The value of isTrue is: %d\n", isTrue);
-    printf("The value of isFalse is: %d\n", isFalse);
-
-    return 0;
-}
-```
-***Output***:
-```
-> The value of isTrue is: 1
-> The value of isFalse is: 0
 ```
 
 ## Format specifiers

@@ -1,19 +1,6 @@
 #include <stdio.h>
 
-// Definir el tipo booleano.
-#define BOOL char
-#define FALSE 0
-#define TRUE 1
-
 int main() {
-    // Declarar variables booleanas.
-    BOOL esVerdadero = TRUE;
-    BOOL esFalso = FALSE;
-
-    // Imprimir los valores en consola.
-    printf("El valor de esVerdadero es: %d\n", esVerdadero);
-    printf("El valor de esFalso es: %d\n", esFalso);
-
     // Declarar variables enteras con signo.
     int unNumero = 4;
     int otroNumero = 0;
