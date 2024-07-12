@@ -12,7 +12,7 @@
 
 <br>
 
-| ◀ | **Previous module**: [Module 03 - Constant Variables]()<br>
+| ◀ | **Previous module**: [Module 03 - Constant Variables](https://github.com/JoshuaMorales99/LearnC/tree/main/03-ConstantVariables/en)<br>
 | ▶ | **Next module**: [Module 05 - SOON]()
 
 ## Introduction to Booleans
