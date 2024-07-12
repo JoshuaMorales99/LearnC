@@ -18,7 +18,7 @@
 <br>
 
 | ◀ | **Módulo anterior**: [Módulo 02 - Variables y Tipos de datos](https://github.com/JoshuaMorales99/LearnC/tree/main/02-VariablesAndDataTypes/es)<br>
-| ▶ | **Módulo siguiente**: [Módulo 04 - PRÓXIMAMENTE]()
+| ▶ | **Módulo siguiente**: [Módulo 04 - Booleanos](https://github.com/JoshuaMorales99/LearnC/tree/main/04-Boolean/es)
 
 ## ¿Qué es una constante?
 En el módulo anterior conocimos a las variables, cuyos valores se pueden modificar una cantidad infinita de veces. Por otra parte, el lenguaje C también nos proporciona una forma de hacer que el valor de una variable sea inmutable. A estas se las conoce como **constantes**.<br>
