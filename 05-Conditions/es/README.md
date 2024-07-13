@@ -1,8 +1,9 @@
 # 🤔 Condicionales
 📖 **TABLA DE CONTENIDOS**
 - [🤔 Condicionales](#-condicionales)
+  - [Introducción](#introducción)
   - [Condicionales lógicos](#condicionales-lógicos)
-  - [La sentencia de control de desición](#la-sentencia-de-control-de-desición)
+  - [La sentencia de control de decisión](#la-sentencia-de-control-de-decisión)
     - [La sentencia `if`](#la-sentencia-if)
     - [La sentencia `else`](#la-sentencia-else)
     - [La sentencia `else if`](#la-sentencia-else-if)
@@ -15,6 +16,13 @@
 
 | ◀ | **Módulo anterior**: [Módulo 04 - Booleanos](https://github.com/JoshuaMorales99/LearnC/tree/main/04-Boolean/es)<br>
 | ▶ | **Módulo siguiente**: [Módulo 06 - PRÓXIMAMENTE]()
+
+## Introducción
+Hay situaciones en el día a día en las que debemos tomar algunas decisiones y, dependiendo de estas decisiones, determinaremos qué acción tomar a continuación. Por ejemplo, si está lloviendo, decidimos llevar un paraguas; si no está lloviendo, no lo llevamos.
+
+<img src="./assets/Paraguas.webp" alt="Criatura adorable en la lluvia con un paraguas" width=250px/>
+
+De forma similar, en programación surgen situaciones donde necesitamos tomar decisiones. En base a estas, el programa ejecutará una acción, otra o ninguna. Esto permite que el programa se comporte de manera diferente según las condiciones específicas que se presenten, al igual que nosotros adaptamos nuestras acciones en función de las circunstancias.
 
 ## Condicionales lógicos
 El lenguaje C soporta **condicionales lógicos** los cuales conectan dos proposiciones. Se utilizan para evaluar el valor de verdad binaria, siendo 0 **Falso** y cualquier otro número **Verdadero**.<br>
@@ -32,11 +40,11 @@ Estos condicionales lógicos se utilizan generalmente para realizar diferentes a
 - `else if`: Se utiliza para especificar una nueva condición, si la primera fue **Falsa**.
 - `switch`: Se utiliza para especificar muchos bloques de código alternativos que se van a ejecutar.
 
-## La sentencia de control de desición
+## La sentencia de control de decisión
 <img src="./assets/Condiciones.webp" alt="Dos caminos posibles, que llevan a lugares diferentes" width=250px/>
 
 ### La sentencia `if`
-La sentencia `if` nos permite chequear si una expresión es **Verdadera** o **Falsa**, y ejecutar códigos si el resultado de dicha condición es **Verdadera**. Su sintaxis es la siguiente:
+La instrucción `if` es la sentencia de control de decisión más simple. Nos permite chequear si una expresión es **Verdadera** o **Falsa**, y ejecutar código si el resultado de dicha condición es **Verdadera**. Su sintaxis es la siguiente:
 ```c
 if( <CONDICION> ) {
     // Nuestro código aquí. Será ejecutado si la condición es Verdadera.
@@ -85,6 +93,20 @@ if(edad < 18) {
 > 2. Verificamos que la edad sea menor a 18 `(edad < 18)`.
 > 3. Como `edad` es 19, y sabemos que 19 no es menor que 18, entonces la condición resulta **Falsa**.
 > 4. Dado que la condición es **Falsa**, no entra en el `if` y no ejecuta el código que contiene.
+
+<br>
+
+**Ventajas de la instrucción `if`**
+Las principales ventajas de la sentencia `if` son:
+- Es la declaración más simple para la toma de decisiones.
+- Es fácil de usar y entender.
+- Puede evaluar expresiones de todo tipo como `int`, `char`, etc.
+
+**Desventajas de la instrucción `if`**
+Las principales desventajas de la sentencia `if` son:
+- Solo permite un único bloque de código por cada condición.
+- Cuando hay un gran número de expresiones, el código del bloque `if` se vuelve complejo e ilegible.
+- Puede ser menos eficiente en términos de rendimiento cuando se tienen muchas condiciones, comparado con otras estructuras de control.
 
 ### La sentencia `else`
 La sentencia `else` nos permite ejecutar código si el resultado de la condición del `if` es **Falso**. Su sintaxis es la siguiente:
@@ -187,6 +209,20 @@ int edad = 19;
 > 8. Dado que la condición 1 y 2 son **Falsas**, no entra en el `else if` y no ejecuta el código que contiene.
 > 9. Sin embargo, como la condición 1 y 2 son **Falsas**, entra en el `else` y ejecuta el código que contiene.
 
+<br>
+
+**Ventajas de la instrucción `else if`**
+Las principales ventajas de la sentencia `else if` son:
+- La sentencias `else if` permite ejecutar diferentes instrucciones en función de diferentes condiciones.
+- Ayuda a modificar el flujo del programa.
+- Es simple, eficiente y fácil de entender cuando hay menos condiciones.
+- Puede evaluar expresiones de todo tipo como `int`, `char`, etc.
+
+**Desventajas de la instrucción `else if`**
+Las principales desventajas de la sentencia `else if` son:
+- Si hay muchas instrucciones `else if` presentes, el código se vuelve ilegible y complejo.
+- Puede ser menos eficiente en términos de rendimiento cuando se tienen muchas condiciones, comparado con otras estructuras de control.
+
 ## Operador ternario
 En C, existe una abreviatura para `if else`. Esta se conoce como **Operador Ternario** ya que consta de tres operandos. Usualmente, se puede utilizar para reempleazar varias líneas de código en una sola. Su sintaxis es la siguiente:
 ```c
@@ -260,3 +296,6 @@ Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposicione
 - [W3schools: Else](https://www.w3schools.com/c/c_conditions_else.php)
 - [W3schools: Else If](https://www.w3schools.com/c/c_conditions_elseif.php)
 - [W3schools: Short Hand If](https://www.w3schools.com/c/c_conditions_short_hand.php)
+- [GeeksForGeeks: Decision Making in C](https://www.geeksforgeeks.org/decision-making-c-cpp/)
+- [GeeksForGeeks: if statement](https://www.geeksforgeeks.org/c-if-statement/?ref=lbp)
+- [GeeksForGeeks: if else statement](https://www.geeksforgeeks.org/c-if-else-statement/?ref=lbp)

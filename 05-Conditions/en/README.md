@@ -1,6 +1,7 @@
 # 🤔 Conditions
 📖 **TABLE OF CONTENT**
 - [🤔 Conditions](#-conditions)
+  - [Introduction](#introduction)
   - [Logical conditionals](#logical-conditionals)
   - [The decision control statement](#the-decision-control-statement)
     - [The `if` statement](#the-if-statement)
@@ -15,6 +16,13 @@
 
 | ◀ | **Previous module**: [Module 04 - Booleans](https://github.com/JoshuaMorales99/LearnC/tree/main/04-Boolean/en)<br>
 | ▶ | **Next module**: [Module 06 - SOON]()
+
+## Introduction
+There are situations in our daily lives where we have to make decisions, and depending on these decisions, we determine what action to take next. For example, if it is raining, we decide to take an umbrella; if it is not raining, we do not take one.
+
+<img src="./assets/Umbrella.webp" alt="Adorable creature in the rain with an umbrella" width=250px/>
+
+Similarly, in programming, situations arise where we need to make decisions. Based on these, the program will execute one action, another, or none. This allows the program to behave differently according to specific conditions, just as we adapt our actions based on circumstances.
 
 ## Logical conditionals
 C language supports logical conditionals which connect two propositions. They are used to evaluate binary truth value, where 0 is False and any other number is True.<br>
@@ -36,7 +44,7 @@ These logical conditionals are generally used to perform different actions in de
 <img src="./assets/Conditions.webp" alt="Two possible paths, leading to different places" width=250px/>
 
 ### The `if` statement
-The if statement allows us to check if an expression is **True** or **False**, and execute code if the result of that condition is True. Its syntax is as follows:
+The `if` statementis the simplest decision control statement. It allows us to check if an expression is **True** or **False**, and execute code if the result of that condition is True. Its syntax is as follows:
 ```c
 if( <CONDITION> ) {
     // Our code here. It will be executed if the condition is True.
@@ -85,6 +93,20 @@ if(age < 18) {
 > 2. We verify that the age is less than 18 `(age < 18)`.
 > 3. Since `age` is 19, and we know that 19 is not less than 18, then the condition results in **False**.
 > 4. Since the condition is **False**, it does not enter the `if` and does not execute the code it contains.
+
+<br>
+
+**Advantages of the `if` Statement**
+The main advantages of the `if` statement are:
+- It is the simplest decision-making statement.
+- It is easy to use and understand.
+- It can evaluate expressions of various data types such as `int`, `char`, etc.
+
+**Disadvantages of the `if` Statement**
+The main disadvantages of the `if` statement are:
+- It allows only a single block of code per condition.
+- When there are a large number of expressions, the code within the `if` block becomes complex and unreadable.
+- It can be less efficient in terms of performance when there are many conditions, compared to other control structures.
 
 ### The `else` statement
 The `else` statement allows us to execute code if the result of the `if` condition is **False**. Its syntax is as follows:
@@ -187,6 +209,20 @@ int age = 19;
 > 8. Since condition 1 and 2 are **False**, it does not enter the `else if` and does not execute the code it contains.
 > 9. However, since condition 1 and 2 are **False**, enter the `else` and execute the code it contains.
 
+<br>
+
+**Advantages of the `else if` Statement**
+The main advantages of the `else if` statement are:
+- The `else if` statement allows executing different instructions based on different conditions.
+- It helps modify the program's flow.
+- It is simple, efficient, and easy to understand when there are few conditions.
+- It can evaluate expressions of various data types such as `int`, `char`, etc.
+
+**Disadvantages of the `else if` Statement**
+The main disadvantages of the `else if` statement are:
+- If there are many `else if` statements, the code becomes unreadable and complex.
+- It can be less efficient in terms of performance when there are many conditions, compared to other control structures.
+
 ## Ternary operator
 In C, there's a shorthand for `if else`. This is known as the **Ternary Operator** as it consists of three operands. It's commonly used to replace multiple lines of code with a single line. Its syntax is as follows:
 ```c
@@ -260,3 +296,6 @@ Another very useful operator is the **NOT** (`!`) operator. It's used in logical
 - [W3schools: Else](https://www.w3schools.com/c/c_conditions_else.php)
 - [W3schools: Else If](https://www.w3schools.com/c/c_conditions_elseif.php)
 - [W3schools: Short Hand If](https://www.w3schools.com/c/c_conditions_short_hand.php)
+- [GeeksForGeeks: Decision Making in C](https://www.geeksforgeeks.org/decision-making-c-cpp/)
+- [GeeksForGeeks: if statement](https://www.geeksforgeeks.org/c-if-statement/?ref=lbp)
+- [GeeksForGeeks: if else statement](https://www.geeksforgeeks.org/c-if-else-statement/?ref=lbp)
