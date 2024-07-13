@@ -1,5 +1,22 @@
-# Condicionales 🤔
-## Condicionales logicos.
+# 🤔 Condicionales
+📖 **TABLA DE CONTENIDOS**
+- [🤔 Condicionales](#-condicionales)
+  - [Condicionales lógicos](#condicionales-lógicos)
+  - [La sentencia de control de desición](#la-sentencia-de-control-de-desición)
+    - [La sentencia `if`](#la-sentencia-if)
+    - [La sentencia `else`](#la-sentencia-else)
+    - [La sentencia `else if`](#la-sentencia-else-if)
+  - [Operador ternario](#operador-ternario)
+  - [Más de una expresión como condición](#más-de-una-expresión-como-condición)
+  - [Negación de una expresión lógica](#negación-de-una-expresión-lógica)
+  - [Bibliografía](#bibliografía)
+
+<br>
+
+| ◀ | **Módulo anterior**: [Módulo 04 - Booleanos](https://github.com/JoshuaMorales99/LearnC/tree/main/04-Boolean/es)<br>
+| ▶ | **Módulo siguiente**: [Módulo 06 - PRÓXIMAMENTE]()
+
+## Condicionales lógicos
 El lenguaje C soporta **condicionales lógicos** los cuales conectan dos proposiciones. Se utilizan para evaluar el valor de verdad binaria, siendo 0 **Falso** y cualquier otro número **Verdadero**.<br>
 Estos pueden ser:
 - **Menor que**: `a < b`
@@ -11,11 +28,14 @@ Estos pueden ser:
 
 Estos condicionales lógicos se utilizan generalmente para realizar diferentes acciones en la toma de desiciones. En C se tiene las siguientes instrucciones condicionales:
 - `if`: Se utiliza para especificar un bloque de código que se va a ejecutar si la condición especificada es **Verdadera**.
-- `else`: Se utiliza para especificar un bloque de código que se va a ejecutar si la condicion especificada es **Falsa**.
+- `else`: Se utiliza para especificar un bloque de código que se va a ejecutar si la condición especificada es **Falsa**.
 - `else if`: Se utiliza para especificar una nueva condición, si la primera fue **Falsa**.
 - `switch`: Se utiliza para especificar muchos bloques de código alternativos que se van a ejecutar.
 
-## La sentencia `if`.
+## La sentencia de control de desición
+<img src="./assets/Condiciones.webp" alt="Dos caminos posibles, que llevan a lugares diferentes" width=250px/>
+
+### La sentencia `if`
 La sentencia `if` nos permite chequear si una expresión es **Verdadera** o **Falsa**, y ejecutar códigos si el resultado de dicha condición es **Verdadera**. Su sintaxis es la siguiente:
 ```c
 if( <CONDICION> ) {
@@ -40,15 +60,15 @@ if(edad < 18) {
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos una variable `edad` que contendrá una edad dada.
-> 2. Verificamos que la edad sea menor a 18.
+> 2. Verificamos que la edad sea menor a 18 `(edad < 18)`.
 > 3. Como `edad` es 4, y sabemos que 4 es menor que 18, entonces la condición resulta **Verdadera**.
-> 4. Como la condición es Verdadera, se entra en el `if` y se ejecuta el código que contiene.
+> 4. Dado que la condición es **Verdadera**, se entra en el `if` y se ejecuta el código que contiene.
 
 <br>
 
 Otro ejemplo:
 ```c
-int edad = 18;
+int edad = 19;
 
 // Evaluar si es menor de edad.
 if(edad < 18) {
@@ -62,11 +82,11 @@ if(edad < 18) {
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
-> 2. Verificamos que la edad sea menor a 18.
-> 3. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición resulta **Falsa**.
-> 4. Como la condición es Falsa, no entra en el `if` y no ejecuta el código que contiene.
+> 2. Verificamos que la edad sea menor a 18 `(edad < 18)`.
+> 3. Como `edad` es 19, y sabemos que 19 no es menor que 18, entonces la condición resulta **Falsa**.
+> 4. Dado que la condición es **Falsa**, no entra en el `if` y no ejecuta el código que contiene.
 
-## La sentencia `else`.
+### La sentencia `else`
 La sentencia `else` nos permite ejecutar código si el resultado de la condición del `if` es **Falso**. Su sintaxis es la siguiente:
 ```c
 if( <CONDICION> ) {
@@ -79,7 +99,7 @@ if( <CONDICION> ) {
 
 Por ejemplo:
 ```c
-int edad = 18;
+int edad = 19;
 
 // Evaluar si es menor de edad.
 if(edad < 18) {
@@ -96,12 +116,12 @@ if(edad < 18) {
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
-> 2. Verificamos que la edad sea menor a 18.
-> 3. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición resulta **Falsa**.
-> 4. Como la condición es Falsa, no entra en el `if` y no ejecuta el código que contiene.
-> 5. Como la condición es Falsa, entra en el `else` y ejecuta el código que contiene.
+> 2. Verificamos que la edad sea menor a 18 `(edad < 18)`.
+> 3. Como `edad` es 19, y sabemos que 19 no es menor que 18, entonces la condición resulta **Falsa**.
+> 4. Dado que la condición es **Falsa**, no entra en el `if` y no ejecuta el código que contiene.
+> 5. Sin embargo, como la condición es **Falsa**, entra en el `else` y ejecuta el código que contiene.
 
-## La sentencia `else if`.
+### La sentencia `else if`
 En ocaciones, tendremos más de dos salidas de las cuales elegir. En estos casos, encadenamos múltiples sentencias `if else`.<br>
 La sentencia `else if` nos permite chequear si una nueva expresión es **Verdadera** o **Falsa**, y ejecutar códigos si el resultado de dicha condición es **Verdadera**. Su sintaxis es la siguiente:
 ```c
@@ -138,13 +158,13 @@ if(edad < 18) {
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
-> 2. Verificamos que la edad sea menor a 18 (Condición 1)
+> 2. Verificamos que la edad sea menor a 18 `(edad < 18)` (Condición 1)
 > 3. Como `edad` es 18, y sabemos que 18 no es menor que 18, entonces la condición 1 resulta **Falsa**.
-> 4. Como la condición 1 es Falsa, no entra en el `if` y no efecuta el código que contiene.
-> 5. Como la condición 1 es Falsa, se evalúa una nueva condición que es establecida en la sentencia `else if`.
-> 6. Verificamos que la edad es igual a 18 (Condición 2)
+> 4. Dado que la condición 1 es **Falsa**, no entra en el `if` y no efecuta el código que contiene.
+> 5. Sin embargo, como la condición 1 es **Falsa**, se evalúa una nueva condición que es establecida en la sentencia `else if`.
+> 6. Verificamos que la edad sea igual a 18 `(edad == 18)` (Condición 2)
 > 7. Como `edad` es 18, y sabemos que 18 es igual que 18, entonces la condición 2 resulta **Verdadera**.
-> 8. Como la condición 1 es Falsa y la condición 2 es Verdadera, entra en el `else if` y ejecuta el código que contiene.
+> 8. Dado que la condición 1 es **Falsa** y la condición 2 es **Verdadera**, entra en el `else if` y ejecuta el código que contiene.
 
 <br>
 
@@ -158,16 +178,16 @@ int edad = 19;
 ```
 > Analizamos el ejemplo anterior.
 > 1. Usamos la variable `edad` que contendrá una edad dada.
-> 2. Verificamos que la edad sea menor a 18 (Condición 1)
+> 2. Verificamos que la edad sea menor a 18 `(edad < 18)` (Condición 1)
 > 3. Como `edad` es 19, y sabemos que 19 no es menor que 18, entonces la condición 1 resulta **Falsa**.
-> 4. Como la condición 1 es Falsa, no entra en el `if` y no ejecuta el código que contiene.
-> 5. Como la condición 1 es Falsa, se evalúa una nueva condición que es establecida en la sentencia `else if`.
-> 6. Verificamos que la edad es igual a 18 (Condición 2)
+> 4. Dado que la condición 1 es **Falsa**, no entra en el `if` y no ejecuta el código que contiene.
+> 5. Sin embargo, como la condición 1 es **Falsa**, se evalúa una nueva condición que es establecida en la sentencia `else if`.
+> 6. Verificamos que la edad es igual a 18 `(edad == 18)` (Condición 2)
 > 7. Como `edad` es 19, y sabemos que 19 no es igual que 18, entonces la condición 2 resulta **Falsa**.
-> 8. Como la condición 1 y 2 son Falsas, no entra en el `else if` y no ejecuta el código que contiene.
-> 9. Como la condición 1 y 2 son Falsas, entra en el `else` y ejecuta el código que contiene.
+> 8. Dado que la condición 1 y 2 son **Falsas**, no entra en el `else if` y no ejecuta el código que contiene.
+> 9. Sin embargo, como la condición 1 y 2 son **Falsas**, entra en el `else` y ejecuta el código que contiene.
 
-## Operador ternario.
+## Operador ternario
 En C, existe una abreviatura para `if else`. Esta se conoce como **Operador Ternario** ya que consta de tres operandos. Usualmente, se puede utilizar para reempleazar varias líneas de código en una sola. Su sintaxis es la siguiente:
 ```c
 ( <CONDICION> ) ? <EXPRESION_VERDADERA> : <EXPRESION_FALSA> ;
@@ -200,7 +220,7 @@ int edad = 18
 > Es mayor de edad
 ```
 
-## Más de una expresión como condición.
+## Más de una expresión como condición
 Es posible evaluar dos o más expresiones juntas usando operadores lógicos. Para realizar esto, haremos uso de los siguientes conectores:
 - **AND** (`&&`): Se utiliza para chequear si dos expresiones resultan **Verdadera**.
 - **OR** (`||`): Se utiliza para chequear si alguna de las dos expresiones resulta **Verdadera**
@@ -227,14 +247,14 @@ if (foo < bar || moo > bar) {
 > foo es menor que bar O moo es mayor que bar
 ```
 
-> Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposiciones lógicas con el fin de negar una variable lógica o constante. En otras palabras, invierte el resultado **Verdadero** y **Falso**.<br>
+## Negación de una expresión lógica
+Otro operador muy útil es el operador **NOT** (`!`). Se utiliza en proposiciones lógicas con el fin de negar una variable lógica o constante. En otras palabras, invierte el resultado **Verdadero** y **Falso**.<br>
 ```
 - ! Verdadero       ->      Falso.
 - ! Falso           ->      Verdadero.
 ```
 
-
-## Bibliografía.
+## Bibliografía
 - [Learn-C: Condiciones](https://www.learn-c.org/es/Conditions)
 - [W3schools: If](https://www.w3schools.com/c/c_conditions.php)
 - [W3schools: Else](https://www.w3schools.com/c/c_conditions_else.php)

@@ -1,5 +1,22 @@
-# Conditions 🤔
-## Logical conditionals.
+# 🤔 Conditions
+📖 **TABLE OF CONTENT**
+- [🤔 Conditions](#-conditions)
+  - [Logical conditionals](#logical-conditionals)
+  - [The decision control statement](#the-decision-control-statement)
+    - [The `if` statement](#the-if-statement)
+    - [The `else` statement](#the-else-statement)
+    - [The `else if` statement](#the-else-if-statement)
+  - [Ternary operator](#ternary-operator)
+  - [More than one expression as condition](#more-than-one-expression-as-condition)
+  - [Negation of a logical expression](#negation-of-a-logical-expression)
+  - [References](#references)
+
+<br>
+
+| ◀ | **Previous module**: [Module 04 - Booleans](https://github.com/JoshuaMorales99/LearnC/tree/main/04-Boolean/en)<br>
+| ▶ | **Next module**: [Module 06 - SOON]()
+
+## Logical conditionals
 C language supports logical conditionals which connect two propositions. They are used to evaluate binary truth value, where 0 is False and any other number is True.<br>
 These can be:
 - **Less than**: `a < b`
@@ -15,7 +32,10 @@ These logical conditionals are generally used to perform different actions in de
 - `else if`: Used to specify a new condition to test, if the first one was **False**.
 - `switch`: Used to specify many alternative blocks of code to be executed.
 
-## The `if` statement.
+## The decision control statement
+<img src="./assets/Conditions.webp" alt="Two possible paths, leading to different places" width=250px/>
+
+### The `if` statement
 The if statement allows us to check if an expression is **True** or **False**, and execute code if the result of that condition is True. Its syntax is as follows:
 ```c
 if( <CONDITION> ) {
@@ -40,15 +60,15 @@ if(age < 18) {
 ```
 > We analyze the previous example:
 > 1. We use the varible `age` that will contain a given age.
-> 2. We verify that the age is less than 18.
+> 2. We verify that the age is less than 18 `(age < 18)`.
 > 3. Since `age` is 4, and we know that 4 is less than 18, then the contition results in **True**.
-> 4. Since the condition is True, enter the `if` and execute the code it contains.
+> 4. Since the condition is **True**, enter the `if` and execute the code it contains.
 
 <br>
 
 Another example:
 ```c
-int age = 18;
+int age = 19;
 
 // Check if it's underage.
 if(age < 18) {
@@ -60,14 +80,13 @@ if(age < 18) {
 ```
 > 
 ```
-> In the above example, we use the variable `age` to check if the age is less than 18. Since `age` is 18, and we know that 18 is not less than 18, then the condition results in **False**. Since it's False, it doesn't enter the `if` and doesn't execute the contained code.
 > We analyze the previous example:
 > 1. We use the variable `age` that will contain given age.
-> 2. We verify that the age is less than 18.
-> 3. Since `age` is 18, and we know that 18 is not less than 18, then the condition results in **False**.
-> 4. Since the condition is False, it does not enter the `if` and does not execute the code it contains.
+> 2. We verify that the age is less than 18 `(age < 18)`.
+> 3. Since `age` is 19, and we know that 19 is not less than 18, then the condition results in **False**.
+> 4. Since the condition is **False**, it does not enter the `if` and does not execute the code it contains.
 
-## The `else` statement.
+### The `else` statement
 The `else` statement allows us to execute code if the result of the `if` condition is **False**. Its syntax is as follows:
 ```c
 if( <CONDITION> ) {
@@ -80,7 +99,7 @@ if( <CONDITION> ) {
 
 For example:
 ```c
-int age = 18;
+int age = 19;
 
 // Check if it's underage.
 if(age < 18) {
@@ -97,12 +116,12 @@ if(age < 18) {
 ```
 > We analyze the previous example:
 > 1. We use the variable `age` that will contain given age.
-> 2. We verify that the age is less than 18.
-> 3. Since `age` is 18, and we know that 18 is not less than 18, then the condition results in **False**.
-> 4. Since the condition is False, it does not enter the `if` and does not execute the code it contains.
-> 5. Since the condition is False, enter the `else` and execute the code it contains.
+> 2. We verify that the age is less than 18 `(age < 18)`.
+> 3. Since `age` is 19, and we know that 19 is not less than 18, then the condition results in **False**.
+> 4. Since the condition is **False**, it does not enter the `if` and does not execute the code it contains.
+> 5. However, since the condition is **False**, enter the `else` and execute the code it contains.
 
-## The `else if` statement.
+### The `else if` statement
 Sometimes, we'll have more than two possible outcomes. In these cases, we chain multiple `if else` statements.<br>
 The `else if` statement allows us to check if a new expression is **True** or **False**, and execute code if the result of that condition is **True**. Its syntax is as follows:
 ```c
@@ -124,6 +143,7 @@ int age = 18;
 if(age < 18) {
     // If condition 1 is true, print "It's underage" to the console.
     printf("It's underage\n");
+// Check if the age is equal to 18.
 } else if(age == 18) {
     // If condition 1 is false and condition 2 is true, print "The age is equal to 18" to the console.
     printf("The age is equal to 18\n");
@@ -138,13 +158,13 @@ if(age < 18) {
 ```
 > We analyze the previous example:
 > 1. We use the variable `age` that will contain given age.
-> 2. We verify that the age is less than 18 (Condition 1)
+> 2. We verify that the age is less than 18 `(age < 18)` (Condition 1)
 > 3. Since `age` is 18, and we know that 18 is not less than 18, then the condition results in **False**.
-> 4. Since condition 1 is False, it does not enter the `if` and does not execute the code it contains.
-> 5. Since condition 1 is False, a new condition that is set in the `else if` statement is evaluated.
-> 6. We verify that the age is equal to 18 (Condition 2)
+> 4. Since condition 1 is **False**, it does not enter the `if` and does not execute the code it contains.
+> 5. However, since condition 1 is **False**, a new condition that is set in the `else if` statement is evaluated.
+> 6. We verify that the age is equal to 18 `(age == 18)` (Condition 2)
 > 7. Since `age` is 18, and we know that 18 is equal to 18, then condition 2 becomes **True**.
-> 8. Since condition 1 is False and condition 2 is True, enter the `else if` and execute the code it contains.
+> 8. Since condition 1 is **False** and condition 2 is **True**, enter the `else if` and execute the code it contains.
 
 <br>
 
@@ -158,20 +178,21 @@ int age = 19;
 ```
 > We analyze the previous example:
 > 1. We use the variable `age` that will contain given age.
-> 2. We verify that the age is less than 18 (Condition 1)
+> 2. We verify that the age is less than 18 `(age < 18)` (Condition 1)
 > 3. Since `age` is 19, and we know that 19 is not less than 18, then the condition results in **False**.
-> 4. Since condition 1 is False, it does not enter the `if` and does not execute the code it contains.
-> 5. Since condition 1 is False, a new condition that is set in the `else if` statement is evaluated.
-> 6. We verify that the age is equal to 18 (Condition 2)
+> 4. Since condition 1 is **False**, it does not enter the `if` and does not execute the code it contains.
+> 5. However, since condition 1 is **False**, a new condition that is set in the `else if` statement is evaluated.
+> 6. We verify that the age is equal to 18 `(age == 18)` (Condition 2)
 > 7. Since `age` is 19, and we know that 19 is not equal to 18, then condition 2 becomes **False**.
-> 8. Since condition 1 and 2 are False, it does not enter the `else if` and does not execute the code it contains.
-> 9. Since condition 1 and 2 are False, enter the `else` and execute the code it contains.
+> 8. Since condition 1 and 2 are **False**, it does not enter the `else if` and does not execute the code it contains.
+> 9. However, since condition 1 and 2 are **False**, enter the `else` and execute the code it contains.
 
-## Ternary operator.
+## Ternary operator
 In C, there's a shorthand for `if else`. This is known as the **Ternary Operator** as it consists of three operands. It's commonly used to replace multiple lines of code with a single line. Its syntax is as follows:
 ```c
 ( <CONDITION> ) ? <TRUE_EXPRESSION> : <FALSE_EXPRESSION> ;
 ```
+<br>
 
 For example, the following lines of code:
 ```c
@@ -199,7 +220,7 @@ int age = 18;
 > It's of legal age
 ```
 
-## More than one expression as condition.
+## More than one expression as condition
 It's possible to evaluate two or more expressions together using logical operators. To do this, we'll use the following connectors:
 - **AND** (`&&`): Used to check if two expressions result in **True**.
 - **OR** (`||`): Used to check if either of the two expressions results in **True**.
@@ -226,14 +247,14 @@ if (foo < bar || moo > bar) {
 > foo is less than bar OR moo is greater than bar
 ```
 
-> Another very useful operator is the **NOT** (`!`) operator. It's used in logical propositions to negate a logical variable or constant. In other words, it flips the result **True** and **False**.<br>
+## Negation of a logical expression
+Another very useful operator is the **NOT** (`!`) operator. It's used in logical propositions to negate a logical variable or constant. In other words, it flips the result **True** and **False**.<br>
 ```
 - ! True        ->      False.
 - ! False       ->      True.
 ```
 
-
-## References.
+## References
 - [Learn-C: Conditions](https://www.learn-c.org/en/Conditions)
 - [W3schools: If](https://www.w3schools.com/c/c_conditions.php)
 - [W3schools: Else](https://www.w3schools.com/c/c_conditions_else.php)
