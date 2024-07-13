@@ -13,7 +13,7 @@
 <br>
 
 | ◀ | **Módulo anterior**: [Módulo 03 - Variables Constantes](https://github.com/JoshuaMorales99/LearnC/tree/main/03-ConstantVariables/es)<br>
-| ▶ | **Módulo siguiente**: [Módulo 05 - PRÓXIMAMENTE]()
+| ▶ | **Módulo siguiente**: [Módulo 05 - Condicionales](https://github.com/JoshuaMorales99/LearnC/tree/main/05-Conditions/es)
 
 ## Introducción a los booleano
 En programación, usualmente se necesita un tipo de dato que solo puede tomar dos valores posibles:

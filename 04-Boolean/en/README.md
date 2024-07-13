@@ -13,7 +13,7 @@
 <br>
 
 | ◀ | **Previous module**: [Module 03 - Constant Variables](https://github.com/JoshuaMorales99/LearnC/tree/main/03-ConstantVariables/en)<br>
-| ▶ | **Next module**: [Module 05 - SOON]()
+| ▶ | **Next module**: [Module 05 - Conditions](https://github.com/JoshuaMorales99/LearnC/tree/main/05-Conditions/en)
 
 ## Introduction to Booleans
 In programming, we often need a data type that can only take two possible values:
