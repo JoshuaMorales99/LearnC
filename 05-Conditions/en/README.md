@@ -1,6 +1,6 @@
-# 🤔 Conditions
+# 🤔 Conditionals
 📖 **TABLE OF CONTENT**
-- [🤔 Conditions](#-conditions)
+- [🤔 Conditionals](#-conditionals)
   - [Introduction](#introduction)
   - [Logical conditionals](#logical-conditionals)
   - [The decision control statement](#the-decision-control-statement)
